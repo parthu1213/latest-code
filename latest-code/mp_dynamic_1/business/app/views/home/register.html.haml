@@ -1,0 +1,54 @@
+= stylesheet_link_tag 'application','https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap',media: 'all', 'data-turbolinks-track' => true
+.contact-section.overview-bgi{:style => "background-image: url('#{image_path 'test.jpg'}')"}
+  \&gt;
+  .container
+    .row.justify-contact-center
+      .login-12
+        .col-md-12.pad-0
+          .row.login-box-12{:style => "background: url('#{image_path 'login.jpg'}') top left repeat rgba(0, 0, 0, 0.04);background-size: cover;"}
+            .col-lg-7.col-sm-12.col-pad-0.align-self-center
+              .login-inner-form
+                .details
+                  %h3 Sign into your account
+                  %form{:action => "../index.html", :method => "GET"}
+                    .form-group
+                      %input.input-text{:name => "name", :placeholder => "Full Name", :type => "email"}/
+                    .form-group
+                      %input.input-text{:name => "email", :placeholder => "Email Address", :type => "email"}/
+                    .form-group
+                      %input.input-text{:name => "Password", :placeholder => "Password", :type => "password"}/
+                    .form-group
+                      %input.input-text{:name => "Password", :placeholder => "Confirm Password", :type => "password"}/
+                    .checkbox.clearfix
+                      .form-check.checkbox-theme
+                        %input#rememberMe.form-check-input{:type => "checkbox", :value => ""}/
+                        %label.form-check-label{:for => "rememberMe"}
+                          Remember me
+                    .form-group
+                      %button.btn-md.btn-theme.btn-block{:type => "submit"} Login
+                  %p
+                    Already a member?
+                    %a{:href => "login.html"} Login here
+            .col-lg-5.col-md-12.col-sm-12.col-pad-0.bg-img.align-self-center.none-992
+              %a{:href => "#"}
+                = image_tag("white-logo.png", :class => "logo")
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Lorem Ipsum
+              %a.btn-outline{:href => "#"} View More
+              %ul.social-list.clearfix
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-facebook
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-twitter
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-google-plus
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-linkedin
+#full-page-search
+  %button.close{:type => "button"} ×
+  %form{:action => "#"}
+    %input{:placeholder => "type keyword(s) here", :type => "search", :value => ""}/
+    %button.btn.btn-sm.btn-color{:type => "button"} Search

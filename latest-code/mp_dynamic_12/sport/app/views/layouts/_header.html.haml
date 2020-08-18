@@ -1,0 +1,84 @@
+.ritekhed-wrapper
+  #ritekhed-header.ritekhed-header-one{:style => "background-image: url('#{image_path 'vpattren.png'}')"}
+    \&gt;
+    .ritekhed-top-strip.ritekhed-bgcolor-two
+      .container
+        .row
+          .col-md-12
+            %ul.ritekhed-top-strip-social
+              %li
+                %a.fab.fa-facebook-f{:href => "https://www.facebook.com/softices/?ref=aymt_homepage_panel&eid=ARAm18ULAHBNqv2_Az_4sos7SWP3mjVSiSx1_B0Wign4XH4MZ2g-GjOu2oJVWaqajG1kXXOJk0XG7OIa"}
+              %li
+                %a.fab.fa-twitter{:href => "https://twitter.com/Softices"}
+              %li
+                %a.fab.fa-linkedin-in{:href => "https://www.linkedin.com/company/softices/?viewAsMember=tru"}
+              %li
+                %a.fab.fa-google-plus-g{:href => "#"}
+              %li
+                %a.fab.fa-dribbble{:href => "#"}
+            %ul.ritekhed-user-section
+              %li
+                %i.fa.fa-globe
+                %a{:href => "#"} Support
+              %li
+                %i.fab.fa-opencart
+                %a.ritekhed-open-cart{:href => "#"} Cart (0)
+                .ritekhed-cart-box
+                  %h2 You have 2 items in the cart
+                  %ul
+                    %li
+                      %figure
+                        %a{:href => "checkout.html"}
+                      .ritekhed-cartbox-text
+                        %h6
+                          %a{:href => "checkout.html"} Key Management Model The 60+ Models
+                        .ritekhed-rating
+                          %span.ritekhed-rating-box.eight-percent
+                        %span.ritekhed-cartbox-price.ritekhed-color
+                          $35.99
+                          %small $43.00
+                    %li
+                      %figure
+                        %a{:href => "checkout.html"}
+                      .ritekhed-cartbox-text
+                        %h6
+                          %a{:href => "checkout.html"} Pyramid Principle: Logic Writing &amp; Thinking
+                        .ritekhed-rating
+                          %span.ritekhed-rating-box.ten-percent
+                        %span.ritekhed-cartbox-price.ritekhed-color $21.00
+                  %h5
+                    Subtotal
+                    %span.ritekhed-color $1343
+                  .ritekhed-cart-link
+                    %a.ritekhed-cartbox-btn.ritekhed-bgcolorhover{:href => "checkout.html"}
+                      %i.flaticon-tool
+                      Go to Checkout
+              %li
+                %i.far.fa-user
+                %a{"data-target" => "#loginModal", "data-toggle" => "modal", :href => "#"} Login
+              %li
+                %i.fa.fa-sign-in{"aria-hidden" => "true"}
+                %a{"data-target" => "#signupModal", "data-toggle" => "modal", :href => "#"} Sign Up
+    .ritekhed-main-header.ritekhed-border-color
+      .container
+        .row
+          .col-md-12
+            %a.ritekhed-logo{:href => "index-2.html"}
+              %img{:alt => "", :src => "#{image_path 'logo.png'}"}/
+            .ritekhed-right-head
+              %span.ritekhed-menu-link
+                %span.menu-bar
+                %span.menu-bar
+                %span.menu-bar
+              %nav#main-nav
+                %ul#main-menu.sm.sm-blue
+                  %li{:class => "nav-item #{active_class(root_path)}"}
+                    %a{:href => root_path} Home
+                  %li{:class => "nav-item #{active_class(playergrid_path)}"}
+                    %a{:href => playergrid_path} Players
+                  %li{:class => "nav-item #{active_class(bloggrid_path)}"}
+                    %a{:href => bloggrid_path} Blog
+                  %li{:class => "nav-item #{active_class(team_path)}"}
+                    %a{:href => team_path} Team
+                  %li{:class => "nav-item #{active_class(contactus_path)}"}
+                    %a{:href => contactus_path} Contact Us

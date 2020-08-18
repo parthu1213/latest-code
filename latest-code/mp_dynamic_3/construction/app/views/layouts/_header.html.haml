@@ -1,0 +1,69 @@
+%body
+  .preload
+  #top-bar.top-bar
+    .container
+      .row
+        .col-lg-8.col-md-8.col-sm-6.col-xs-12
+          %ul.top-info
+            %li
+              %i.fa.fa-phone  
+              %p.info-text (+91) 70166 76005
+            %li
+              %i.fa.fa-envelope-o  
+              %p.info-text contact@softices.com
+        .col-lg-4.col-md-4.col-sm-6.col-xs-12.top-social.text-right
+          %ul.unstyled
+            %li
+              %a{:href => "https://www.facebook.com/softices/?ref=aymt_homepage_panel&eid=ARAm18ULAHBNqv2_Az_4sos7SWP3mjVSiSx1_B0Wign4XH4MZ2g-GjOu2oJVWaqajG1kXXOJk0XG7OIa", :title => "Facebook"}
+                %span.social-icon
+                  %i.fa.fa-facebook
+              %a{:href => "https://twitter.com/Softices", :title => "Twitter"}
+                %span.social-icon
+                  %i.fa.fa-twitter
+              %a{:href => "#", :title => "Google+"}
+                %span.social-icon
+                  %i.fa.fa-google-plus
+              %a{:href => "https://www.linkedin.com/company/softices/?viewAsMember=tru", :title => "Linkdin"}
+                %span.social-icon
+                  %i.fa.fa-linkedin
+              %a{:href => "#", :title => "Rss"}
+                %span.social-icon
+                  %i.fa.fa-rss
+              %a{:href => "#", :title => "Skype"}
+                %span.social-icon
+                  %i.fa.fa-skype
+  %header#header.header
+    .container
+      .row
+        .navbar-header
+          .logo
+            %a{:href => "index-2.html"}
+              = image_tag("logo.png")
+        .site-nav-inner
+          %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %nav.collapse.navbar-collapse.navbar-responsive-collapse.pull-right
+            %ul.nav.navbar-nav
+              %li{:class => "#{active_class(root_path)}"}
+                %a{:href => root_path} Home
+              %li{:class => "#{active_class(aboutus_path)}"}
+                %a{:href => aboutus_path} About Us
+              %li{:class => "#{active_class(projects_path)}"}
+                %a{:href => projects_path} Projects
+              %li{:class => "#{active_class(services_path)}"}
+                %a{:href => services_path} services
+              %li{:class => "#{active_class(news_path)}"}
+                %a{:href => news_path} News
+              %li{:class => "#{active_class(contact_us_path)}"}
+                %a{:href => contact_us_path} contact
+              %li.nav-search
+                %span#search
+                  %i.fa.fa-search
+              %li.header-get-a-quote
+                %a.btn.btn-primary{:href => "#"} Get Free Quote
+          .search{:style => "display: none;"}
+            %input.form-control{:placeholder => "Type what you want and enter", :type => "text"}/
+            %span.search-close ×

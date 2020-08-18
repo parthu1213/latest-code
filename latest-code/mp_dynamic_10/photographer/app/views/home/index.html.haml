@@ -1,0 +1,142 @@
+%section.welcome-area
+  .welcome-slides.owl-carousel
+    .single-welcome-slide.bg-img.bg-overlay{:style => "background-image:  url('#{image_path 'bg-img/1.jpg'}');"}
+      .container.h-100
+        .row.h-100.align-items-center.justify-content-end
+          .col-12.col-lg-8.col-xl-6
+            .welcome-text
+              %h2{"data-animation" => "bounceInDown", "data-delay" => "900ms"}
+                Hello
+                = succeed "I'm" do
+                  %br/
+              %p{"data-animation" => "bounceInDown", "data-delay" => "500ms"} I photograph very instinctively. I see how it is taken like that. I do not follow certain styles, philosophies or teachers.
+              .hero-btn-group{"data-animation" => "bounceInDown", "data-delay" => "100ms"}
+                %a.btn.alime-btn.mb-3.mb-sm-0.mr-4{:href => "#"} Get a Quote
+                %a.hero-mail-contact{:href => "mailto:hello.alime@gmail.com"} hello.alime@gmail.com
+    .single-welcome-slide.bg-img.bg-overlay{:style => "background-image: url('#{image_path 'bg-img/2.jpg'}');"}
+      .container.h-100
+        .row.h-100.align-items-center
+          .col-12.col-lg-8.col-xl-6
+            .welcome-text
+              %h2{"data-animation" => "bounceInUp", "data-delay" => "100ms"}
+                Hello
+                = succeed "I'm" do
+                  %br/
+              %p{"data-animation" => "bounceInUp", "data-delay" => "500ms"} I photograph very instinctively. I see how it is taken like that. I do not follow certain styles, philosophies or teachers.
+              .hero-btn-group{"data-animation" => "bounceInUp", "data-delay" => "900ms"}
+                %a.btn.alime-btn.mb-3.mb-sm-0.mr-4{:href => "#"} Get a Quote
+                %a.hero-mail-contact{:href => "mailto:hello.alime@gmail.com"} hello.alime@gmail.com
+.alime-portfolio-area.section-padding-80.clearfix
+  .container-fluid
+    .row
+      .col-12
+        .alime-projects-menu
+          .portfolio-menu.text-center
+            %button.btn.active{"data-filter" => "*"} All
+            %button.btn{"data-filter" => ".human"} Human
+            %button.btn{"data-filter" => ".nature"} Nature
+            %button.btn{"data-filter" => ".country"} Country
+            %button.btn{"data-filter" => ".video"} Video
+    .row.alime-portfolio
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.nature.mb-30.wow.fadeInUp{"data-wow-delay" => "100ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/3.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/3.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.video.human.mb-30.wow.fadeInUp{"data-wow-delay" => "300ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/4.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/4.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.country.mb-30.wow.fadeInUp{"data-wow-delay" => "500ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/5.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/5.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.human.mb-30.wow.fadeInUp{"data-wow-delay" => "700ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/6.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/6.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.nature.mb-30.wow.fadeInUp{"data-wow-delay" => "100ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/7.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/7.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.video.country.mb-30.wow.fadeInUp{"data-wow-delay" => "300ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/8.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/8.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.human.mb-30.wow.fadeInUp{"data-wow-delay" => "500ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/10.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/10.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.nature.mb-30.wow.fadeInUp{"data-wow-delay" => "700ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/9.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/9.jpg')}"} +
+      .col-12.col-sm-6.col-lg-6.single_gallery_item.video.country.mb-30.wow.fadeInUp{"data-wow-delay" => "100ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/36.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/36.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.human.mb-30.wow.fadeInUp{"data-wow-delay" => "300ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/37.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/37.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.country.mb-30.wow.fadeInUp{"data-wow-delay" => "500ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/5.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/5.jpg')}"} +
+    .row
+      .col-12.text-center.wow.fadeInUp{"data-wow-delay" => "700ms"}
+        %a.btn.alime-btn.btn-2.mt-15{:href => "#"} View More
+%section.follow-area.clearfix
+  .container
+    .row
+      .col-12
+        .section-heading.text-center
+          %h2 Follow Instagram
+          %p @Alime_photographer
+  .instragram-feed-area.owl-carousel
+    .single-instagram-item
+      = image_tag("bg-img/11.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/12.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/13.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/14.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/15.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/16.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer

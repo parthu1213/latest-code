@@ -1,0 +1,76 @@
+%section.breadcrumb-area.bg-img.bg-overlay.jarallax{:style => "background-image: url('#{image_path 'bg-img/38.jpg'}');"}
+  .container.h-100
+    .row.h-100.align-items-center
+      .col-12
+        .breadcrumb-content.text-center
+          %h2.page-title Contact
+          %nav{"aria-label" => "breadcrumb"}
+            %ol.breadcrumb.justify-content-center
+              %li.breadcrumb-item
+                %a{:href => "index.html"}
+                  %i.icon_house_alt
+                  Home
+              %li.breadcrumb-item.active{"aria-current" => "page"} Contact
+%section.contact-form.py-5
+  .container
+    .col-12
+      %h3.text-center Get in touch
+      %p.text-center Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis  euismod. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia.
+      %ul.contact-info.text-center.mb-3
+        %li
+          %i.fa.fa-map-marker.mr-2{"aria-hidden" => "true"}>
+          202-204 Panvel Point, Mota Varachha, Surat, Gujarat, India
+        %li
+          %i.fa.fa-phone.mr-2{"aria-hidden" => "true"}>
+          +91 70166 76005
+        %li
+          %i.fa.fa-envelope.mr-2{"aria-hidden" => "true"}>
+          contact@softices.com
+.map-area.section-padding-0-80
+  .container
+    #map
+      %iframe{:allowfullscreen => "", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12309.440717226664!2d24.094896788114085!3d56.9484200464499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfb0e5073ded%3A0x400cfcd68f2fe30!2sRiga%2C+Latvia!5e0!3m2!1sen!2sbd!4v1550835159592"}
+.follow-area.clearfix
+  .container
+    .row
+      .col-12
+        .section-heading.text-center
+          %h2 Follow Instagram
+          %p @Alime_photographer
+  .instragram-feed-area.owl-carousel
+    .single-instagram-item
+      = image_tag("bg-img/11.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/12.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/13.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/14.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/15.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/16.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer

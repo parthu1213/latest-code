@@ -1,0 +1,604 @@
+
+%body
+  .loading
+    .text-center.middle
+      .lds-ellipsis
+        %div
+        %div
+        %div
+        %div
+  %section.hero{"data-scroll-index" => "1"}
+    .section-padding.pos-re
+      .container
+        .row
+          .offset-lg-2.col-lg-8.offset-md-1.col-md-10.text-center.mb-80
+            %h4.extra-title
+              About Our
+              %span Creative
+              Agency
+            %p Lorem Ipsum is simply dummy text of the printing and type setting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries.
+          .feat-item.mb-md50.col-lg-4
+            .text-center
+              %span.icon.icon-basic-anchor
+              %h5 Web Design
+              %h6 Modern &amp; Clean Design
+              %p Lorem Ipsum is simply dummy text of the printing and type setting industry
+          .feat-item.active.mb-md50.col-lg-4
+            .text-center
+              %span.icon.icon-basic-pencil-ruler
+              %h5 Development
+              %h6 Web &amp; Mobile Development
+              %p Lorem Ipsum is simply dummy text of the printing and type setting industry
+          .feat-item.col-lg-4
+            .text-center
+              %span.icon.icon-basic-cards-diamonds
+              %h5 Branding
+              %h6 Logo &amp; Motion Design
+              %p Lorem Ipsum is simply dummy text of the printing and type setting industry
+      .curve.curve-gray-b.curve-bottom
+    .tabs-section.section-padding.bg-gray
+      .container
+        .row
+          %ul#pills-tab.col-md-12.nav.nav-pills.tabs{:role => "tablist"}
+            %li.nav-item.one.active
+              %a#pills-home-tab.nav-link.active{"aria-controls" => "tab1", "aria-selected" => "true", "data-toggle" => "pill", :href => "#tab1", :role => "tab"} About Us
+            %li.nav-item.two
+              %a#pills-profile-tab.nav-link{"aria-controls" => "tab2", "aria-selected" => "false", "data-toggle" => "pill", :href => "#tab2", :role => "tab"} Our Mission
+            %li.nav-item.three
+              %a#pills-contact-tab.nav-link{"aria-controls" => "tab3", "aria-selected" => "false", "data-toggle" => "pill", :href => "#tab3", :role => "tab"} Why Us?
+          #pills-tabContent.tab-content.col-lg-12
+            #tab1.tab-pane.fade.show.active{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
+              .row
+                .left.col-lg-6
+                  .about.box-white
+                    %h5.title About Us
+                    %h6.sub-title We Are A Creative Agency
+                    %p We’re full service which means we’ve got you covered on design and content right through to digital.
+                    .skills.mt-40
+                      .skill-item.mb-30
+                        %h6 Web Design
+                        .skill-progress
+                          .progres{"data-value" => "90%"}
+                      .skill-item.mb-30
+                        %h6 Branding
+                        .skill-progress
+                          .progres{"data-value" => "75%"}
+                      .skill-item
+                        %h6 Development
+                        .skill-progress
+                          .progres{"data-value" => "80%"}
+                .col-lg-6.image
+                  .img
+                    = image_tag("2.jpg")
+            #tab2.tab-pane.fade{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
+              .row
+                .left.col-lg-6
+                  .mission.box-white
+                    %h5.title Our Mission
+                    %h6.sub-title We Are A Creative Agency
+                    %p.mb-10
+                      %b We’re full service which means
+                      we’ve got you covered on design and content right through to digital. You’ll form a lasting relationship with us,
+                      %b collaboration is central to
+                      everything we do.
+                      %b We’ll push you out of
+                      your comfort zone from time, but this is where you’ll shine. Bottom line is we want you to succeed at Faculty.
+                    %p You’ll form a lasting relationship with us, collaboration is central to everything we do. We’ll push you out of your comfort zone from time-to-time, but this is where you’ll shine. Bottom line is we want you to succeed at Faculty.
+                .col-lg-6.image
+                  .img
+                    = image_tag("3.jpg")
+                    %a.vid{:href => "https://vimeo.com/127203262"}
+                      %span.vid-butn
+                        %i.fas.fa-play-circle
+            #tab3.tab-pane.fade{"aria-labelledby" => "pills-home-tab", :role => "tabpanel"}
+              .row
+                .left.col-lg-6
+                  .why-us.box-white
+                    %h5.title Why Choose Us?
+                    %h6.sub-title We Are A Creative Agency
+                    %p We’re full service which means we’ve got you covered on design and content right through to digital.You’ll form a lasting relationship with us, collaboration is central to everything we do.
+                    %ul.feat.mt-30.row
+                      %li.col-sm-4
+                        %span.icon.icon-basic-display
+                        %h6 Perfect Design
+                      %li.col-sm-4
+                        %span.icon.icon-basic-picture-multiple
+                        %h6 Retina Ready
+                      %li.col-sm-4
+                        %span.icon.icon-basic-headset
+                        %h6 Friendly Support
+                .col-lg-6.image
+                  .img.owl-carousel.owl-theme.carousel-single
+                    = image_tag("4.jpg")
+                    = image_tag("5.jpg")
+                    = image_tag("2.jpg")
+  .process.section-padding.bg-img.bg-fixed.pos-re.text-center{"data-overlay-dark" => "7", :style => "background-image: url('#{image_path 'bg6.jpg'}')"}
+    .container
+      .row
+        .section-head.offset-md-2.col-md-8.offset-lg-3.col-lg-6
+          %h4
+            %span Our
+            Process
+          %p We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design &amp; web development services.
+        .full-width.clearfix
+        .col-lg-3.col-md-6
+          .item.first.mb-md50
+            = image_tag("arrow.png", :class => "tobotm")
+            %span.icon.icon-basic-lightbulb
+            .cont
+              %h3 01
+              %h6 Ideas
+              %p Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat
+        .col-lg-3.col-md-6
+          .item.odd.mb-md50
+            = image_tag("arrow.png")
+            %span.icon.icon-basic-book-pencil
+            .cont
+              %h3 02
+              %h6 Planning
+              %p Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat
+        .col-lg-3.col-md-6
+          .item.mb-sm50
+            = image_tag("arrow.png", :class => "tobotm")
+            %span.icon.icon-basic-pencil-ruler
+            .cont
+              %h3 03
+              %h6 Development
+              %p Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat
+        .col-lg-3.col-md-6
+          .item.odd
+            %span.icon.icon-basic-server-upload
+            .cont
+              %h3 04
+              %h6 Testing
+              %p Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat
+    .curve.curve-gray-t.curve-top
+    .curve.curve-bottom
+  %section.works.section-padding{"data-scroll-index" => "2"}
+    .container
+      .row
+        .section-head.offset-md-2.col-md-8.offset-lg-3.col-lg-6
+          %h4
+            %span Creative
+            Portfolio
+          %p We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design &amp; web development services.
+    .container-fluid
+      .row
+        .filtering.text-center.mb-30.col-sm-12
+          .filter
+            %span.active{"data-filter" => "*"} All
+            %span{"data-filter" => ".brand"} Brand
+            %span{"data-filter" => ".web"} Design
+            %span{"data-filter" => ".graphic"} Graphic
+        .clearfix
+        .gallery.full-width
+          .col-lg-3.col-md-6.items.graphic
+            .item-img
+              = image_tag("portfolio/1.jpg")
+              .item-img-overlay
+                .overlay-info.full-width
+                  %p Logo | Branding
+                  %h6 Creative Web Design
+                  %a.popimg{:href => "assets/portfolio/1.jpg"}
+                    %span.icon
+                      %i.fas.fa-long-arrow-alt-right
+          .col-lg-3.col-md-6.items.web
+            .item-img
+              = image_tag("portfolio/2.jpg")
+              .item-img-overlay
+                .overlay-info.full-width
+                  %p Logo | Branding
+                  %h6 Creative Web Design
+                  %a.popimg{:href => "assets/portfolio/2.jpg"}
+                    %span.icon
+                      %i.fas.fa-long-arrow-alt-right
+          .col-lg-3.col-md-6.items.brand
+            .item-img
+              = image_tag("portfolio/3.jpg")
+              .item-img-overlay
+                .overlay-info.full-width
+                  %p Logo | Branding
+                  %h6 Creative Web Design
+                  %a.popimg{:href => "assets/portfolio/3.jpg"}
+                    %span.icon
+                      %i.fas.fa-long-arrow-alt-right
+          .col-lg-3.col-md-6.items.graphic
+            .item-img
+              = image_tag("portfolio/4.jpg")
+              .item-img-overlay
+                .overlay-info.full-width
+                  %p Logo | Branding
+                  %h6 Creative Web Design
+                  %a.popimg{:href => "assets/portfolio/4.jpg"}
+                    %span.icon
+                      %i.fas.fa-long-arrow-alt-right
+          .col-lg-3.col-md-6.items.web
+            .item-img
+              = image_tag("portfolio/5.jpg")
+              .item-img-overlay
+                .overlay-info.full-width
+                  %p Logo | Branding
+                  %h6 Creative Web Design
+                  %a.popimg{:href => "assets/portfolio/5.jpg"}
+                    %span.icon
+                      %i.fas.fa-long-arrow-alt-right
+          .col-lg-3.col-md-6.items.brand
+            .item-img
+              = image_tag("portfolio/6.jpg")
+              .item-img-overlay
+                .overlay-info.full-width
+                  %p Logo | Branding
+                  %h6 Creative Web Design
+                  %a.popimg{:href => "assets/portfolio/6.jpg"}
+                    %span.icon
+                      %i.fas.fa-long-arrow-alt-right
+          .col-lg-3.col-md-6.items.brand
+            .item-img
+              = image_tag("portfolio/7.jpg")
+              .item-img-overlay
+                .overlay-info.full-width
+                  %p Logo | Branding
+                  %h6 Creative Web Design
+                  %a.popimg{:href => "assets/portfolio/7.jpg"}
+                    %span.icon
+                      %i.fas.fa-long-arrow-alt-right
+          .col-lg-3.col-md-6.items.graphic
+            .item-img
+              = image_tag("portfolio/8.jpg")
+              .item-img-overlay
+                .overlay-info.full-width
+                  %p Logo | Branding
+                  %h6 Creative Web Design
+                  %a.popimg{:href => "assets/portfolio/8.jpg"}
+                    %span.icon
+                      %i.fas.fa-long-arrow-alt-right
+  .why-us.section-padding.bg-gray.pos-re
+    .container
+      .row
+        .col-lg-6
+          .img.mb-md50
+            = image_tag("1.jpg")
+        .col-lg-6
+          .content.pt-10
+            .item.mb-40
+              %span.icon.icon-basic-display
+              .cont
+                %h5 Fully Responsive
+                %p Nulla metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat velit class aptent taciti sociosqu.
+            .item.mb-40
+              %span.icon.icon-basic-bolt
+              .cont
+                %h5 Clean &amp; Modern Design
+                %p Nulla metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat velit class aptent taciti sociosqu.
+            .item
+              %span.icon.icon-basic-headset
+              .cont
+                %h5 Friendly Support
+                %p Nulla metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat velit class aptent taciti sociosqu.
+    .curve.curve-top
+    .curve.curve-bottom
+  %section.team.section-padding{"data-scroll-index" => "3"}
+    .container
+      .row
+        .section-head.offset-md-2.col-md-8.offset-lg-3.col-lg-6
+          %h4
+            %span Talent
+            Team
+          %p We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design &amp; web development services.
+        .owl-carousel.owl-theme
+          .item
+            .team-img
+              = image_tag("team/1.jpg")
+              .social
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-facebook-f
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-twitter
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-behance
+            .info
+              %h6 Alex Smith
+              %span Project Manager
+          .item
+            .team-img
+              = image_tag("team/2.jpg")
+              .social
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-facebook-f
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-twitter
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-behance
+            .info
+              %h6 Alex Smith
+              %span Project Manager
+          .item
+            .team-img
+              = image_tag("team/3.jpg")
+              .social
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-facebook-f
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-twitter
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-behance
+            .info
+              %h6 Alex Smith
+              %span Project Manager
+          .item
+            .team-img
+              = image_tag("team/4.jpg")
+              .social
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-facebook-f
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-twitter
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-behance
+            .info
+              %h6 Alex Smith
+              %span Project Manager
+          .item
+            .team-img
+              = image_tag("team/3.jpg")
+              .social
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-facebook-f
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-twitter
+                %a.icon{:href => "#0"}
+                  %i.fab.fa-behance
+            .info
+              %h6 Alex Smith
+              %span Project Manager
+  %section.testimonials.section-padding.bg-img.bg-fixed.pos-re{"data-overlay-dark" => "7", :style => "background-image: url('#{image_path 'bg4.jpg'}')"}
+    .container
+      .row
+        .section-head.offset-md-2.col-md-8.offset-lg-3.col-lg-6
+          %h4
+            What's
+            %span Clients
+            Says?
+          %p We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design &amp; web development services.
+        .owl-carousel.owl-theme.text-center.col-lg-10.offset-lg-1
+          .item-box
+            %span.quote
+              = image_tag("quot.png")
+            %p Lorem Ipsum is simply dummy text a galley of type and scrambled it to make a type specimen book.
+            .info
+              .author-img
+                = image_tag("clients/1.jpg")
+              .cont
+                %h6 Alex Smith
+                %span Envato Customer
+          .item-box
+            %span.quote
+              = image_tag("quot.png")
+            %p Lorem Ipsum is simply dummy text a galley of type and scrambled it to make a type specimen book.
+            .info
+              .author-img
+                = image_tag("clients/2.jpg")
+              .cont
+                %h6 Alex Smith
+                %span Envato Customer
+          .item-box
+            %span.quote
+              = image_tag("quot.png")
+            %p Lorem Ipsum is simply dummy text a galley of type and scrambled it to make a type specimen book.
+            .info
+              .author-img
+                = image_tag("clients/3.jpg")
+              .cont
+                %h6 Alex Smith
+                %span Envato Customer
+          .item-box
+            %span.quote
+              = image_tag("quot.png")
+            %p Lorem Ipsum is simply dummy text a galley of type and scrambled it to make a type specimen book.
+            .info
+              .author-img
+                = image_tag("clients/4.jpg")
+              .cont
+                %h6 Alex Smith
+                %span Envato Customer
+    .curve.curve-top
+  %section.price.section-padding.bg-gray.pos-re{"data-scroll-index" => "4"}
+    .container
+      .row
+        .section-head.offset-md-2.col-md-8.offset-lg-3.col-lg-6
+          %h4
+            Pricing
+            %span Table
+          %p We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design &amp; web development services.
+        .pricing-tables.text-center.full-width
+          .row
+            .col-lg-3
+              .item.mb-md50
+                .type
+                  %h4 Free
+                .value
+                  %h3
+                    %span> $
+                    00
+                  %span.per / Month
+                .features
+                  %ul
+                    %li 10 GB Disk Space
+                    %li 15 Domain Names
+                    %li 4 Email Address
+                    %li Enhanced Security
+                    %li Unlimited Support
+                .order
+                  %a.butn.butn-bg{:href => "#0"}
+                    %span Purchase Now
+            .col-lg-3
+              .item.mb-md50
+                .type
+                  %h4 Basic
+                .value
+                  %h3
+                    %span> $
+                    10
+                  %span.per / Month
+                .features
+                  %ul
+                    %li 10 GB Disk Space
+                    %li 15 Domain Names
+                    %li 4 Email Address
+                    %li Enhanced Security
+                    %li Unlimited Support
+                .order
+                  %a.butn.butn-bg{:href => "#0"}
+                    %span Purchase Now
+            .col-lg-3
+              .item.active.mb-md50
+                .type
+                  %h4 Standard
+                .value
+                  %h3
+                    %span> $
+                    30
+                  %span.per / Month
+                .features
+                  %ul
+                    %li 100 GB Disk Space
+                    %li 30 Domain Names
+                    %li 5 Email Address
+                    %li Enhanced Security
+                    %li Unlimited Support
+                .order
+                  %a.butn.butn-light{:href => "#0"}
+                    %span Purchase Now
+            .col-lg-3
+              .item
+                .type
+                  %h4 Premium
+                .value
+                  %h3
+                    %span> $
+                    80
+                  %span.per / Month
+                .features
+                  %ul
+                    %li 500 GB Disk Space
+                    %li 100 Domain Names
+                    %li 10 Email Address
+                    %li Enhanced Security
+                    %li Unlimited Support
+                .order
+                  %a.butn.butn-bg{:href => "#0"}
+                    %span Purchase Now
+    .curve.curve-bottom
+  %section.blog.section-padding{"data-scroll-index" => "5"}
+    .container
+      .row
+        .section-head.offset-md-2.col-md-8.offset-lg-3.col-lg-6
+          %h4
+            %span Latest
+            News
+          %p We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design &amp; web development services.
+        .col-lg-4
+          .item.mb-md50
+            .post-img
+              .img
+                = image_tag("blog/1.jpg")
+            .cont
+              .info
+                %a{:href => "#0"} By : Admin
+                %a{:href => "#0"} 06 Aug 2017
+                %a.tag{:href => "#0"} WordPress
+              %h6
+                %a{:href => "#0"} 48 Best WordPress Themes
+              %p Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the dummy text ever
+              %a.more{:href => "#0"}
+                Read More
+                %i.fas.fa-chevron-right
+        .col-lg-4
+          .item.mb-md50
+            .post-img
+              .img
+                = image_tag("blog/2.jpg")
+            .cont
+              .info
+                %a{:href => "#0"} By : Admin
+                %a{:href => "#0"} 06 Aug 2017
+                %a.tag{:href => "#0"} WordPress
+              %h6
+                %a{:href => "#0"} 48 Best WordPress Themes
+              %p Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the dummy text ever
+              %a.more{:href => "#0"}
+                Read More
+                %i.fas.fa-chevron-right
+        .col-lg-4
+          .item
+            .post-img
+              .img
+                = image_tag("blog/3.jpg")
+            .cont
+              .info
+                %a{:href => "#0"} By : Admin
+                %a{:href => "#0"} 06 Aug 2017
+                %a.tag{:href => "#0"} WordPress
+              %h6
+                %a{:href => "#0"} 48 Best WordPress Themes
+              %p Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the dummy text ever
+              %a.more{:href => "#0"}
+                Read More
+                %i.fas.fa-chevron-right
+  %section.call-action.section-padding.bg-img.bg-fixed{"data-overlay-dark" => "5", :style => "background-image: url('#{image_path 'bg2.jpg'}')"}
+    .container
+      .row
+        .col-lg-12
+          .text-center
+            %h2 Want to work with us?
+            %h5 Tell us about your project
+            %a.butn.butn-bg{:href => "#0"}
+              %span Get Started
+  %section.contact.section-padding{"data-scroll-index" => "6"}
+    .container
+      .row
+        .section-head.offset-md-2.col-md-8.offset-lg-3.col-lg-6
+          %h4
+            Get
+            %span In
+            Touch
+          %p We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design &amp; web development services.
+        .col-lg-5
+          .contact-info.mb-md50
+            %h5 Contact Us :
+            %p Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat
+            .item
+              %span.icon.icon-basic-tablet
+              .cont
+                %h6 Phone :
+                %p +91 70166 76005
+            .item
+              %span.icon.icon-basic-mail-open-text
+              .cont
+                %h6 Email :
+                %p contact@softices.com
+            .item
+              %span.icon.icon-basic-geolocalize-05
+              .cont
+                %h6 Address :
+                %p 202-204 Panvel Point, Mota Varachha, Surat
+        .col-lg-7
+          %form#contact-form.form{:action => "http://innovationplans.com/idesign/coco3/contact.php", :method => "post"}
+            .messages
+            .controls
+              .row
+                .col-md-6
+                  .form-group
+                    %input#form_name{:name => "name", :placeholder => "Name", :required => "required", :type => "text"}/
+                .col-md-6
+                  .form-group
+                    %input#form_email{:name => "email", :placeholder => "Email", :required => "required", :type => "email"}/
+                .col-md-12
+                  .form-group
+                    %input#form_subject{:name => "subject", :placeholder => "Subject", :type => "text"}/
+                .col-md-12
+                  .form-group
+                    %textarea#form_message{:name => "message", :placeholder => "Message", :required => "required", :rows => "4"}
+                .col-md-12
+                  %button.butn.butn-bg{:type => "submit"}
+                    %span Send Message

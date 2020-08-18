@@ -1,0 +1,45 @@
+%body
+  %nav.navbar.py-4.navbar-expand-lg.ftco_navbar.navbar-light.bg-light.flex-row
+    .container
+      .row.no-gutters.d-flex.align-items-start.align-items-center.px-3.px-md-0
+        .col-lg-2.pr-4.align-items-center
+          %a.navbar-brand{:href => root_path}
+            Dr.
+            %span care
+        .col-lg-10.d-none.d-md-block
+          .row.d-flex
+            .col-md-4.pr-4.d-flex.topper.align-items-center
+              .icon.bg-white.mr-2.d-flex.justify-content-center.align-items-center
+                %span.icon-map
+              %span.text 202-204 Panvel Point, Nr. Sudama Chowk, Mota Varachha, Surat, Gujarat, India
+            .col-md.pr-4.d-flex.topper.align-items-center
+              .icon.bg-white.mr-2.d-flex.justify-content-center.align-items-center
+                %span.icon-paper-plane
+              %span.text Email: contact@softices.com
+            .col-md.pr-4.d-flex.topper.align-items-center
+              .icon.bg-white.mr-2.d-flex.justify-content-center.align-items-center
+                %span.icon-phone2
+              %span.text Phone: +91 70166 76005
+  %nav#ftco-navbar.navbar.navbar-expand-lg.navbar-dark.bg-dark.ftco-navbar-light
+    .container.d-flex.align-items-center
+      %button.navbar-toggler{"aria-controls" => "ftco-nav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#ftco-nav", "data-toggle" => "collapse", :type => "button"}
+        %span.oi.oi-menu
+        Menu
+      %p.button-custom.order-lg-last.mb-0
+        %a.btn.btn-secondary.py-2.px-3{:href => "appointment.html"} Make An Appointment
+      #ftco-nav.collapse.navbar-collapse
+        %ul.navbar-nav.mr-auto
+          %li{:class => "nav-item #{active_class(root_path)}"}
+            %a.nav-link.pl-0{:href => root_path} Home
+          %li{:class => "nav-item #{active_class(about_path)}"}
+            %a.nav-link{:href => about_path} About
+          %li{:class => "nav-item #{active_class(doctor_path)}"}
+            %a.nav-link{:href => doctor_path} Doctor
+          %li{:class => "nav-item #{active_class(department_path)}"}
+            %a.nav-link{:href => department_path} Departments
+          %li{:class => "nav-item #{active_class(pricing_path)}"}
+            %a.nav-link{:href => pricing_path} Pricing
+          %li{:class => "nav-item #{active_class(blog_path)}"}
+            %a.nav-link{:href => blog_path} Blog
+          %li{:class => "nav-item #{active_class(contact_path)}"}
+            %a.nav-link{:href => contact_path} Contact

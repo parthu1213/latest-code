@@ -1,0 +1,14 @@
+//= require jquery-1.12.1.min
+//= require popper.min
+//= require bootstrap.min
+//= require jquery.magnific-popup
+//= require owl.carousel.min
+//= require masonry.pkgd
+//= require jquery.nice-select.min
+//= require gijgo.min
+//= require jquery.ajaxchimp.min
+//= require jquery.form
+//= require jquery.validate.min
+//= require mail-script
+//= require contact
+//= require custom

@@ -1,0 +1,33 @@
+%body
+  %header
+    .wrap-menu-header.gradient1.trans-0-4
+      .container.h-full
+        .wrap_header.trans-0-3
+          .logo
+            %a{:href => root_path}
+              %img{:alt => "IMG-LOGO", "data-logofixed" => "#{image_path 'icons/star2.png'}", :src => "#{image_path 'icons/star.png'}"}/
+          .wrap_menu.p-l-45.p-l-0-xl
+            %nav.menu
+              %ul.main_menu
+                %li
+                  %a{:href => root_path} Home
+                %li
+                  %a{:href => menu_path} Menu
+                %li
+                  %a{:href => reservation_path} Reservation
+                %li
+                  %a{:href => gallery_path} Gallery
+                %li
+                  %a{:href => about_path} About
+                %li
+                  %a{:href => blog_path} Blog
+                %li
+                  %a{:href => contact_path} Contact
+          .social.flex-w.flex-l-m.p-r-20
+            %a{:href => "#"}
+              %i.fa.fa-tripadvisor{"aria-hidden" => "true"}
+            %a{:href => "https://www.facebook.com/softices/?ref=aymt_homepage_panel&eid=ARAm18ULAHBNqv2_Az_4sos7SWP3mjVSiSx1_B0Wign4XH4MZ2g-GjOu2oJVWaqajG1kXXOJk0XG7OIa"}
+              %i.fa.fa-facebook.m-l-21{"aria-hidden" => "true"}
+            %a{:href => "https://twitter.com/Softices"}
+              %i.fa.fa-twitter.m-l-21{"aria-hidden" => "true"}
+            %button.btn-show-sidebar.m-l-33.trans-0-4

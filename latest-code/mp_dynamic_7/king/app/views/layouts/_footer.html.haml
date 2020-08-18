@@ -1,0 +1,68 @@
+%footer.footer-area.section_gap
+  .container
+    .row
+      .col-lg-3.col-md-6.col-sm-6
+        .single-footer-widget
+          %h6.footer_title About Agency
+          %p The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point
+      .col-lg-3.col-md-6.col-sm-6
+        .single-footer-widget
+          %h6.footer_title Navigation Links
+          .row
+            .col-4
+              %ul.list_style
+                %li
+                  %a{:href => "#"} Home
+                %li
+                  %a{:href => "#"} Feature
+                %li
+                  %a{:href => "#"} Services
+                %li
+                  %a{:href => "#"} Portfolio
+            .col-4
+              %ul.list_style
+                %li
+                  %a{:href => "#"} Team
+                %li
+                  %a{:href => "#"} Pricing
+                %li
+                  %a{:href => "#"} Blog
+                %li
+                  %a{:href => "#"} Contact
+      .col-lg-3.col-md-6.col-sm-6
+        .single-footer-widget
+          %h6.footer_title Newsletter
+          %p For business professionals caught between high OEM price and mediocre print and graphic output,
+          #mc_embed_signup
+            %form.subscribe_form.relative{:action => "https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01", :method => "get", :novalidate => "true", :target => "_blank"}
+              .input-group.d-flex.flex-row
+                %input{:name => "EMAIL", :onblur => "this.placeholder = 'Email Address '", :onfocus => "this.placeholder = ''", :placeholder => "Email Address", :required => "", :type => "email"}/
+                %button.btn.sub-btn
+                  %span.lnr.lnr-location
+              .mt-10.info
+      .col-lg-3.col-md-6.col-sm-6
+        .single-footer-widget.instafeed
+          %h6.footer_title InstaFeed
+          %ul.list_style.instafeed.d-flex.flex-wrap
+            %li= image_tag("instagram/Image-01.jpg")
+            %li= image_tag("instagram/Image-02.jpg")
+            %li= image_tag("instagram/Image-03.jpg")
+            %li= image_tag("instagram/Image-04.jpg")
+            %li= image_tag("instagram/Image-05.jpg")
+            %li= image_tag("instagram/Image-06.jpg")
+            %li= image_tag("instagram/Image-07.jpg")
+            %li= image_tag("instagram/Image-08.jpg")
+    .border_line
+    .row.footer-bottom.d-flex.justify-content-between.align-items-center
+      %p.col-lg-8.col-sm-12.footer-text.m-0
+        Copyright ©
+        :javascript
+          document.write(new Date().getFullYear());
+        All rights reserved
+      .col-lg-4.col-sm-12.footer-social
+        %a{:href => "https://www.facebook.com/softices/?ref=aymt_homepage_panel&eid=ARAm18ULAHBNqv2_Az_4sos7SWP3mjVSiSx1_B0Wign4XH4MZ2g-GjOu2oJVWaqajG1kXXOJk0XG7OIa"}
+          %i.fa.fa-facebook
+        %a{:href => "https://twitter.com/Softices"}
+          %i.fa.fa-twitter
+        %a{:href => "https://www.behance.net/softicesconsultancy?tracking_source=search%7Csoftices%20consultancy"}
+          %i.fa.fa-behance

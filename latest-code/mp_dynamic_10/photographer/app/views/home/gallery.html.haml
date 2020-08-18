@@ -1,0 +1,133 @@
+%section.breadcrumb-area.bg-img.bg-overlay.jarallax{:style => "background-image: url('#{image_path 'bg-img/38.jpg'}');"}
+  .container.h-100
+    .row.h-100.align-items-center
+      .col-12
+        .breadcrumb-content.text-center
+          %h2.page-title Gallery
+          %nav{"aria-label" => "breadcrumb"}
+            %ol.breadcrumb.justify-content-center
+              %li.breadcrumb-item
+                %a{:href => root_path}
+                  %i.icon_house_alt
+                  Home
+              %li.breadcrumb-item.active{"aria-current" => "page"} Gallery
+.alime-portfolio-area.section-padding-80.clearfix
+  .container-fluid
+    .row
+      .col-12
+        / Projects Menu
+        .alime-projects-menu.wow.fadeInUp{"data-wow-delay" => "100ms"}
+          .portfolio-menu.text-center
+            %button.btn.active{"data-filter" => "*"} All
+            %button.btn{"data-filter" => ".human"} Human
+            %button.btn{"data-filter" => ".nature"} Nature
+            %button.btn{"data-filter" => ".country"} Country
+            %button.btn{"data-filter" => ".video"} Video
+    .row.alime-portfolio
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.nature.mb-30.wow.fadeInUp{"data-wow-delay" => "100ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/39.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/39.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.video.human.mb-30.wow.fadeInUp{"data-wow-delay" => "300ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/40.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/40.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.country.mb-30.wow.fadeInUp{"data-wow-delay" => "500ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/41.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/41.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.human.mb-30.wow.fadeInUp{"data-wow-delay" => "700ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/42.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/42.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.nature.mb-30.wow.fadeInUp{"data-wow-delay" => "100ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/43.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/43.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.video.country.mb-30.wow.fadeInUp{"data-wow-delay" => "300ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/44.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/44.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.human.mb-30.wow.fadeInUp{"data-wow-delay" => "500ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/45.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/45.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.nature.mb-30.wow.fadeInUp{"data-wow-delay" => "700ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/46.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/46.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.video.country.mb-30.wow.fadeInUp{"data-wow-delay" => "100ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/47.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/47.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.human.mb-30.wow.fadeInUp{"data-wow-delay" => "300ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/48.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/48.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.country.mb-30.wow.fadeInUp{"data-wow-delay" => "500ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/49.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/49.jpg')}"} +
+      .col-12.col-sm-6.col-lg-3.single_gallery_item.country.mb-30.wow.fadeInUp{"data-wow-delay" => "700ms"}
+        .single-portfolio-content
+          = image_tag("bg-img/50.jpg")
+          .hover-content
+            %a.portfolio-img{:href => "#{image_path('bg-img/50.jpg')}"} +
+    .row
+      .col-12.text-center.wow.fadeInUp{"data-wow-delay" => "800ms"}
+        %a.btn.alime-btn.btn-2.mt-15{:href => "#"} View More
+.follow-area.clearfix
+  .container
+    .row
+      .col-12
+        .section-heading.text-center
+          %h2 Follow Instagram
+          %p @Alime_photographer
+  .instragram-feed-area.owl-carousel
+    .single-instagram-item
+      = image_tag("bg-img/11.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/12.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/13.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/14.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/15.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer
+    .single-instagram-item
+      = image_tag("bg-img/16.jpg")
+      .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+        %a{:href => "#"}
+          %i.ti-instagram{"aria-hidden" => "true"}
+          %span Alime_photographer

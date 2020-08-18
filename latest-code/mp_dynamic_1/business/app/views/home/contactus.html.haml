@@ -1,0 +1,72 @@
+.sub-banner.overview-bgi{:style => "background-image: url('#{image_path 'banner-1.jpg'}')"}
+  \&gt;
+  .container
+    .breadcrumb-area
+      %h1 Contact Us
+      %ul.breadcrumbs
+        %li
+          %a{:href => "index.html"} Home
+        %li.active Contact Us
+.contact-1.content-area-7
+  .container
+    .main-title
+      %h1
+        %span Contact
+        Us
+      %p We waited until we could do it right. Then we did! Instead of creating a carbon copy.
+    .row
+      .offset-lg-1.col-lg-4.offset-md-0.col-md-5
+        .contact-info
+          %h3 Contact Info
+          .media
+            %i.fa.fa-map-marker
+            .media-body
+              %h5.mt-0 Office Address
+              %p 202-204 Panvel Point, Sudama Chowk
+          .media
+            %i.fa.fa-phone
+            .media-body
+              %h5.mt-0 Phone Number
+              %p
+                Office
+                %a{:href => "tel:0477-0477-8556-552"} : XXXX XXXX XXX
+              %p
+                Mobile
+                %a{:href => "tel:+0477-85x6-552"} : +91 70166 76005
+          .media.mrg-btn-0
+            %i.fa.fa-envelope
+            .media-body
+              %h5.mt-0 Email Address
+              %p
+                %a{:href => "#"} contact@softices.com
+              %p
+                %a{:href => "https://softices.com/"} http://sotices.com
+      .col-lg-7.col-md-7.col-md-7
+        %form{:action => "#", :enctype => "multipart/form-data", :method => "GET"}
+          .row
+            .col-lg-6.col-md-12.col-sm-12.col-xs-12
+              .form-group.name
+                %input.form-control{:name => "name", :placeholder => "Name", :type => "text"}/
+            .col-lg-6.col-md-12.col-sm-12.col-xs-12
+              .form-group.email
+                %input.form-control{:name => "email", :placeholder => "Email", :type => "email"}/
+            .col-lg-6.col-md-12.col-sm-12.col-xs-12
+              .form-group.subject
+                %input.form-control{:name => "subject", :placeholder => "Subject", :type => "text"}/
+            .col-lg-6.col-md-12.col-sm-12.col-xs-12
+              .form-group.number
+                %input.form-control{:name => "phone", :placeholder => "Number", :type => "text"}/
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+              .form-group.message
+                %textarea.form-control{:name => "message", :placeholder => "Write message"}
+            .col-lg-6.col-md-12.col-sm-12.col-xs-12
+              .send-btn
+                %button.btn.btn-color.btn-md.btn-message{:type => "submit"} Send Message
+.section
+  .map
+    #contactMap.contact-map
+#full-page-search
+  %button.close{:type => "button"} ×
+  %form{:action => "#"}
+    %input{:placeholder => "type keyword(s) here", :type => "search", :value => ""}/
+    %button.btn.btn-sm.btn-color{:type => "button"} Search

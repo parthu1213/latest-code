@@ -1,0 +1,285 @@
+.sub-banner.overview-bgi{:style => "background-image: url('#{image_path 'banner-1.jpg'}')"}
+  \&gt;
+  .container
+    .breadcrumb-area
+      %h1 Blog Columns
+      %ul.breadcrumbs
+        %li
+          %a{:href => "index.html"} Home
+        %li.active Blog Columns
+.blog-section.content-area-2
+  .container
+    .row
+      .col-lg-4.col-md-12
+        .sidebar.mb-30
+          .widget.search-box
+            %h5.sidebar-title Search
+            %form.form-search{:method => "GET"}
+              %input.form-control{:placeholder => "Search", :type => "text"}/
+              %button.btn{:type => "submit"}
+                %i.fa.fa-search
+          .widget.categories
+            %h5.sidebar-title Categories
+            %ul
+              %li
+                %a{:href => "#"}
+                  App Development
+                  %span (12)
+              %li
+                %a{:href => "#"}
+                  Graphic Design
+                  %span (8)
+              %li
+                %a{:href => "#"}
+                  Web Design
+                  %span (23)
+              %li
+                %a{:href => "#"}
+                  3D Design
+                  %span (5)
+              %li
+                %a{:href => "#"}
+                  Plugin Development
+                  %span (63)
+              %li
+                %a{:href => "#"}
+                  Expert Review
+                  %span (7)
+          .widget.recent-posts
+            %h5.sidebar-title Recent Posts
+            .media.mb-4
+              %a.pr-3{:href => "portfoliodetails"}
+                = image_tag("recent-portfolio/img-1.jpg")
+              .media-body.align-self-center
+                %p
+                  %a{:href => "blog-single-sidebar-right.html"} Lectus tristique lacinia non in diam mauris ultricies.
+                %p
+                  %i.fa.fa-calendar>
+                  27 Feb 2018
+            .media.mb-4
+              %a.pr-3{:href => "portfoliodetails"}
+                = image_tag("recent-portfolio/img-2.jpg")
+              .media-body.align-self-center
+                %p
+                  %a{:href => "blog-single-sidebar-right.html"} Lectus tristique lacinia non in diam mauris ultricies.
+                %p
+                  %i.fa.fa-calendar>
+                  27 Feb 2018
+            .media
+              %a.pr-3{:href => "portfoliodetails"}
+                = image_tag("recent-portfolio/img-3.jpg")
+              .media-body.align-self-center
+                %p
+                  %a{:href => "blog-single-sidebar-right.html"} Lectus tristique lacinia non in diam mauris ultricies.
+                %p
+                  %i.fa.fa-calendar>
+                  27 Feb 2018
+          .widget.tags.clearfix
+            %h5.sidebar-title Tags
+            %ul.tags
+              %li
+                %a{:href => "#"} Development
+              %li
+                %a{:href => "#"} Design
+              %li
+                %a{:href => "#"} Css
+              %li
+                %a{:href => "#"} Photoshop
+              %li
+                %a{:href => "#"} Php
+              %li
+                %a{:href => "#"} Wordpress
+              %li
+                %a{:href => "#"} Graphic
+              %li
+                %a{:href => "#"} UI-UX
+              %li
+                %a{:href => "#"} Responsive
+              %li
+                %a{:href => "#"} Business
+              %li
+                %a{:href => "#"} Financial solve
+          .widget.w-2.latest-tweet
+            %h5.sidebar-title Latest Tweet
+            %p
+              %a{:href => "#"} Lorem Ipsum is simply
+              dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text,
+            %p
+              @Lorem ipsum dolor
+              %a{:href => "#"} sit amet, consectetur
+              adipiscing elit. Aenean id dignissim justo. Maecenas urna lacus,
+      .col-lg-8.col-md-12
+        .row
+          .col-lg-6.col-md-6.col-sm-12
+            .blog-1
+              .single-blog
+                .blog-image
+                  %a.image-scale{:href => "#"}
+                    = image_tag("blog/b1.jpg", :class => "w-100")
+                .blog-content
+                  .blog-category
+                    %span business
+                  .blog-title
+                    %a{:href => "#"}
+                      %h4 The phrasal sequence of the Lorem Ipsum text.
+                  .blog-text
+                    %p Consulting emphasizes the importance of developing and maintaining authentic relationships. He also provides a clear, step-by-step outline of the consulting process.
+                  .blog-meta
+                    %span.date-type
+                      %i.fa.fa-calendar
+                      20 june, 2017
+                    %span.comments-type
+                      %i.fa.fa-comment-o
+                      13
+          .col-lg-6.col-md-6.col-sm-12
+            .blog-1
+              .single-blog
+                .blog-image
+                  %a.image-scale{:href => "blog-single-sidebar-right.html"}
+                    = image_tag("blog/b2.jpg", :class => "w-100")
+                .blog-content
+                  .blog-category
+                    %span business
+                  .blog-title
+                    %a{:href => "blog-single-sidebar-right.html"}
+                      %h4 The phrasal sequence of the Lorem Ipsum text.
+                  .blog-text
+                    %p Consulting emphasizes the importance of developing and maintaining authentic relationships. He also provides a clear, step-by-step outline of the consulting process.
+                  .blog-meta
+                    %span.date-type
+                      %i.fa.fa-calendar
+                      20 june, 2017
+                    %span.comments-type
+                      %i.fa.fa-comment-o
+                      13
+          .col-lg-6.col-md-6.col-sm-12
+            .blog-1
+              .single-blog
+                .blog-image
+                  %a.image-scale{:href => "blog-single-sidebar-right.html"}
+                    = image_tag("blog/b3.jpg", :class => "w-100")
+                .blog-content
+                  .blog-category
+                    %span business
+                  .blog-title
+                    %a{:href => "blog-single-sidebar-right.html"}
+                      %h4 The phrasal sequence of the Lorem Ipsum text.
+                  .blog-text
+                    %p Consulting emphasizes the importance of developing and maintaining authentic relationships. He also provides a clear, step-by-step outline of the consulting process.
+                  .blog-meta
+                    %span.date-type
+                      %i.fa.fa-calendar
+                      20 june, 2017
+                    %span.comments-type
+                      %i.fa.fa-comment-o
+                      13
+          .col-lg-6.col-md-6.col-sm-12
+            .blog-1
+              .single-blog
+                .blog-image
+                  %a.image-scale{:href => "blog-single-sidebar-right.html"}
+                    = image_tag("blog/b3.jpg", :class => "w-100")
+                .blog-content
+                  .blog-category
+                    %span business
+                  .blog-title
+                    %a{:href => "blog-single-sidebar-right.html"}
+                      %h4 The phrasal sequence of the Lorem Ipsum text.
+                  .blog-text
+                    %p Consulting emphasizes the importance of developing and maintaining authentic relationships. He also provides a clear, step-by-step outline of the consulting process.
+                  .blog-meta
+                    %span.date-type
+                      %i.fa.fa-calendar
+                      20 june, 2017
+                    %span.comments-type
+                      %i.fa.fa-comment-o
+                      13
+          .col-lg-6.col-md-6.col-sm-12
+            .blog-2
+              .single-blog
+                .blog-image
+                  %a.image-scale{:href => "blog-single-sidebar-right.html"}
+                    = image_tag("blog/b1.jpg", :class => "w-100")
+                .blog-content
+                  .blog-category
+                    %span business
+                  .blog-title
+                    %a{:href => "blog-single-sidebar-right.html"}
+                      %h4 The phrasal sequence of the Lorem Ipsum text.
+                  .blog-text
+                    %p Consulting emphasizes the importance of developing and maintaining authentic relationships. He also provides a clear, step-by-step outline of the consulting process.
+                  .blog-meta
+                    %span.date-type
+                      %i.fa.fa-calendar
+                      20 june, 2017
+                    %span.comments-type
+                      %i.fa.fa-comment-o
+                      13
+          .col-lg-6.col-md-6.col-sm-12
+            .blog-1
+              .single-blog
+                .blog-image
+                  %a.image-scale{:href => "blog-single-sidebar-right.html"}
+                    = image_tag("blog/b1.jpg", :class => "w-100")
+                .blog-content
+                  .blog-category
+                    %span business
+                  .blog-title
+                    %a{:href => "blog-single-sidebar-right.html"}
+                      %h4 The phrasal sequence of the Lorem Ipsum text.
+                  .blog-text
+                    %p Consulting emphasizes the importance of developing and maintaining authentic relationships. He also provides a clear, step-by-step outline of the consulting process.
+                  .blog-meta
+                    %span.date-type
+                      %i.fa.fa-calendar
+                      20 june, 2017
+                    %span.comments-type
+                      %i.fa.fa-comment-o
+                      13
+          .col-lg-6.col-md-6.col-sm-12
+            .blog-2
+              .single-blog
+                .blog-image
+                  %a.image-scale{:href => "blog-single-sidebar-right.html"}
+                    = image_tag("blog/b1.jpg", :class => "w-100")
+                .blog-content
+                  .blog-category
+                    %span business
+                  .blog-title
+                    %a{:href => "blog-single-sidebar-right.html"}
+                      %h4 The phrasal sequence of the Lorem Ipsum text.
+                  .blog-text
+                    %p Consulting emphasizes the importance of developing and maintaining authentic relationships. He also provides a clear, step-by-step outline of the consulting process.
+                  .blog-meta
+                    %span.date-type
+                      %i.fa.fa-calendar
+                      20 june, 2017
+                    %span.comments-type
+                      %i.fa.fa-comment-o
+                      13
+          .col-lg-6.col-md-6.col-sm-12
+            .blog-3
+              .single-blog
+                .blog-image
+                  %a.image-scale{:href => "blog-single-sidebar-right.html"}
+                    = image_tag("blog/b1.jpg", :class => "w-100")
+                .blog-content
+                  .blog-category
+                    %span business
+                  .blog-title
+                    %a{:href => "blog-single-sidebar-right.html"}
+                      %h4 The phrasal sequence of the Lorem Ipsum text.
+                  .blog-text
+                    %p Consulting emphasizes the importance of developing and maintaining authentic relationships. He also provides a clear, step-by-step outline of the consulting process.
+                  .blog-meta
+                    %span.date-type
+                      %i.fa.fa-calendar
+                      20 june, 2017
+                    %span.comments-type
+                      %i.fa.fa-comment-o
+                      13
+#full-page-search
+  %button.close{:type => "button"} ×
+  %form{:action => "#"}
+    %input{:placeholder => "type keyword(s) here", :type => "search", :value => ""}/
+    %button.btn.btn-sm.btn-color{:type => "button"} Search

@@ -1,0 +1,142 @@
+%body
+  %section.breadcrumb-area.bg-img.bg-overlay.jarallax{:style => "background-image: url('#{image_path 'bg-img/38.jpg'}');"}
+    .container.h-100
+      .row.h-100.align-items-center
+        .col-12
+          .breadcrumb-content.text-center
+            %h2.page-title Latest Blog
+            %nav{"aria-label" => "breadcrumb"}
+              %ol.breadcrumb.justify-content-center
+                %li.breadcrumb-item
+                  %a{:href => root_path}
+                    %i.icon_house_alt
+                    Home
+                %li.breadcrumb-item.active{"aria-current" => "page"} Blog
+  .alime-blog-area.section-padding-80-0.mb-70
+    .container
+      .row
+        .col-12.col-lg-6
+          .single-post-area.wow.fadeInUpBig{"data-wow-delay" => "100ms"}
+            %a.post-thumbnail{:href => "#"}= image_tag("bg-img/51.jpg")
+            %a.btn.post-catagory{:href => "#"} Photography
+            .post-content
+              .post-meta
+                %a{:href => "#"} May 19, 2019
+                %a{:href => "#"} 3 Comment
+              %a.post-title{:href => "single-blog.html"} The Female Body Shape Men Find Most Attractive
+        .col-12.col-sm-6.col-lg-3
+          .single-post-area.wow.fadeInUpBig{"data-wow-delay" => "400ms"}
+            %a.post-thumbnail{:href => "#"}= image_tag("bg-img/52.jpg")
+            %a.btn.post-catagory{:href => "#"} Camera
+            .post-content
+              .post-meta
+                %a{:href => "#"} May 19, 2019
+                %a{:href => "#"} 3 Comment
+              %a.post-title{:href => "single-blog.html"} The Female Body Shape Men Find
+        .col-12.col-sm-6.col-lg-3
+          .single-post-area.wow.fadeInUpBig{"data-wow-delay" => "700ms"}
+            %a.post-thumbnail{:href => "#"}= image_tag("bg-img/53.jpg")
+            %a.btn.post-catagory{:href => "#"} Country
+            .post-content
+              .post-meta
+                %a{:href => "#"} May 19, 2019
+                %a{:href => "#"} 3 Comment
+              %a.post-title{:href => "single-blog.html"} Vietnam's largest art community
+        .col-12.col-sm-6.col-lg-3
+          .single-post-area.wow.fadeInUpBig{"data-wow-delay" => "100ms"}
+            %a.post-thumbnail{:href => "#"}= image_tag("bg-img/54.jpg")
+            %a.btn.post-catagory{:href => "#"} Camera
+            .post-content
+              .post-meta
+                %a{:href => "#"} May 19, 2019
+                %a{:href => "#"} 3 Comment
+              %a.post-title{:href => "single-blog.html"} Photo awards of the year
+        .col-12.col-sm-6.col-lg-3
+          .single-post-area.wow.fadeInUpBig{"data-wow-delay" => "400ms"}
+            %a.post-thumbnail{:href => "#"}= image_tag("bg-img/55.jpg")
+            %a.btn.post-catagory{:href => "#"} Tips
+            .post-content
+              .post-meta
+                %a{:href => "#"} May 19, 2019
+                %a{:href => "#"} 3 Comment
+              %a.post-title{:href => "single-blog.html"} The Female Body Shape Men Find
+        .col-12.col-lg-6
+          .single-post-area.wow.fadeInUpBig{"data-wow-delay" => "700ms"}
+            %a.post-thumbnail{:href => "#"}= image_tag("bg-img/56.jpg")
+            %a.btn.post-catagory{:href => "#"} Photography
+            .post-content
+              .post-meta
+                %a{:href => "#"} May 19, 2019
+                %a{:href => "#"} 3 Comment
+              %a.post-title{:href => "single-blog.html"} The Female Body Shape Men Find Most Attractive
+        .col-12.col-lg-3
+          .single-post-area.wow.fadeInUpBig{"data-wow-delay" => "100ms"}
+            %a.post-thumbnail{:href => "#"}= image_tag("bg-img/57.jpg")
+            %a.btn.post-catagory{:href => "#"} Country
+            .post-content
+              .post-meta
+                %a{:href => "#"} May 19, 2019
+                %a{:href => "#"} 3 Comment
+              %a.post-title{:href => "single-blog.html"} The Female Body Shape Men Find
+        .col-12.col-lg-6
+          .single-post-area.wow.fadeInUpBig{"data-wow-delay" => "400ms"}
+            %a.post-thumbnail{:href => "#"}= image_tag("bg-img/58.jpg")
+            %a.btn.post-catagory{:href => "#"} Camera
+            .post-content
+              .post-meta
+                %a{:href => "#"} May 19, 2019
+                %a{:href => "#"} 3 Comment
+              %a.post-title{:href => "single-blog.html"} The Female Body Shape Men Find Most Attractive
+        .col-12.col-lg-3
+          .single-post-area.wow.fadeInUpBig{"data-wow-delay" => "700ms"}
+            %a.post-thumbnail{:href => "#"}= image_tag("bg-img/59.jpg")
+            %a.btn.post-catagory{:href => "#"} Photography
+            .post-content
+              .post-meta
+                %a{:href => "#"} May 19, 2019
+                %a{:href => "#"} 3 Comment
+              %a.post-title{:href => "single-blog.html"} The Female Body Shape Men Find
+  .follow-area.clearfix
+    .container
+      .row
+        .col-12
+          .section-heading.text-center
+            %h2 Follow Instagram
+            %p @Alime_photographer
+    .instragram-feed-area.owl-carousel
+      .single-instagram-item
+        = image_tag("bg-img/11.jpg")
+        .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+          %a{:href => "#"}
+            %i.ti-instagram{"aria-hidden" => "true"}
+            %span Alime_photographer
+      .single-instagram-item
+        = image_tag("bg-img/12.jpg")
+        .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+          %a{:href => "#"}
+            %i.ti-instagram{"aria-hidden" => "true"}
+            %span Alime_photographer
+      .single-instagram-item
+        = image_tag("bg-img/13.jpg")
+        .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+          %a{:href => "#"}
+            %i.ti-instagram{"aria-hidden" => "true"}
+            %span Alime_photographer
+      .single-instagram-item
+        = image_tag("bg-img/14.jpg")
+        .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+          %a{:href => "#"}
+            %i.ti-instagram{"aria-hidden" => "true"}
+            %span Alime_photographer
+      .single-instagram-item
+        = image_tag("bg-img/15.jpg")
+        .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+          %a{:href => "#"}
+            %i.ti-instagram{"aria-hidden" => "true"}
+            %span Alime_photographer
+      .single-instagram-item
+        = image_tag("bg-img/16.jpg")
+        .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+          %a{:href => "#"}
+            %i.ti-instagram{"aria-hidden" => "true"}
+            %span Alime_photographer

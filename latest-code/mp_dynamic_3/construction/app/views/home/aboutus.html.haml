@@ -1,0 +1,173 @@
+%body
+  .search{:style => "display: none;"}
+    %input.form-control{:placeholder => "Type what you want and enter", :type => "text"}/
+    %span.search-close ×
+  #banner-area.banner-area{:style => "background-image: url('#{image_path 'banner/banner1.jpg'}')"}
+    .banner-text
+      .container
+        .row
+          .col-xs-12
+            .banner-heading
+              %h1.border-title.border-left About Us
+              %ol.breadcrumb.mb-0
+                %li Home
+                %li Company
+                %li
+                  %a{:href => "#"} About Us
+  %section#main-container.main-container
+    .video-cta-area.section-space--inner--120
+      .container
+        .row.align-items-center
+          .col-lg-6.col-md-12
+            .video-cta-content
+              %h4.video-cta-content__small-title ABOUT US
+              %h3.video-cta-content__title We are Best construction in the world
+              %p.video-cta-content__text Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              %button.btn.btn-primary.solid.blank.mb-5{:type => "submit"} Contact Us
+          .col-lg-5.offset-lg-1.col-md-12
+            .cta-video-image
+              .video-popup
+                %a{:href => "https://www.youtube.com/watch?v=OrS-93U4AYQ"}
+                  .cta-video-image__image
+                    = image_tag("video-cta.jpg", :class => "img-fluid")
+                  .cta-video-image__icon
+                    %i.fa.fa-play{"aria-hidden" => "true"}
+  %section#facts.facts-area.bg-overlay.no-padding{:style => "background-image: url('#{image_path 'parallax1.jpg'}')"}
+    .container
+      .row
+        .facts-wrapper
+          .col-sm-3.ts-facts
+            .ts-facts-img
+              = image_tag("icon-image/fact1.png")
+            .ts-facts-content
+              %h2.ts-facts-num
+                %span.counterUp 1789
+              %h3.ts-facts-title Project Handover
+          .col-sm-3.ts-facts
+            .ts-facts-img
+              = image_tag("icon-image/fact2.png")
+            .ts-facts-content
+              %h2.ts-facts-num
+                %span.counterUp 1247
+              %h3.ts-facts-title Full-time Salaried
+          .col-sm-3.ts-facts
+            .ts-facts-img
+              = image_tag("icon-image/fact3.png")
+            .ts-facts-content
+              %h2.ts-facts-num
+                %span.counterUp 5000
+              %h3.ts-facts-title Million Revenue
+          .col-sm-3.ts-facts
+            .ts-facts-img
+              = image_tag("icon-image/fact4.png")
+            .ts-facts-content
+              %h2.ts-facts-num
+                %span.counterUp 44
+              %h3.ts-facts-title Countries Experience
+  %section#team_member.padding.ptb-xs-40.top_90.position_rel.bg_prap
+    .container
+      .row.text-center
+        %h2.border-title Our Leadership
+        %p.border-sub-title
+          Collaboratively administrate empowered markets via plug-and-play networks.
+      .row
+        .col-lg-3.col-md-6.wow.fadeIn.mb-sm-30.mb-xs-30{"data-wow-delay" => "0.2s", :style => "visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;"}
+          .team_head.img-fluid
+            .team_view
+              %figure
+                = image_tag("team/team7.jpg")
+              .team_hover.text-center.d-flex.align-items-center
+                %div
+                  %ul
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-facebook
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-twitter
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-google-plus
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-instagram
+                  %p.text-white
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            .team_discoption.text-center.py-3
+              %span.team_name Kevin Peterson
+              %span.postion Civil Engineer
+        .col-lg-3.col-md-6.wow.fadeIn.mb-sm-30.mb-xs-30{"data-wow-delay" => "0.2s", :style => "visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;"}
+          .team_head.img-fluid
+            .team_view
+              %figure
+                = image_tag("team/team8.jpg")
+              .team_hover.text-center.d-flex.align-items-center
+                %div
+                  %ul
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-facebook
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-twitter
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-google-plus
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-instagram
+                  %p.text-white
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            .team_discoption.text-center.py-3
+              %span.team_name Kevin Peterson
+              %span.postion Construction Assistant
+        .col-lg-3.col-md-6.wow.fadeIn.mb-xs-30{"data-wow-delay" => "0.4s", :style => "visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;"}
+          .team_head.img-fluid
+            .team_view
+              %figure
+                = image_tag("team/team9.jpg")
+              .team_hover.text-center.d-flex.align-items-center
+                %div
+                  %ul
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-facebook
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-twitter
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-google-plus
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-instagram
+                  %p.text-white
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            .team_discoption.text-center.py-3
+              %span.team_name Kevin Peterson
+              %span.postion Construction Manager
+        .col-lg-3.col-md-6.mb-xs-30.wow.fadeIn{"data-wow-delay" => "0.6s", :style => "visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;"}
+          .team_head.img-fluid
+            .team_view
+              %figure
+                = image_tag("team/team10.jpg")
+              .team_hover.text-center.d-flex.align-items-center
+                %div
+                  %ul
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-facebook
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-twitter
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-google-plus
+                    %li
+                      %a.text-white{:href => "#", :target => "_blank"}
+                        %i.fa.fa-instagram
+                  %p.text-white
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            .team_discoption.text-center.py-3
+              %span.team_name Kevin Peterson
+              %span.postion Electricians

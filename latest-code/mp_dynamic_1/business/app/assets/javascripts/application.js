@@ -1,0 +1,17 @@
+//= require jquery-2.2.0.min
+//= require popper.min
+//= require bootstrap.min
+//= require jquery.selectBox
+//= require rangeslider
+//= require jquery.magnific-popup.min
+//= require jquery.filterizr
+//= require wow.min
+//= require backstretch
+//= require jquery.countdown
+//= require jquery.scrollUp
+//= require particles.min
+//= require typed.min
+//= require jquery.mb.YTPlayer
+//= require jquery.mCustomScrollbar.concat.min
+//= require ie-emulation-modes-warning
+//= require app

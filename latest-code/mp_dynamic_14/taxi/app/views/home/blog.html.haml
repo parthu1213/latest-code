@@ -1,0 +1,170 @@
+%body
+  #top-bar
+    .container
+      .row
+        .col-lg-6.col-md-9
+          .contacts
+            %div
+              %span.fa.fa-phone
+              (+91) 70166 76005
+            .hidden-xs.hidden-ms
+              %span.fa.fa-skype
+              SOFTICES
+            .hidden-xs.hidden-ms
+              %span.fa.fa-phone>
+              202-204 Panvel Point,
+        .col-lg-6.col-md-3
+          .social.social-small.visible-lg
+            %a.fa.fa-twitter{:href => "https://twitter.com/Softices"}
+            %a.fa.fa-facebook{:href => "https://www.facebook.com/softices/?ref=aymt_homepage_panel&eid=ARAm18ULAHBNqv2_Az_4sos7SWP3mjVSiSx1_B0Wign4XH4MZ2g-GjOu2oJVWaqajG1kXXOJk0XG7OIa"}
+            %a.fa.fa-instagram{:href => "https://www.instagram.com/softices_consultancy/"}
+            %a.fa.fa-google-plus{:href => "#"}
+            %a.fa.fa-pinterest{:href => "https://in.pinterest.com/SofticesConsultancy/"}
+          %a.btn.btn-xs.btn-black-bordered.pull-right{:href => gettaxi_path} Get taxi online
+  #nav-wrapper.nav-wrapper
+    %nav.navbar.navbar-static.navbar-affix{"data-spy" => "affix"}
+      .container
+        .navbar-header
+          %button.navbar-toggle.collapsed{:type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar.top-bar
+            %span.icon-bar.middle-bar
+            %span.icon-bar.bottom-bar
+          %a.logo{:href => root_path}
+            %img{:src => "#{image_path 'logo-inner.png'}"}/
+        #navbar.navbar-collapse.collapse
+          %button.navbar-toggle.collapsed{:type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar.top-bar
+            %span.icon-bar.middle-bar
+            %span.icon-bar.bottom-bar
+          %ul.nav.navbar-nav
+            %li
+              %a{:href => root_path} Home
+            %li
+              %a{:href => gettaxi_path} Get Taxi
+            %li
+              %a{:href => services_path} Services
+            %li.hasSub.current_page_item
+              %a{:href => "#"} Our blog
+              %ul.sub-menu
+                %li.current_page_item
+                  %a{:href => blog_path} Classic Blog
+            %li
+              %a{:href => contacts_path} Contacts
+  %header.page-header{:style => "background-image: url('#{image_path '_inner-bg.jpg'}');"}
+    .container
+      %ol.bread
+        %li
+          %a{:href => root_path}
+            %span Home
+        %li.divider
+          %span //
+        %li
+          %span Our Blog
+      %h1 Our blog
+  #blog.blog-wrap
+    .container
+      .row
+        .col-lg-4
+          .blogWrp
+            .blogImg
+              %img{:src => "#{image_path 'blog.jpg'}"}/
+            .blog-details
+              .blog-meta
+                %ul
+                  %li
+                    %i.fa.fa-clock-o>
+                    Nov 25
+                  %li
+                    %i.fa.fa-comments
+                    %a{:href => "#"} 2 Comments
+              .blog-body
+                %h3
+                  %a{:href => "#"} Honda Civic Camry - Expected Prices
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at tortor fringilla quam placerat blandit.
+        .col-lg-4
+          .blogWrp
+            .blogImg
+              %img{:src => "#{image_path 'blog.jpg'}"}/
+            .blog-details
+              .blog-meta
+                %ul
+                  %li
+                    %i.fa.fa-clock-o>
+                    Nov 25
+                  %li
+                    %i.fa.fa-comments
+                    %a{:href => "#"} 2 Comments
+              .blog-body
+                %h3
+                  %a{:href => "#"} Honda Civic Camry - Expected Prices
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at tortor fringilla quam placerat blandit.
+        .col-lg-4
+          .blogWrp
+            .blogImg
+              %img{:src => "#{image_path 'blog.jpg'}"}/
+            .blog-details
+              .blog-meta
+                %ul
+                  %li
+                    %i.fa.fa-clock-o>
+                    Nov 25
+                  %li
+                    %i.fa.fa-comments
+                    %a{:href => "#"} 2 Comments
+              .blog-body
+                %h3
+                  %a{:href => "#"} Honda Civic Camry - Expected Prices
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at tortor fringilla quam placerat blandit.
+        .col-lg-4
+          .blogWrp
+            .blogImg
+              %img{:src => "#{image_path 'blog.jpg'}"}/
+            .blog-details
+              .blog-meta
+                %ul
+                  %li
+                    %i.fa.fa-clock-o>
+                    Nov 25
+                  %li
+                    %i.fa.fa-comments
+                    %a{:href => "#"} 2 Comments
+              .blog-body
+                %h3
+                  %a{:href => "#"} Honda Civic Camry - Expected Prices
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at tortor fringilla quam placerat blandit.
+        .col-lg-4
+          .blogWrp
+            .blogImg
+              %img{:src => "#{image_path 'blog.jpg'}"}/
+            .blog-details
+              .blog-meta
+                %ul
+                  %li
+                    %i.fa.fa-clock-o>
+                    Nov 25
+                  %li
+                    %i.fa.fa-comments
+                    %a{:href => "#"} 2 Comments
+              .blog-body
+                %h3
+                  %a{:href => "#"} Honda City Facelift – Expected Prices
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .col-lg-4
+          .blogWrp
+            .blogImg
+              %img{:src => "#{image_path 'blog.jpg'}"}/
+            .blog-details
+              .blog-meta
+                %ul
+                  %li
+                    %i.fa.fa-clock-o>
+                    Nov 25
+                  %li
+                    %i.fa.fa-comments
+                    %a{:href => "#"} 2 Comments
+              .blog-body
+                %h3
+                  %a{:href => "#"} Porsche 911 Carrera 2017
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at tortor fringilla quam placerat blandit.

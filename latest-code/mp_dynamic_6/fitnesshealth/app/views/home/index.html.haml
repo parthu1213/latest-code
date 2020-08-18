@@ -1,0 +1,430 @@
+%body
+  %section.home-slider.js-fullheight.owl-carousel.ftco-degree-bottom
+    .slider-item.js-fullheight{:style => "background-image: url('#{image_path 'bg_1.jpg'}');"}
+      .overlay
+      .container
+        .row.slider-text.js-fullheight.justify-content-center.align-items-center{"data-scrollax-parent" => "true"}
+          .col-sm-6.ftco-animate.text-center
+            %h1.mb-4 Fuel Your Body Fitness
+            %h2.subheading Be One Of Us
+    .slider-item.js-fullheight{:style => "background-image: url('#{image_path 'bg_2.jpg'}');"}
+      .overlay
+      .container
+        .row.slider-text.js-fullheight.justify-content-center.align-items-center{"data-scrollax-parent" => "true"}
+          .col-sm-7.ftco-animate.text-center
+            %h1.mb-4 Challenge Yourself
+            %h2.subheading Get Your Body Fit
+  %section.ftco-section-services.ftco-degree
+    .container
+      .row.d-flex.align-items-center
+        .col-xl-6.d-flex.align-self-stretch
+          .align-self-stretch
+            = image_tag("about.jpg", :class => "img-fluid")
+        .col-xl-6.align-self-stretch.pt-5
+          .row.justify-content-center.mb-3
+            .col-md-12.heading-section.ftco-animate.fadeInUp.ftco-animated
+              %h3.subheading Shape Your Body
+              %h2.mb-4 What We Do?
+          .services.d-flex.ftco-animate.fadeInUp.ftco-animated
+            .icon.d-flex.justify-content-center.align-items-center
+              %span.flaticon-ruler
+            .text.ml-5
+              %h3 Analyze Your Goal
+              %p A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country
+          .services.d-flex.ftco-animate.fadeInUp.ftco-animated
+            .icon.d-flex.justify-content-center.align-items-center
+              %span.flaticon-gym
+            .text.ml-5
+              %h3 Work Hard On It
+              %p A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country
+          .services.d-flex.ftco-animate.fadeInUp.ftco-animated
+            .icon.d-flex.justify-content-center.align-items-center
+              %span.flaticon-tools-and-utensils
+            .text.ml-5
+              %h3 Improve Your Performance
+              %p A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country
+          .services.d-flex.ftco-animate.fadeInUp.ftco-animated
+            .icon.d-flex.justify-content-center.align-items-center
+              %span.flaticon-abs
+            .text.ml-5
+              %h3 Achieve Your Perfect Body
+              %p A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country
+  %section.ftco-about.d-md-flex.bg-light
+    .one-half.img{:style => "background-image: url('#{image_path 'about-2.jpg'}');"}
+      %a.icon.popup-vimeo.d-flex.justify-content-center.align-items-center{:href => "https://vimeo.com/45830194"}
+        %span.icon-play
+    .one-half.ftco-animate.fadeInUp.ftco-animated
+      .heading-section.ftco-animate.fadeInUp.ftco-animated
+        %h3.subheading About Muscle
+        %h2.mb-5
+          Welcome
+          = succeed "To" do
+            %br/
+      %div
+        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  %section.ftco-section.bg-light
+    .container-fluid
+      .row.justify-content-center.mb-5
+        .col-md-7.heading-section.text-center.ftco-animate.fadeInUp.ftco-animated
+          %h3.subheading Shape Your Body
+          %h2.mb-1 Our Coaches
+      .row
+        .col-lg-3.col-md-3.d-flex
+          .team-member
+            .inner-box
+              .image-box
+                %figure.image
+                  %a{:href => "#"}
+                    = image_tag("trainer-1.jpg")
+                .caption-box
+                  .text
+                    Health Coach look at Exercise, Eating, wellness &amp; Food not just as calories &amp; weight loss.
+                  .social-links
+                    %ul.clearfix.pl-0
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-facebook-f
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-twitter
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-google-plus
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-pinterest-p
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-dribbble
+                  .lower-box
+                    .name
+                      %a{:href => "#"} Bruce Lane
+                    .designation specialists
+        .col-lg-3.col-md-3.d-flex
+          .team-member
+            .inner-box
+              .image-box
+                %figure.image
+                  %a{:href => "#"}= image_tag("trainer-1.jpg")
+                .caption-box
+                  .text
+                    Health Coach look at Exercise, Eating, wellness &amp; Food not just as calories &amp; weight loss.
+                  .social-links
+                    %ul.clearfix.pl-0
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-facebook-f
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-twitter
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-google-plus
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-pinterest-p
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-dribbble
+                  .lower-box
+                    .name
+                      %a{:href => "#"} Bruce Lane
+                    .designation specialists
+        .col-lg-3.col-md-3.d-flex
+          .team-member
+            .inner-box
+              .image-box
+                %figure.image
+                  %a{:href => "#"}= image_tag("trainer-1.jpg")
+                .caption-box
+                  .text
+                    Health Coach look at Exercise, Eating, wellness &amp; Food not just as calories &amp; weight loss.
+                  .social-links
+                    %ul.clearfix.pl-0
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-facebook-f
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-twitter
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-google-plus
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-pinterest-p
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-dribbble
+                  .lower-box
+                    .name
+                      %a{:href => "#"} Bruce Lane
+                    .designation specialists
+        .col-lg-3.col-md-3.d-flex
+          .team-member
+            .inner-box
+              .image-box
+                %figure.image
+                  %a{:href => "#"}= image_tag("trainer-1.jpg")
+                .caption-box
+                  .text
+                    Health Coach look at Exercise, Eating, wellness &amp; Food not just as calories &amp; weight loss.
+                  .social-links
+                    %ul.clearfix.pl-0
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-facebook-f
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-twitter
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-google-plus
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-pinterest-p
+                      %li
+                        %a{:href => "#"}
+                          %span.fa.fa-dribbble
+                  .lower-box
+                    .name
+                      %a{:href => "#"} Bruce Lane
+                    .designation specialists
+  %section.ftco-section
+    .container-fluid
+      .row.justify-content-center.mb-5.pb-3
+        .col-md-7.heading-section.ftco-animate.text-center.fadeInUp.ftco-animated
+          %h3.subheading Gym Classes
+          %h2.mb-1 Workout Classes
+      .row
+        .col-md-6.col-lg-3
+          .class-item.box-hover-effect.effect1.mb-md-30.bg-lighter
+            .thumb.mb-2
+              = image_tag("popular-class/5.jpg", :class => "w-100 img-responsive img-fullwidth")
+            .content.text-left.flip.p-3.pt-0
+              %h4.text-uppercase.font-weight-800.line-bottom Yoga Program
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.
+              %a.read-more.btn-sm{:href => "#"} Read More
+        .col-md-6.col-lg-3
+          .class-item.box-hover-effect.effect1.mb-md-30.bg-lighter
+            .thumb.mb-2
+              = image_tag("popular-class/6.jpg", :class => "w-100 img-responsive img-fullwidth")
+            .content.text-left.flip.p-3.pt-0
+              %h4.text-uppercase.font-weight-800.line-bottom Yoga Program
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.
+              %a.read-more.btn-sm{:href => "#"} Read More
+        .col-md-6.col-lg-3
+          .class-item.box-hover-effect.effect1.mb-md-30.bg-lighter
+            .thumb.mb-2
+              = image_tag("popular-class/7.jpg", :class => "w-100 img-responsive img-fullwidth")
+            .content.text-left.flip.p-3.pt-0
+              %h4.text-uppercase.font-weight-800.line-bottom Yoga Program
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.
+              %a.read-more.btn-sm{:href => "#"} Read More
+        .col-md-6.col-lg-3
+          .class-item.box-hover-effect.effect1.mb-md-30.bg-lighter
+            .thumb.mb-2
+              = image_tag("popular-class/7.jpg", :class => "w-100 img-responsive img-fullwidth")
+            .content.text-left.flip.p-3.pt-0
+              %h4.text-uppercase.font-weight-800.line-bottom Yoga Program
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.
+              %a.read-more.btn-sm{:href => "#"} Read More
+    .container
+      .row.mt-4.justify-content-center.ftco-animate.fadeInUp.ftco-animated
+        .col-md-4.text-center
+          %a.btn-custom.py-4{:href => "#"}
+            View More Program
+            %span.ion-ios-arrow-down.ml-2
+  %section.ftco-section.bg-light
+    .container
+      .row.justify-content-center.mb-5.pb-3
+        .col-md-7.heading-section.ftco-animate.text-center.fadeInUp.ftco-animated
+          %h3.subheading Pricing Tables
+          %h2.mb-1 Membership Plans
+      .row
+        .pricing-column.col-lg-3.col-md-4.col-sm-6.col-xs-12.ftco-animate.fadeInUp.ftco-animated
+          .inner-box.wow.fadeInUp.animated{"data-wow-delay" => "0ms", "data-wow-duration" => "1500ms", :style => "visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;"}
+            .plan-title
+              %h3.my-0 Standard Plan
+            .pricing-info.clearfix
+              .duration One Month
+              .price.styled-font $29.99
+            .lower-content
+              %ul.specs-list
+                %li Fitness &amp; Performance
+                %li Physical Activity
+                %li Support &amp; Motivation
+                %li Diet Recommendation
+              .link-box
+                %a.theme-btn.btn-style-three{:href => "#"} Book Now
+        .pricing-column.col-lg-3.col-md-4.col-sm-6.col-xs-12.ftco-animate.fadeInUp.ftco-animated
+          .inner-box.wow.fadeInUp.animated{"data-wow-delay" => "0ms", "data-wow-duration" => "1500ms", :style => "visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;"}
+            .plan-title
+              %h3.my-0 Golden Plan
+            .pricing-info.clearfix
+              .duration Three Month
+              .price.styled-font $49.99
+            .lower-content
+              %ul.specs-list
+                %li Nutrition Strategies
+                %li Diet Recommendation
+                %li Physical Activity
+                %li Fitness &amp; Performance
+              .link-box
+                %a.theme-btn.btn-style-three{:href => "#"} Book Now
+        .pricing-column.col-lg-3.col-md-4.col-sm-6.col-xs-12.ftco-animate.fadeInUp.ftco-animated
+          .inner-box.wow.fadeInUp.animated{"data-wow-delay" => "0ms", "data-wow-duration" => "1500ms", :style => "visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;"}
+            .plan-title
+              %h3.my-0 Diamond Plan
+            .pricing-info.clearfix
+              .duration Six Month
+              .price.styled-font $79.99
+            .lower-content
+              %ul.specs-list
+                %li Fitness &amp; Performance
+                %li Physical Activity
+                %li Support &amp; Motivation
+                %li Diet Recommendation
+              .link-box
+                %a.theme-btn.btn-style-three{:href => "#"} Book Now
+        .pricing-column.col-lg-3.col-md-4.col-sm-6.col-xs-12.ftco-animate.fadeInUp.ftco-animated
+          .inner-box.wow.fadeInUp.animated{"data-wow-delay" => "0ms", "data-wow-duration" => "1500ms", :style => "visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;"}
+            .plan-title
+              %h3.my-0 Platinum Plan
+            .pricing-info.clearfix
+              .duration One Year
+              .price.styled-font $99.99
+            .lower-content
+              %ul.specs-list
+                %li Nutrition Strategies
+                %li Diet Recommendation
+                %li Physical Activity
+                %li Fitness &amp; Performance
+              .link-box
+                %a.theme-btn.btn-style-three{:href => "#"} Book Now
+  %section.ftco-section.bg-light
+    .container
+      .row.justify-content-center.mb-5.pb-3
+        .col-md-7.heading-section.ftco-animate.text-center.fadeInUp.ftco-animated
+          %h3.subheading Articles
+          %h2.mb-1 Recent Blog
+      .row.d-flex
+        .col-md-4.d-flex.ftco-animate.fadeInUp.ftco-animated
+          .blog-entry.justify-content-end
+            %a.block-20{:href => "blog-single.html", :style => "background-image: url('#{image_path 'image_1.jpg'}');"}
+            .text.p-4.float-right.d-block
+              .meta
+                %div
+                  %a{:href => "#"} December 23, 2018
+                %div
+                  %a{:href => "#"} Admin
+                %div
+                  %a.meta-chat{:href => "#"}
+                    %span.icon-chat
+                    3
+              %h3.heading.mt-2
+                %a{:href => "#"} Young Women Doing Abdominal
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        .col-md-4.d-flex.ftco-animate.fadeInUp.ftco-animated
+          .blog-entry.justify-content-end
+            %a.block-20{:href => "blog-single.html", :style => "background-image: url('#{image_path 'image_2.jpg'}');"}
+            .text.p-4.float-right.d-block
+              .meta
+                %div
+                  %a{:href => "#"} December 23, 2018
+                %div
+                  %a{:href => "#"} Admin
+                %div
+                  %a.meta-chat{:href => "#"}
+                    %span.icon-chat
+                    3
+              %h3.heading.mt-2
+                %a{:href => "#"} Young Women Doing Abdominal
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        .col-md-4.d-flex.ftco-animate.fadeInUp.ftco-animated
+          .blog-entry
+            %a.block-20{:href => "blog-single.html", :style => "background-image: url('#{image_path 'image_3.jpg'}');"}
+            .text.p-4.float-right.d-block
+              .meta
+                %div
+                  %a{:href => "#"} December 23, 2018
+                %div
+                  %a{:href => "#"} Admin
+                %div
+                  %a.meta-chat{:href => "#"}
+                    %span.icon-chat
+                    3
+              %h3.heading.mt-2
+                %a{:href => "#"} Young Women Doing Abdominal
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  %section.ftco-appointment
+    .overlay
+    .container-wrap
+      .row.no-gutters.d-md-flex.align-items-center
+        .col-md-6.d-flex.align-self-stretch.img{:style => "background-image: url('#{image_path 'about-3.jpg'}')"}
+        .col-md-6.appointment.ftco-animate.fadeInUp.ftco-animated
+          %h3.mb-3 Book a Appointment
+          %form.appointment-form{:action => "#"}
+            .d-md-flex
+              .form-group
+                %input.form-control{:placeholder => "First Name", :type => "text"}/
+              .form-group.ml-md-4
+                %input.form-control{:placeholder => "Last Name", :type => "text"}/
+            .d-md-flex
+              .form-group
+                .input-wrap
+                  .icon
+                    %span.ion-md-calendar
+                  %input.form-control.appointment_date{:placeholder => "Date", :type => "text"}/
+              .form-group.ml-md-4
+                .input-wrap
+                  .icon
+                    %span.ion-ios-clock
+                  %input.form-control.appointment_time.ui-timepicker-input{:autocomplete => "off", :placeholder => "Time", :type => "text"}/
+              .form-group.ml-md-4
+                %input.form-control{:placeholder => "Phone", :type => "text"}/
+            .d-md-flex
+              .form-group
+                %textarea.form-control{:cols => "30", :id => "", :name => "", :placeholder => "Message", :rows => "2"}
+              .form-group.ml-md-4
+                %input.btn.btn-primary.py-3.px-4{:type => "submit", :value => "Appointment"}/
+  %section.news-section
+    .container
+      .row
+        .col-md-12.heading-section.ftco-animate.text-center.fadeInUp.ftco-animated.mb-5
+          %h3.subheading Articles
+          %h2.mb-1 Recent Blog
+      .row.clearfix
+        .news-style-one.col-md-4.col-sm-6.col-xs-12
+          .inner-box
+            %figure.image-box
+              %a{:href => "http://asianitbd.com/wp/healthcoach/2016/11/stop-getting-annoyed-if-you-want-better-health/"}
+                %img.attachment-370x230.size-370x230.wp-post-image{:alt => "4", :height => "1170", :sizes => "(max-width: 1170px) 100vw, 1170px", :src => "http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/4-1.jpg", :srcset => "http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/4-1.jpg 1170w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/4-1-150x150.jpg 150w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/4-1-300x300.jpg 300w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/4-1-768x768.jpg 768w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/4-1-1024x1024.jpg 1024w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/4-1-107x107.jpg 107w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/4-1-270x270.jpg 270w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/4-1-90x90.jpg 90w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/4-1-75x75.jpg 75w", :width => "1170"}/
+            .lower-content
+              .posted-info Nov 18, 2016
+              .post-author-info by admin
+              %h3
+                %a{:href => "http://asianitbd.com/wp/healthcoach/2016/11/stop-getting-annoyed-if-you-want-better-health/"} Stop Getting Annoyed If You Want Better Health
+              .text At Integrative Nutrition, we teach the concept of Primary Food which is everything that nourishes...
+        .news-style-one.col-md-4.col-sm-6.col-xs-12
+          .inner-box
+            %figure.image-box
+              %a{:href => "http://asianitbd.com/wp/healthcoach/2016/11/what-is-a-healthy-food-the-answer-will-surprise-you/"}
+                %img.attachment-370x230.size-370x230.wp-post-image{:alt => "1", :height => "1170", :sizes => "(max-width: 1170px) 100vw, 1170px", :src => "http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/1-1.jpg", :srcset => "http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/1-1.jpg 1170w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/1-1-150x150.jpg 150w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/1-1-300x300.jpg 300w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/1-1-768x768.jpg 768w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/1-1-1024x1024.jpg 1024w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/1-1-107x107.jpg 107w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/1-1-270x270.jpg 270w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/1-1-90x90.jpg 90w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/1-1-75x75.jpg 75w", :width => "1170"}/
+            .lower-content
+              .posted-info Nov 18, 2016
+              .post-author-info by admin
+              %h3
+                %a{:href => "http://asianitbd.com/wp/healthcoach/2016/11/what-is-a-healthy-food-the-answer-will-surprise-you/"} What is a “Healthy” Food? The Answer Will Surprise You
+              .text At Integrative Nutrition, we teach the concept of Primary Food which is everything that nourishes […]
+        .news-style-one.col-md-4.col-sm-6.col-xs-12
+          .inner-box
+            %figure.image-box
+              %a{:href => "http://asianitbd.com/wp/healthcoach/2016/11/build-an-athletic-body-with-in-eight-weeks-time/"}
+                %img.attachment-370x230.size-370x230.wp-post-image{:alt => "5", :height => "1170", :sizes => "(max-width: 1170px) 100vw, 1170px", :src => "http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/5-1.jpg", :srcset => "http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/5-1.jpg 1170w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/5-1-150x150.jpg 150w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/5-1-300x300.jpg 300w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/5-1-768x768.jpg 768w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/5-1-1024x1024.jpg 1024w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/5-1-107x107.jpg 107w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/5-1-270x270.jpg 270w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/5-1-90x90.jpg 90w, http://asianitbd.com/wp/healthcoach/wp-content/uploads/2016/11/5-1-75x75.jpg 75w", :width => "1170"}/
+            .lower-content
+              .posted-info Nov 18, 2016
+              .post-author-info by admin
+              %h3
+                %a{:href => "http://asianitbd.com/wp/healthcoach/2016/11/build-an-athletic-body-with-in-eight-weeks-time/"} Build an Athletic Body With In Eight Weeks Time
+              .text At Integrative Nutrition, we teach the concept of Primary Food which is everything that nourishes...

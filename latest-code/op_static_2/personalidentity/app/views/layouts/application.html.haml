@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Personalidentity
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'application','https://fonts.googleapis.com/css?family=Muli:300,400,700,900',media: 'all', 'data-turbolinks-track' => true
+  %body
+    = render "layouts/header"
+    = yield
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    :javascript
+      $(".progress").each(function()
+         {
+           var data,progressHeight, color;
+           data = $(this).attr('data');
+           progressHeight = $(this).attr('progressHeight');
+           color = $(this).attr('color');
+           $(this).css('height', progressHeight);
+           var barSpan = '<span class="bar"></span>';
+           var valueSpan = '<span class="value"></span>';
+           $(this).append(barSpan);
+           $(this).append(valueSpan);
+           $(this).children(".bar").css('width', data+'%');
+           $(this).children(".bar").css('background-color', color);
+           $(this).children(".value").html(data+'%');
+         })

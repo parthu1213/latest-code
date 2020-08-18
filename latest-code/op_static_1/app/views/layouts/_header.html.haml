@@ -1,0 +1,27 @@
+%header.site-header.site-header__header-one.site-header__header-two
+  %nav.navbar.navbar-expand-lg.navbar-light.header-navigation.stricky
+    .container.clearfix
+      .logo-box.clearfix
+        %a.navbar-brand{:href => "index.html"}
+          = image_tag("global/logo-light.png", :width => "119")
+        %button.menu-toggler{"data-target" => ".main-navigation"}
+          %span.fa.fa-bars
+      .main-navigation
+        %ul.one-page-scroll-menu.navigation-box
+          %li.current.scrollToLink
+            %a{:href => "#banner"} Home
+          %li.scrollToLink
+            %a{:href => "#about"} About
+          %li.scrollToLink
+            %a{:href => "#features"} Features
+          %li.scrollToLink
+            %a{:href => "#pricing"} Pricing
+          %li.scrollToLink
+            %a{:href => "#screenshots"} App Screenshots
+          %li.scrollToLink
+            %a{:href => "#service"} Service
+          %li.scrollToLink
+            %a{:href => "#news"} News
+      .right-side-box
+        %a.thm-btn.header__cta-btn{:href => "#"}
+          %span Login

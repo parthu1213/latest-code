@@ -1,0 +1,61 @@
+%body
+  .site-wrap
+    .site-mobile-menu.site-navbar-target
+      .site-mobile-menu-header
+        .site-mobile-menu-close.mt-3
+          %span.icon-close2.js-menu-toggle
+      .site-mobile-menu-body
+    #home-section.top-bar.py-3.bg-light
+      .container
+        .row.align-items-center
+          .col-6.text-left
+            %ul.social-media
+              %li
+                %a{:href => "https://www.facebook.com/softices/?ref=aymt_homepage_panel&eid=ARAm18ULAHBNqv2_Az_4sos7SWP3mjVSiSx1_B0Wign4XH4MZ2g-GjOu2oJVWaqajG1kXXOJk0XG7OIa"}
+                  %span.icon-facebook
+              %li
+                %a{:href => "https://twitter.com/Softices"}
+                  %span.icon-twitter
+              %li
+                %a{:href => "https://www.instagram.com/softices_consultancy/"}
+                  %span.icon-instagram
+              %li
+                %a{:href => "https://www.linkedin.com/company/softices/?viewAsMember=tru"}
+                  %span.icon-linkedin
+          .col-6
+            %p.mb-0.float-right
+              %span.mr-3
+                %a{:href => "tel://#"}
+                  %span.icon-phone.mr-2{:style => "position: relative; top: 2px;"}
+                  %span.d-none.d-lg-inline-block.text-black (+91) 70166 76005
+              %span
+                %a{:href => "#"}
+                  %span.icon-envelope.mr-2{:style => "position: relative; top: 2px;"}
+                  %span.d-none.d-lg-inline-block.text-black contact@softices.com
+    %header.site-navbar.py-4.bg-white.js-sticky-header.site-navbar-target{:role => "banner"}
+      .container
+        .row.align-items-center
+          .col-6.col-xl-2
+            %h1.mb-0.site-logo
+              %a.text-black.mb-0{:href => root_path}
+                Identity
+          .col-12.col-md-10.d-none.d-xl-block
+            %nav.site-navigation.position-relative.text-right{:role => "navigation"}
+              %ul.site-menu.main-menu.js-clone-nav.mr-auto.d-none.d-lg-block
+                %li
+                  %a.nav-link{:href => "#home-section"} Home
+                %li
+                  %a.nav-link{:href => "#work-section"} Work
+                %li
+                  %a.nav-link{:href => "#about-section"} About Us
+                %li
+                  %a.nav-link{:href => "#testimonials-section"} Clients
+                %li
+                  %a.nav-link{:href => "#skill-section"} Skill
+                %li
+                  %a.nav-link{:href => "#service-section"} Service
+                %li
+                  %a.nav-link{:href => "#contact-section"} Contact
+          .col-6.d-inline-block.d-xl-none.ml-md-0.py-3{:style => "position: relative; top: 3px;"}
+            %a.site-menu-toggle.js-menu-toggle.text-black.float-right{:href => "#"}
+              %span.icon-menu.h3

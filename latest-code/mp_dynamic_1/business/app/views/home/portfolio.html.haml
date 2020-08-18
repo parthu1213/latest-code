@@ -1,0 +1,182 @@
+.sub-banner.overview-bgi{:style => "background-image: url('#{image_path 'banner-1.jpg'}')"}
+  .container
+    .breadcrumb-area
+      %h1 Portfolio 4column
+      %ul.breadcrumbs
+        %li
+          %a{:href => "index.html"} Home
+        %li.active Portfolio 4column
+.portfolio-area.content-area-2
+  .container-fluid
+    .main-title
+      %h1
+        %span Our
+        portfolio
+      %ul.list-inline-listing.filters.filteriz-navigation
+        %li.active.btn.filtr-button.filtr{"data-filter" => "all"} All
+        %li.btn.btn-inline.filtr-button.filtr{"data-filter" => "1"} Web
+        %li.btn.btn-inline.filtr-button.filtr{"data-filter" => "2"} Grapich
+        %li.btn.btn-inline.filtr-button.filtr{"data-filter" => "3"} Word Press
+    .cars
+      .row.filter-portfolio.mb-30
+        .col-lg-3.col-md-4.col-sm-6.col-pad.filtr-item{"data-category" => "3"}
+          .property-box
+            .property-thumbnail
+              %a.property-img{:href => "portfoliodetails"}
+                = image_tag("portfolio/img-1.jpg", :class => "img-fluid")
+              .property-overlay
+                %a.overlay-link{:href => "portfoliodetails"}
+                  %i.fa.fa-link
+                .property-magnify-gallery
+                  %a.overlay-link{:href => "assets/portfolio/img-1.jpg"}
+                    %i.fa.fa-expand
+                  = image_tag("portfolio/img-2.jpg", :class => "hidden")
+                  = image_tag("portfolio/img-3.jpg", :class => "hidden")
+        .col-lg-3.col-md-4.col-sm-6.col-pad.filtr-item{"data-category" => "3, 2, 1"}
+          .property-box
+            .property-thumbnail
+              %a.property-img{:href => "portfoliodetails"}
+                = image_tag("portfolio/img-2.jpg", :class => "img-fluid")
+              .property-overlay
+                %a.overlay-link{:href => "portfoliodetails"}
+                  %i.fa.fa-link
+                .property-magnify-gallery
+                  %a.overlay-link{:href => "assets/portfolio/img-2.jpg"}
+                    %i.fa.fa-expand
+                  = image_tag("portfolio/img-3.jpg", :class => "hidden")
+                  = image_tag("portfolio/img-4.jpg", :class => "hidden")
+        .col-lg-3.col-md-4.col-sm-6.col-pad.filtr-item{"data-category" => "1, 2"}
+          .property-box
+            .property-thumbnail
+              %a.property-img{:href => "portfoliodetails"}
+                = image_tag("portfolio/img-3.jpg", :class => "img-fluid")
+              .property-overlay
+                %a.overlay-link{:href => "portfoliodetails"}
+                  %i.fa.fa-link
+                .property-magnify-gallery
+                  %a.overlay-link{:href => "assets/portfolio/img-3.jpg"}
+                    %i.fa.fa-expand
+                  %a.hidden{:href => "img/portfolio/img-4.jpg"}
+                  %a.hidden{:href => "img/portfolio/img-5.jpg"}
+        .col-lg-3.col-md-4.col-sm-6.col-pad.filtr-item{"data-category" => "3, 2"}
+          .property-box
+            .property-thumbnail
+              %a.property-img{:href => "portfoliodetails"}
+                = image_tag("portfolio/img-4.jpg", :class => "img-fluid")
+              .property-overlay
+                %a.overlay-link{:href => "portfoliodetails"}
+                  %i.fa.fa-link
+                .property-magnify-gallery
+                  %a.overlay-link{:href => "assets/portfolio/img-4.jpg"}
+                    %i.fa.fa-expand
+                  = image_tag("portfolio/img-5.jpg", :class => "hidden")
+                  = image_tag("portfolio/img-6.jpg", :class => "hidden")
+        .col-lg-3.col-md-4.col-sm-6.col-pad.filtr-item{"data-category" => "2, 1"}
+          .property-box
+            .property-thumbnail
+              %a.property-img{:href => "portfoliodetails"}
+                = image_tag("portfolio/img-5.jpg", :class => "img-fluid")
+              .property-overlay
+                %a.overlay-link{:href => "portfoliodetails"}
+                  %i.fa.fa-link
+                .property-magnify-gallery
+                  %a.overlay-link{:href => "assets/portfolio/img-5.jpg"}
+                    %i.fa.fa-expand
+                  = image_tag("portfolio/img-6.jpg", :class => "hidden")
+                  = image_tag("portfolio/img-7.jpg", :class => "hidden")
+        .col-lg-3.col-md-4.col-sm-6.col-pad.filtr-item{"data-category" => "3, 1, 2"}
+          .property-box
+            .property-thumbnail
+              %a.property-img{:href => "portfoliodetails"}
+                = image_tag("portfolio/img-6.jpg", :class => "img-fluid")
+              .property-overlay
+                %a.overlay-link{:href => "portfoliodetails"}
+                  %i.fa.fa-link
+                .property-magnify-gallery
+                  %a.overlay-link{:href => "assets/portfolio/img-6.jpg"}
+                    %i.fa.fa-expand
+                  = image_tag("portfolio/img-7.jpg", :class => "hidden")
+                  = image_tag("portfolio/img-8.jpg", :class => "hidden")
+        .col-lg-3.col-md-4.col-sm-6.col-pad.filtr-item{"data-category" => "3, 2, 1"}
+          .property-box
+            .property-thumbnail
+              %a.property-img{:href => "portfoliodetails"}
+                = image_tag("portfolio/img-7.jpg", :class => "img-fluid")
+              .property-overlay
+                %a.overlay-link{:href => "portfoliodetails"}
+                  %i.fa.fa-link
+                .property-magnify-gallery
+                  %a.overlay-link{:href => "assets/portfolio/img-7.jpg"}
+                    %i.fa.fa-expand
+                  = image_tag("portfolio/img-8.jpg", :class => "hidden")
+                  = image_tag("portfolio/img-1.jpg", :class => "hidden")
+        .col-lg-3.col-md-4.col-sm-6.col-pad.filtr-item{"data-category" => "1, 2"}
+          .property-box
+            .property-thumbnail
+              %a.property-img{:href => "portfoliodetails"}
+                = image_tag("portfolio/img-8.jpg", :class => "img-fluid")
+              .property-overlay
+                %a.overlay-link{:href => "portfoliodetails"}
+                  %i.fa.fa-link
+                .property-magnify-gallery
+                  %a.overlay-link{:href => "assets/portfolio/img-8.jpg"}
+                    %i.fa.fa-expand
+                  = image_tag("portfolio/img-1.jpg", :class => "hidden")
+                  = image_tag("portfolio/img-2.jpg", :class => "hidden")
+        .col-lg-3.col-md-4.col-sm-6.col-pad.filtr-item{"data-category" => "1, 2"}
+          .property-box
+            .property-thumbnail
+              %a.property-img{:href => "portfoliodetails"}
+                = image_tag("portfolio/img-3.jpg", :class => "img-fluid")
+              .property-overlay
+                %a.overlay-link{:href => "portfoliodetails"}
+                  %i.fa.fa-link
+                .property-magnify-gallery
+                  %a.overlay-link{:href => "assets/portfolio/img-3.jpg"}
+                    %i.fa.fa-expand
+                  = image_tag("portfolio/img-4.jpg", :class => "hidden")
+                  = image_tag("portfolio/img-5.jpg", :class => "hidden")
+        .col-lg-3.col-md-4.col-sm-6.col-pad.filtr-item{"data-category" => "3, 2"}
+          .property-box
+            .property-thumbnail
+              %a.property-img{:href => "portfoliodetails"}
+                = image_tag("portfolio/img-4.jpg", :class => "img-fluid")
+              .property-overlay
+                %a.overlay-link{:href => "portfoliodetails"}
+                  %i.fa.fa-link
+                .property-magnify-gallery
+                  %a.overlay-link{:href => "assets/portfolio/img-4.jpg"}
+                    %i.fa.fa-expand
+                  = image_tag("portfolio/img-5.jpg", :class => "hidden")
+                  = image_tag("portfolio/img-6.jpg", :class => "hidden")
+        .col-lg-3.col-md-4.col-sm-6.col-pad.filtr-item{"data-category" => "2, 1"}
+          .property-box
+            .property-thumbnail
+              %a.property-img{:href => "portfoliodetails"}
+                = image_tag("portfolio/img-5.jpg", :class => "img-fluid")
+              .property-overlay
+                %a.overlay-link{:href => "portfoliodetails"}
+                  %i.fa.fa-link
+                .property-magnify-gallery
+                  %a.overlay-link{:href => "assets/portfolio/img-5.jpg"}
+                    %i.fa.fa-expand
+                  = image_tag("portfolio/img-6.jpg", :class => "hidden")
+                  = image_tag("portfolio/img-7.jpg", :class => "hidden")
+        .col-lg-3.col-md-4.col-sm-6.col-pad.filtr-item{"data-category" => "3, 1, 2"}
+          .property-box
+            .property-thumbnail
+              %a.property-img{:href => "portfoliodetails"}
+                = image_tag("portfolio/img-6.jpg", :class => "img-fluid")
+              .property-overlay
+                %a.overlay-link{:href => "portfoliodetails"}
+                  %i.fa.fa-link
+                .property-magnify-gallery
+                  %a.overlay-link{:href => "assets/portfolio/img-6.jpg"}
+                    %i.fa.fa-expand
+                  = image_tag("portfolio/img-7.jpg", :class => "hidden")
+                  = image_tag("portfolio/img-8.jpg", :class => "hidden")
+#full-page-search
+  %button.close{:type => "button"} ×
+  %form{:action => "#"}
+    %input{:placeholder => "type keyword(s) here", :type => "search", :value => ""}/
+    %button.btn.btn-sm.btn-color{:type => "button"} Search

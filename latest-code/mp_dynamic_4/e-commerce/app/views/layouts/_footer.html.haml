@@ -1,0 +1,70 @@
+%body
+  %section.footer-section
+    .container
+      .footer-logo.text-center
+        %a{:href => "index.html"}
+          %h3.text-white Fasion
+      .row
+        .col-lg-3.col-sm-6
+          .footer-widget.about-widget
+            %h2 About
+            %p Donec vitae purus nunc. Morbi faucibus erat sit amet congue mattis. Nullam frin-gilla faucibus urna, id dapibus erat iaculis ut. Integer ac sem.
+            = image_tag("cards.png")
+        .col-lg-3.col-sm-6
+          .footer-widget.about-widget
+            %h2 Questions
+            %ul
+              %li
+                %a{:href => ""} About Us
+              %li
+                %a{:href => ""} Track Orders
+              %li
+                %a{:href => ""} Returns
+              %li
+                %a{:href => ""} Jobs
+              %li
+                %a{:href => ""} Shipping
+              %li
+                %a{:href => ""} Blog
+            %ul
+              %li
+                %a{:href => ""} Partners
+              %li
+                %a{:href => ""} Bloggers
+              %li
+                %a{:href => ""} Support
+              %li
+                %a{:href => ""} Terms of Use
+              %li
+                %a{:href => ""} Press
+        .col-lg-3.col-sm-6
+          .footer-widget.about-widget
+            %h2 Questions
+            .fw-latest-post-widget
+              .lp-item
+                .lp-thumb.set-bg{:style => "background-image: url('#{image_path 'blog-thumbs/1.jpg'}')"}
+                .lp-content
+                  %h6 what shoes to wear
+                  %span Oct 21, 2018
+                  %a.readmore{:href => "#"} Read More
+              .lp-item
+                .lp-thumb.set-bg{:style => "background-image: url('#{image_path 'blog-thumbs/2.jpg'}')"}
+                .lp-content
+                  %h6 trends this year
+                  %span Oct 21, 2018
+                  %a.readmore{:href => "#"} Read More
+        .col-lg-3.col-sm-6
+          .footer-widget.contact-widget
+            %h2 Questions
+            .con-info
+              %span C.
+              %p Softices Consultancy Pvt. ltd.
+            .con-info
+              %span B.
+              %p 202-204 Panvel Point, Nr. Sudama Chowk, Mota Varachha
+            .con-info
+              %span T.
+              %p +91 70166 76005
+            .con-info
+              %span E.
+              %p contact@softices.com

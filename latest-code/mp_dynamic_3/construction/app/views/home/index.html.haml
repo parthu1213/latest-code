@@ -1,0 +1,516 @@
+%body
+  #main-slide.carousel.slide{"data-ride" => "carousel"}
+    %ol.carousel-indicators.visible-lg.visible-md
+      %li.active{"data-slide-to" => "0", "data-target" => "#main-slide"}
+      %li{"data-slide-to" => "1", "data-target" => "#main-slide"}
+      %li{"data-slide-to" => "2", "data-target" => "#main-slide"}
+    .carousel-inner
+      .item.active{:style => "background-image: url('#{image_path 'slider-main/bg1.jpg'}')"}
+        .slider-content.text-left
+          .col-md-12
+            %h2.slide-title-box.animated2 27 Years Young
+            %h3.slide-title.animated3 With a Bench Strength of
+            %h3.slide-sub-title.animated3 1170+ Construction Experts
+            %p.animated3
+              %a.slider.btn.btn-primary.border{:href => "#"} Our Services
+      .item{:style => "background-image: url('#{image_path 'slider-main/bg2.jpg'}')"}
+        .slider-content
+          .col-md-12.text-center
+            %h2.slide-title.animated4 We are the Leader in
+            %h3.slide-sub-title.animated5 Construction Industry
+            %p.slider-description.lead.animated3 We will deal with your failure that determines how you achieve success.
+            %p
+              %a.slider.btn.btn-primary{:href => "#"} Our Services
+              %a.slider.btn.btn-primary.border{:href => "#"} Call Now
+      .item{:style => "background-image: url('#{image_path 'slider-main/bg3.jpg'}')"}
+        .slider-content.text-right
+          .col-md-12
+            %h2.slide-title.animated6 Meet Our Engineers
+            %h3.slide-sub-title.animated7 We care our Cummunities
+            %p.slider-description.lead.animated7 We will deal with your failure that determines how you achieve success.
+            %p
+              %a.slider.btn.btn-primary{:href => "#"} Get Free Quote
+              %a.slider.btn.btn-primary.border{:href => "#"} Learn More
+    %a.left.carousel-control{"data-slide" => "prev", :href => "#main-slide"}
+      %span
+        %i.fa.fa-angle-left
+    %a.right.carousel-control{"data-slide" => "next", :href => "#main-slide"}
+      %span
+        %i.fa.fa-angle-right
+  %section.call-to-action
+    .container
+      .row
+        .col-md-10.col-xs-12
+          %h3.call-to-action-title We are committed to providing the best quality of service
+        .col-md-2.col-xs-12
+          .call-to-action-btn-angle
+            %a{:href => "#"}
+              %i.fa.fa-paper-plane>
+              Contact Us
+  %section#ts-features.ts-features.experience
+    .about-section.section-space--inner--bottom--120
+      .container
+        .row.row-25.align-items-center
+          .col-lg-6.col-12.mb-30
+            .about-image-two
+              = image_tag("about.jpg")
+              %span.video-popup
+                %a{:href => "http://www.youtube.com/watch?v=LTauBc7lDIg"}
+                  %i.ion-ios-play-outline
+          .col-lg-6.col-12.mb-30
+            .about-content-two
+              %h3 Welcome to Constrk
+              %h1 50 Years of Experience in Industry
+              %h4 We are ready to build your dream home Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, beatae.
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam repudiandae odit dolorum quis laudantium impedit beatae perferendis natus, hic libero sed atque quibusdam possimus error, voluptate est molestiae doloremque necessitatibus illum rerum sunt! Ad sunt obcaecati voluptatem sint sequi quos, qui non deleniti a praesentium, sapiente accusantium odit.
+              %a.ht-btn--default.ht-btn--default--dark-hover.section-space--top--20{:href => "service.html"} Our Services
+  %section#facts.facts-area.bg-overlay.no-padding{:style => "background-image: url('#{image_path 'parallax1.jpg'}')"}
+    .container
+      .row
+        .facts-wrapper
+          .col-sm-3.ts-facts
+            .ts-facts-img
+              = image_tag("icon-image/fact1.png")
+            .ts-facts-content
+              %h2.ts-facts-num
+                %span.counterUp 1789
+              %h3.ts-facts-title Project Handover
+          .col-sm-3.ts-facts
+            .ts-facts-img
+              = image_tag("icon-image/fact2.png")
+            .ts-facts-content
+              %h2.ts-facts-num
+                %span.counterUp 1247
+              %h3.ts-facts-title Full-time Salaried
+          .col-sm-3.ts-facts
+            .ts-facts-img
+              = image_tag("icon-image/fact3.png")
+            .ts-facts-content
+              %h2.ts-facts-num
+                %span.counterUp 5000
+              %h3.ts-facts-title Million Revenue
+          .col-sm-3.ts-facts
+            .ts-facts-img
+              = image_tag("icon-image/fact4.png")
+            .ts-facts-content
+              %h2.ts-facts-num
+                %span.counterUp 44
+              %h3.ts-facts-title Countries Experience
+  %section#news.news
+    .container
+      .row.text-center
+        %h2.border-title What We Do
+        %p.border-sub-title
+          Collaboratively administrate empowered markets via plug-and-play networks.
+      .row
+        .col-md-4.col-xs-12
+          .latest-post
+            .latest-post-media
+              %a.latest-post-img.image-angle{:href => "#"}
+                = image_tag("news/news1.jpg", :class => "img-responsive")
+            .post-body
+              %h4.post-title
+                %a{:href => "#"} Laminate Flooring
+              %p.mb-5 With over thirty years of experience in residential renovation design and over 16,000 renovation plans delivered to this day.
+        .col-md-4.col-xs-12
+          .latest-post
+            .latest-post-media
+              %a.latest-post-img.image-angle{:href => "#"}
+                = image_tag("news/news2.jpg", :class => "img-responsive")
+            .post-body
+              %h4.post-title
+                %a{:href => "#"} Green Building
+              %p.mb-5 With over thirty years of experience in residential renovation design and over 16,000 renovation plans delivered to this day.
+        .col-md-4.col-xs-12
+          .latest-post
+            .latest-post-media
+              %a.latest-post-img.image-angle{:href => "#"}
+                = image_tag("news/news3.jpg", :class => "img-responsive")
+            .post-body
+              %h4.post-title
+                %a{:href => "#"} Construction Consultant
+              %p.mb-5 With over thirty years of experience in residential renovation design and over 16,000 renovation plans delivered to this day.
+        .col-md-4.col-xs-12
+          .latest-post
+            .latest-post-media
+              %a.latest-post-img.image-angle{:href => "#"}
+                = image_tag("news/news3.jpg", :class => "img-responsive")
+            .post-body
+              %h4.post-title
+                %a{:href => "#"} Construction Consultant
+              %p.mb-5 With over thirty years of experience in residential renovation design and over 16,000 renovation plans delivered to this day.
+        .col-md-4.col-xs-12
+          .latest-post
+            .latest-post-media
+              %a.latest-post-img.image-angle{:href => "#"}
+                = image_tag("news/news5.jpg", :class => "img-responsive")
+            .post-body
+              %h4.post-title
+                %a{:href => "#"} Construction Consultant
+              %p.mb-5 With over thirty years of experience in residential renovation design and over 16,000 renovation plans delivered to this day.
+        .col-md-4.col-xs-12
+          .latest-post
+            .latest-post-media
+              %a.latest-post-img.image-angle{:href => "#"}
+                = image_tag("news/news6.jpg", :class => "img-responsive")
+            .post-body
+              %h4.post-title
+                %a{:href => "#"} Construction Consultant
+              %p.mb-5 With over thirty years of experience in residential renovation design and over 16,000 renovation plans delivered to this day.
+      .general-btn.text-center
+        %a.btn.btn-primary{:href => "#"} See All Posts
+  %section#project-area.project-area
+    .container
+      .row
+        %h2.title Our Projects
+      .row
+        .isotope-nav{"data-isotope-nav" => "isotope"}
+          %ul
+            %li
+              %a.active{"data-filter" => "*", :href => "#"} Show All
+            %li
+              %a{"data-filter" => ".commercial", :href => "#"} Commercial
+            %li
+              %a{"data-filter" => ".interiors", :href => "#"} Interiors
+            %li
+              %a{"data-filter" => ".education", :href => "#"} Education
+            %li
+              %a{"data-filter" => ".government", :href => "#"} Government
+            %li
+              %a{"data-filter" => ".infrastructure", :href => "#"} Infrastructure
+            %li
+              %a{"data-filter" => ".residential", :href => "#"} Residential
+            %li
+              %a{"data-filter" => ".healthcare", :href => "#"} Healthcare
+    #isotope.isotope
+      .col-md-3.col-sm-6.col-xs-12.commercial.isotope-item
+        .single-project-style-two
+          .img-box
+            = image_tag("projects/project1.jpg")
+            .overlay
+              .box
+                .content
+                  %a.more-btn{:href => "projects.html"}
+                    %i.fa.fa-link{"aria-hidden" => "true"}
+                  %h3 Houston Plant
+      .col-md-3.col-sm-6.col-xs-12.healthcare.isotope-item
+        .isotope-img-container
+          .single-project-style-two
+            .img-box
+              = image_tag("projects/project8.jpg")
+              .overlay
+                .box
+                  .content
+                    %a.more-btn{:href => "projects.html"}
+                      %i.fa.fa-link{"aria-hidden" => "true"}
+                    %h3 Houston Plant
+      .col-md-3.col-sm-6.col-xs-12.government.isotope-item
+        .isotope-img-container
+          .single-project-style-two
+            .img-box
+              = image_tag("projects/project7.jpg")
+              .overlay
+                .box
+                  .content
+                    %a.more-btn{:href => "projects.html"}
+                      %i.fa.fa-link{"aria-hidden" => "true"}
+                    %h3 Houston Plant
+      .col-md-3.col-sm-6.col-xs-12.infrastructure.isotope-item
+        .isotope-img-container
+          .single-project-style-two
+            .img-box
+              = image_tag("projects/project6.jpg")
+              .overlay
+                .box
+                  .content
+                    %a.more-btn{:href => "projects.html"}
+                      %i.fa.fa-link{"aria-hidden" => "true"}
+                    %h3 Houston Plant
+      .col-md-3.col-sm-6.col-xs-12.infrastructure.isotope-item
+        .isotope-img-container
+          .single-project-style-two
+            .img-box
+              = image_tag("projects/project2.jpg")
+              .overlay
+                .box
+                  .content
+                    %a.more-btn{:href => "projects.html"}
+                      %i.fa.fa-link{"aria-hidden" => "true"}
+                    %h3 Houston Plant
+      .col-md-3.col-sm-6.col-xs-12.residential.isotope-item
+        .isotope-img-container
+          .single-project-style-two
+            .img-box
+              = image_tag("projects/project3.jpg")
+              .overlay
+                .box
+                  .content
+                    %a.more-btn{:href => "projects.html"}
+                      %i.fa.fa-link{"aria-hidden" => "true"}
+                    %h3 Houston Plant
+      .col-md-3.col-sm-6.col-xs-12.commercial.isotope-item
+        .isotope-img-container
+          .single-project-style-two
+            .img-box
+              = image_tag("projects/project4.jpg")
+              .overlay
+                .box
+                  .content
+                    %a.more-btn{:href => "projects.html"}
+                      %i.fa.fa-link{"aria-hidden" => "true"}
+                    %h3 Houston Plant
+      .col-md-3.col-sm-6.col-xs-12.education.isotope-item
+        .isotope-img-container
+          .single-project-style-two
+            .img-box
+              = image_tag("projects/project5.jpg")
+              .overlay
+                .box
+                  .content
+                    %a.more-btn{:href => "projects.html"}
+                      %i.fa.fa-link{"aria-hidden" => "true"}
+                    %h3 Houston Plant
+    .general-btn.text-center
+      %a.btn.btn-primary{:href => "projects.html"} View All Projects
+  %section.content
+    .container
+      .row
+        .col-md-6
+          %h3.border-title.border-left Why Work With Us?
+          #accordion.panel-group
+            .panel.panel-default
+              .panel-heading
+                %h4.panel-title
+                  %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseOne"} 27 Years of Experience
+              #collapseOne.panel-collapse.collapse.in
+                .panel-body
+                  = image_tag("services/service1.jpg", :class => "pull-left")
+                  %p Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor
+            .panel.panel-default
+              .panel-heading
+                %h4.panel-title
+                  %a.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseTwo"} Dedicated Consulting
+              #collapseTwo.panel-collapse.collapse
+                .panel-body
+                  = image_tag("services/service2.jpg", :class => "pull-right")
+                  %p Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor
+            .panel.panel-default
+              .panel-heading
+                %h4.panel-title
+                  %a.collapsed{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseThree"} ISO 9001 Certified
+              #collapseThree.panel-collapse.collapse
+                .panel-body
+                  = image_tag("services/service3.jpg", :class => "pull-left")
+                  %p Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor
+        .col-md-6
+          %h3.border-title.border-left Happy Clients
+          .row.all-clients
+            .col-sm-4
+              %figure.clients-logo
+                %a{:href => "#"}
+                  = image_tag("clients/client1.png", :class => "img-responsive")
+            .col-sm-4
+              %figure.clients-logo
+                %a{:href => "#"}
+                  = image_tag("clients/client2.png", :class => "img-responsive")
+            .col-sm-4
+              %figure.clients-logo
+                %a{:href => "#"}
+                  = image_tag("clients/client3.png", :class => "img-responsive")
+            .col-sm-4
+              %figure.clients-logo
+                %a{:href => "#"}
+                  = image_tag("clients/client4.png", :class => "img-responsive")
+            .col-sm-4
+              %figure.clients-logo
+                %a{:href => "#"}
+                  = image_tag("clients/client5.png", :class => "img-responsive")
+            .col-sm-4
+              %figure.clients-logo
+                %a{:href => "#"}
+                  = image_tag("clients/client6.png", :class => "img-responsive")
+  %section#testimonial-area.testimonial-area.bg-overlay{:style => "background-image: url('#{image_path 'parallax2.jpg'}')"}
+    .container
+      .row.text-center
+        %h2.border-title What People Said
+        %p.border-sub-title
+          Collaboratively administrate empowered markets via plug-and-play networks.
+      .row
+        #testimonial-slide.owl-carousel.owl-theme.testimonial-slide
+          .item
+            .single-testimonial-style-one
+              .top-box
+                %i.qoute-icon.zxp-icon-right-quote
+                .icon-box
+                  = image_tag("clients/testi-1-1.jpg")
+                .text-box
+                  %h3 Professional Handling
+                  .stars
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+              .content-box
+                %p
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  %br/
+                  con sectetur, adipisci velit, sed quia non num quam eius modi tem
+                  %br/
+                  pora incid unt ut labore et dolore magnam.
+                %h4 - Jackelyn Fernendez, Twitter
+          .item
+            .single-testimonial-style-one
+              .top-box
+                %i.qoute-icon.zxp-icon-right-quote
+                .icon-box
+                  = image_tag("clients/testi-1-1.jpg")
+                .text-box
+                  %h3 Professional Handling
+                  .stars
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+              .content-box
+                %p
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  %br/
+                  con sectetur, adipisci velit, sed quia non num quam eius modi tem
+                  %br/
+                  pora incid unt ut labore et dolore magnam.
+                %h4 - Jackelyn Fernendez, Twitter
+          .item
+            .single-testimonial-style-one
+              .top-box
+                %i.qoute-icon.zxp-icon-right-quote
+                .icon-box
+                  = image_tag("clients/testi-1-1.jpg")
+                .text-box
+                  %h3 Professional Handling
+                  .stars
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+              .content-box
+                %p
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  %br/
+                  con sectetur, adipisci velit, sed quia non num quam eius modi tem
+                  %br/
+                  pora incid unt ut labore et dolore magnam.
+                %h4 - Jackelyn Fernendez, Twitter
+          .item
+            .single-testimonial-style-one
+              .top-box
+                %i.qoute-icon.zxp-icon-right-quote
+                .icon-box
+                  = image_tag("clients/testi-1-1.jpg")
+                .text-box
+                  %h3 Professional Handling
+                  .stars
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+              .content-box
+                %p
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  %br/
+                  con sectetur, adipisci velit, sed quia non num quam eius modi tem
+                  %br/
+                  pora incid unt ut labore et dolore magnam.
+                %h4 - Jackelyn Fernendez, Twitter
+          .item
+            .single-testimonial-style-one
+              .top-box
+                %i.qoute-icon.zxp-icon-right-quote
+                .icon-box
+                  = image_tag("clients/testi-1-1.jpg")
+                .text-box
+                  %h3 Professional Handling
+                  .stars
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+                    %i.fa.fa-star
+              .content-box
+                %p
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  %br/
+                  con sectetur, adipisci velit, sed quia non num quam eius modi tem
+                  %br/
+                  pora incid unt ut labore et dolore magnam.
+                %h4 - Jackelyn Fernendez, Twitter
+  %section.subscribe.no-padding
+    .container
+      .row
+        .col-md-4.col-sm-12.col-xs-12
+          .subscribe-call-to-acton
+            %h3 Can We Help?
+            %h4 +44 (0) 3792 722 972
+        .col-md-8.col-sm-12.col-xs-12
+          .ts-newsletter
+            .newsletter-introtext
+              %h4 Newsletter Sign-up
+              %p Latest updates and news
+            .newsletter-form
+              %form{:action => "#", :method => "post"}
+                .form-group
+                  %input#newsletter-form-email.form-control.form-control-lg{:autocomplete => "off", :name => "email", :placeholder => "Your Email Here", :type => "email"}/
+                  %button.btn.btn-primary{:style => "background-image: url('#{image_path 'newsletter-icon.png'}') !important"} Subscribe
+  %section.blog-style-two.sec-pad
+    .container
+      .sec-title
+        .row
+          .col-md-3
+            %h3 Recent News
+          .col-md-6
+            %p
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              %br/
+              deserunt mollit anim id est laborum.
+          .col-md-3.text-right
+            %a.thm-btn{:href => "#"} More News
+      .row
+        .col-md-4.col-sm-6.col-xs-12
+          .single-blog-style-two
+            .img-box
+              = image_tag("news/blog-1-1.jpg")
+              %a.read-more{:href => "blog-details.html"} Read Post
+            .text-box
+              .meta-info
+                %a{:href => "#"}
+                  %i.fa.fa-clock-o{"aria-hidden" => "true"}
+                  Nov 25
+              %a{:href => "blog-details.html"}
+                %h3 2018 Project: Planning Anduff  Construction
+        .col-md-4.col-sm-6.col-xs-12
+          .single-blog-style-two
+            .img-box
+              = image_tag("news/blog-1-2.jpg")
+              %a.read-more{:href => "blog-details.html"} Read Post
+            .text-box
+              .meta-info
+                %a{:href => "#"}
+                  %i.fa.fa-clock-o{"aria-hidden" => "true"}
+                  Nov 25
+              %a{:href => "blog-details.html"}
+                %h3 Central Valley Comes Calling with Industrial Options
+        .col-md-4.col-sm-6.col-xs-12
+          .single-blog-style-two
+            .img-box
+              = image_tag("news/blog-1-3.jpg")
+              %a.read-more{:href => "blog-details.html"} Read Post
+            .text-box
+              .meta-info
+                %a{:href => "#"}
+                  %i.fa.fa-clock-o{"aria-hidden" => "true"}
+                  Nov 25
+              %a{:href => "blog-details.html"}
+                %h3 Columbus' Industrial Market Continues to Rise

@@ -1,0 +1,13 @@
+//= require jquery-3.min
+//= require scripts
+//= require jquery-migrate-3.0.0.min
+//= require popper.min
+//= require bootstrap.min
+//= require scrollIt.min
+//= require jquery.waypoints.min
+//= require owl.carousel.min
+//= require jquery.magnific-popup.min
+//= require jquery.stellar.min
+//= require isotope.pkgd.min
+//= require YouTubePopUp.jquery
+//= require validator

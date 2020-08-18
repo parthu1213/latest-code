@@ -1,0 +1,226 @@
+%body
+  %section.breadcrumb.breadcrumb_bg{:style => "background-image: url('#{image_path 'breadcrumb.png'}')"}
+    .container
+      .row
+        .col-lg-12
+          .breadcrumb_iner
+            .breadcrumb_iner_item.text-center
+              %h2 blog
+              %p home . blog
+  %section.blog_area.section_padding
+    .container
+      .row
+        .col-lg-8.mb-5.mb-lg-0
+          .blog_left_sidebar
+            %article.blog_item
+              .blog_item_img
+                = image_tag("blog/single_blog_1.png", :class => "card-img rounded-0")
+              .blog_details
+                %a.d-inline-block{:href => "single-blog.html"}
+                  %h2 Google inks pact for new 35-storey office
+                %p
+                  That dominion stars lights dominion divide years for fourth have don't stars is that
+                  he earth it first without heaven in place seed it second morning saying.
+                %ul.blog-info-link
+                  %li
+                    %a{:href => "#"}
+                      %i.far.fa-user
+                      Travel, Lifestyle
+                  %li
+                    %a{:href => "#"}
+                      %i.far.fa-comments
+                      03 Comments
+            %article.blog_item
+              .blog_item_img
+                = image_tag("blog/single_blog_2.png", :class => "card-img rounded-0")
+              .blog_details
+                %a.d-inline-block{:href => "single-blog.html"}
+                  %h2 Google inks pact for new 35-storey office
+                %p
+                  That dominion stars lights dominion divide years for fourth have don't stars is that
+                  he earth it first without heaven in place seed it second morning saying.
+                %ul.blog-info-link
+                  %li
+                    %a{:href => "#"}
+                      %i.far.fa-user
+                      Travel, Lifestyle
+                  %li
+                    %a{:href => "#"}
+                      %i.far.fa-comments
+                      03 Comments
+            %article.blog_item
+              .blog_item_img
+                = image_tag("blog/single_blog_3.png", :class => "card-img rounded-0")
+              .blog_details
+                %a.d-inline-block{:href => "single-blog.html"}
+                  %h2 Google inks pact for new 35-storey office
+                %p
+                  That dominion stars lights dominion divide years for fourth have don't stars is that
+                  he earth it first without heaven in place seed it second morning saying.
+                %ul.blog-info-link
+                  %li
+                    %a{:href => "#"}
+                      %i.far.fa-user
+                      Travel, Lifestyle
+                  %li
+                    %a{:href => "#"}
+                      %i.far.fa-comments
+                      03 Comments
+            %article.blog_item
+              .blog_item_img
+                = image_tag("blog/single_blog_4.png", :class => "card-img rounded-0")
+              .blog_details
+                %a.d-inline-block{:href => "single-blog.html"}
+                  %h2 Google inks pact for new 35-storey office
+                %p
+                  That dominion stars lights dominion divide years for fourth have don't stars is that
+                  he earth it first without heaven in place seed it second morning saying.
+                %ul.blog-info-link
+                  %li
+                    %a{:href => "#"}
+                      %i.far.fa-user
+                      Travel, Lifestyle
+                  %li
+                    %a{:href => "#"}
+                      %i.far.fa-comments
+                      03 Comments
+            %article.blog_item
+              .blog_item_img
+                = image_tag("blog/single_blog_5.png", :class => "card-img rounded-0")
+              .blog_details
+                %a.d-inline-block{:href => "single-blog.html"}
+                  %h2 Google inks pact for new 35-storey office
+                %p
+                  That dominion stars lights dominion divide years for fourth have don't stars is that
+                  he earth it first without heaven in place seed it second morning saying.
+                %ul.blog-info-link
+                  %li
+                    %a{:href => "#"}
+                      %i.far.fa-user
+                      Travel, Lifestyle
+                  %li
+                    %a{:href => "#"}
+                      %i.far.fa-comments
+                      03 Comments
+            %nav.blog-pagination.justify-content-center.d-flex
+              %ul.pagination
+                %li.page-item
+                  %a.page-link{"aria-label" => "Previous", :href => "#"}
+                    %i.ti-angle-left
+                %li.page-item
+                  %a.page-link{:href => "#"} 1
+                %li.page-item.active
+                  %a.page-link{:href => "#"} 2
+                %li.page-item
+                  %a.page-link{"aria-label" => "Next", :href => "#"}
+                    %i.ti-angle-right
+        .col-lg-4
+          .blog_right_sidebar
+            %aside.single_sidebar_widget.search_widget
+              %form{:action => "#"}
+                .form-group
+                  .input-group.mb-3
+                    %input.form-control{:onblur => "this.placeholder = 'Search Keyword'", :onfocus => "this.placeholder = ''", :placeholder => "Search Keyword", :type => "text"}/
+                    .input-group-append
+                      %button.btn{:type => "button"}
+                        %i.ti-search
+                %button.button.rounded-0.primary-bg.text-white.w-100.btn_1{:type => "submit"} Search
+            %aside.single_sidebar_widget.post_category_widget
+              %h4.widget_title Category
+              %ul.list.cat-list
+                %li
+                  %a.d-flex{:href => "#"}
+                    %p Resaurant food
+                    %p (37)
+                %li
+                  %a.d-flex{:href => "#"}
+                    %p Travel news
+                    %p (10)
+                %li
+                  %a.d-flex{:href => "#"}
+                    %p Modern technology
+                    %p (03)
+                %li
+                  %a.d-flex{:href => "#"}
+                    %p Product
+                    %p (11)
+                %li
+                  %a.d-flex{:href => "#"}
+                    %p Inspiration
+                    %p 21
+                %li
+                  %a.d-flex{:href => "#"}
+                    %p Health Care (21)
+                    %p 09
+            %aside.single_sidebar_widget.popular_post_widget
+              %h3.widget_title Recent Post
+              .media.post_item
+                = image_tag("post/post_1.png")
+                .media-body
+                  %a{:href => "single-blog.html"}
+                    %h3 From life was you fish...
+                  %p January 12, 2019
+              .media.post_item
+                = image_tag("post/post_2.png")
+                .media-body
+                  %a{:href => "single-blog.html"}
+                    %h3 The Amazing Hubble
+                  %p 02 Hours ago
+              .media.post_item
+                = image_tag("post/post_3.png")
+                .media-body
+                  %a{:href => "single-blog.html"}
+                    %h3 Astronomy Or Astrology
+                  %p 03 Hours ago
+              .media.post_item
+                = image_tag("post/post_4.png")
+                .media-body
+                  %a{:href => "single-blog.html"}
+                    %h3 Asteroids telescope
+                  %p 01 Hours ago
+            %aside.single_sidebar_widget.tag_cloud_widget
+              %h4.widget_title Tag Clouds
+              %ul.list
+                %li
+                  %a{:href => "#"} project
+                %li
+                  %a{:href => "#"} love
+                %li
+                  %a{:href => "#"} technology
+                %li
+                  %a{:href => "#"} travel
+                %li
+                  %a{:href => "#"} restaurant
+                %li
+                  %a{:href => "#"} life style
+                %li
+                  %a{:href => "#"} design
+                %li
+                  %a{:href => "#"} illustration
+            %aside.single_sidebar_widget.instagram_feeds
+              %h4.widget_title Instagram Feeds
+              %ul.instagram_row.flex-wrap
+                %li
+                  %a{:href => "#"}
+                    = image_tag("post/post_5.png", :class => "img-fluid")
+                %li
+                  %a{:href => "#"}
+                    = image_tag("post/post_6.png", :class => "img-fluid")
+                %li
+                  %a{:href => "#"}
+                    = image_tag("post/post_7.png", :class => "img-fluid")
+                %li
+                  %a{:href => "#"}
+                    = image_tag("post/post_8.png", :class => "img-fluid")
+                %li
+                  %a{:href => "#"}
+                    = image_tag("post/post_9.png", :class => "img-fluid")
+                %li
+                  %a{:href => "#"}
+                    = image_tag("post/post_10.png", :class => "img-fluid")
+            %aside.single_sidebar_widget.newsletter_widget
+              %h4.widget_title Newsletter
+              %form{:action => "#"}
+                .form-group
+                  %input.form-control{:onblur => "this.placeholder = 'Enter email'", :onfocus => "this.placeholder = ''", :placeholder => "Enter email", :required => "", :type => "email"}/
+                %button.button.rounded-0.primary-bg.text-white.w-100.btn_1{:type => "submit"} Subscribe

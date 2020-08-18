@@ -1,0 +1,221 @@
+%body
+  #top-bar
+    .container
+      .row
+        .col-lg-6.col-md-9
+          .contacts
+            %div
+              %span.fa.fa-phone
+              (+91) 70166 76005
+            .hidden-xs.hidden-ms
+              %span.fa.fa-skype
+              SOFTICES
+            .hidden-xs.hidden-ms
+              %span.fa.fa-phone>
+              202-204 Panvel Point
+        .col-lg-6.col-md-3
+          .social.social-small.visible-lg
+            %a.fa.fa-twitter{:href => "https://twitter.com/Softices"}
+            %a.fa.fa-facebook{:href => "https://www.facebook.com/softices/?ref=aymt_homepage_panel&eid=ARAm18ULAHBNqv2_Az_4sos7SWP3mjVSiSx1_B0Wign4XH4MZ2g-GjOu2oJVWaqajG1kXXOJk0XG7OIa"}
+            %a.fa.fa-instagram{:href => "https://www.instagram.com/softices_consultancy/"}
+            %a.fa.fa-google-plus{:href => "#"}
+            %a.fa.fa-pinterest{:href => "https://in.pinterest.com/SofticesConsultancy/"}
+          %a.btn.btn-xs.btn-black-bordered.pull-right{:href => gettaxi_path} Get taxi online
+  #nav-wrapper.nav-wrapper
+    %nav.navbar.navbar-static.navbar-affix{"data-spy" => "affix"}
+      .container
+        .navbar-header
+          %button.navbar-toggle.collapsed{:type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar.top-bar
+            %span.icon-bar.middle-bar
+            %span.icon-bar.bottom-bar
+          %a.logo{:href => root_path}
+            %img{:src => "#{image_path 'logo-inner.png'}"}/
+        #navbar.navbar-collapse.collapse
+          %button.navbar-toggle.collapsed{:type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar.top-bar
+            %span.icon-bar.middle-bar
+            %span.icon-bar.bottom-bar
+          %ul.nav.navbar-nav
+            %li
+              %a{:href => root_path} Home
+            %li.current_page_item
+              %a{:href => gettaxi_path} Get Taxi
+            %li
+              %a{:href => services_path} Services
+            %li.hasSub
+              %a{:href => "#"} Our blog
+              %ul.sub-menu
+                %li
+                  %a{:href => blog_path} Classic Blog
+            %li
+              %a{:href => contacts_path} Contacts
+  %header.page-header{:style => "background-image: url('#{image_path '_inner-bg.jpg'}');"}
+    .container
+      %ol.bread
+        %li
+          %a{:href => root_path}
+            %span Home
+        %li.divider
+          %span //
+        %li
+          %span Get Taxi
+      %h1 Get Taxi
+  .drive-cars-section
+    .container
+      .title
+        %h4.yellow The weather started getting rough the tiny ship was tossed if not for the courage.
+        %h2.h1 Drive A Luxury Car Everyday
+      .row.clearfix
+        .driver-block.col-md-4.col-sm-6.col-xs-12
+          .inner-box
+            .icon-box
+              %i.fa.fa-search{"aria-hidden" => "true"}
+            %h3 Book Your Car
+            .text The weather started getting rough the tiny ship was lost the min ting a maximum security stockade lost the minnow.
+        .driver-block.col-md-4.col-sm-6.col-xs-12
+          .inner-box
+            .icon-box
+              %i.fa.fa-usd{"aria-hidden" => "true"}
+            %h3 Pay the Fare
+            .text The weather started getting rough the tiny ship was lost the min ting a maximum security stockade lost the minnow.
+        .driver-block.col-md-4.col-sm-6.col-xs-12
+          .inner-box
+            .icon-box
+              %i.fa.fa-car{"aria-hidden" => "true"}
+            %h3 Ride the Car
+            .text The weather started getting rough the tiny ship was lost the min ting a maximum security stockade lost the minnow.
+  .taxi-form-full
+    .container
+      %form.form-validate
+        .row.forms
+          %input.btn.btn-lg.btn-book.aligncenter{:value => "Book Now"}/
+          .col-md-6
+            .form-group
+              %label From Address...
+              %input#to.ajaxField{:name => "to", :placeholder => "Starting Place...", :type => "text", :value => ""}/
+          .col-md-6
+            .form-group
+              %label To
+              %input#to.ajaxField{:name => "to", :placeholder => "To...", :type => "text", :value => ""}/
+          .col-md-6
+            .form-group
+              %label Phone Number
+              %input#phone.ajaxField.required{:name => "phone", :placeholder => "Phone Number", :type => "text", :value => ""}/
+          .col-md-6
+            .form-group
+              %label Date&amp;Time
+              %input#text.ajaxField{:name => "text", :placeholder => "Date and Time", :type => "text", :value => ""}/
+        %input.btn.btn-lg.btn-red.aligncenter{:type => "submit", :value => "Get Taxi"}/
+        %input#type.ajaxField{:name => "type", :type => "hidden", :value => "2"}/
+  %section.best-services-section.style-two
+    %figure.floated-image.wow.slideInRight.animated{"data-wow-delay" => "0ms", "data-wow-duration" => "1500ms", :style => "/* visibility: visible; *//* animation-duration: 1500ms; *//* animation-delay: 0ms; *//* animation-name: slideInRight; */"}
+      %img{:src => "#{image_path 'featured-image-6.png'}"}/
+    .container
+      .title
+        %h2.yellow Our Awesome Services
+        .desc-text The weather started getting rough the tiny ship was tossed if not for the courage.
+      .outer-box
+        .row.clearfix
+          .service-block-four.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-layer{:style => "background-image:url('#{image_path 'featured-image-5.jpg'}');"}
+              .icon-box
+                %i.fa.fa-glass{"aria-hidden" => "true"}
+              %h3 Night Parties
+              .text The weather started getting rough the ship was tossed if courage.
+          .service-block-four.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-layer{:style => "background-image:url('#{image_path 'featured-image-5.jpg'}');"}
+              .icon-box
+                %i.fa.fa-shopping-cart{"aria-hidden" => "true"}
+              %h3 Shopping Malls
+              .text The weather started getting rough the ship was tossed if courage.
+          .service-block-four.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-layer{:style => "background-image:url('#{image_path 'featured-image-5.jpg'}');"}
+              .icon-box
+                %i.fa.fa-circle-o{"aria-hidden" => "true"}
+              %h3 Weddings
+              .text The weather started getting rough the ship was tossed if courage.r
+          .service-block-four.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-layer{:style => "background-image:url('#{image_path 'featured-image-5.jpg'}');"}
+              .icon-box
+                %i.fa.fa-plane{"aria-hidden" => "true"}
+              %h3 Airports
+              .text The weather started getting rough the ship was tossed if courage.
+          .service-block-four.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-layer{:style => "background-image:url('#{image_path 'featured-image-5.jpg'}');"}
+              .icon-box
+                %i.fa.fa-h-square{"aria-hidden" => "true"}
+              %h3 Hotels
+              .text The weather started getting rough the ship was tossed if courage.
+          .service-block-four.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-layer{:style => "background-image:url('#{image_path 'featured-image-5.jpg'}');"}
+              .icon-box
+                %i.fa.fa-play-circle-o{"aria-hidden" => "true"}
+              %h3 Cinemas
+              .text The weather started getting rough the ship was tossed if courage.
+  %section#download.parallax{:style => "background-image: url('#{image_path '_download-bg.jpg'}');"}
+    .container
+      %h4.yellow Get More Benefits
+      %h2.h1 Download The App
+      .row
+        .col-md-4.col-sm-12
+          .items.row
+            .col-md-2.visible-md.visible-lg
+              %span.num 01.
+            .col-md-10
+              %h5.yellow Fast booking
+              %p Nam ac ligula congue, interdum enim sit amet, fermentum nisi.
+            .col-md-2.visible-md.visible-lg
+              %span.num 02.
+            .col-md-10
+              %h5.yellow Easy to use
+              %p Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        .col-md-4.col-md-push-4.col-sm-12
+          .items.items-right.row
+            .col-md-10
+              %h5.yellow GPS searching
+              %p Ut elementum tincidunt erat vel ornare. Suspendisse ac felis non diam pretium.
+            .col-md-2.visible-md.visible-lg
+              %span.num 03.
+            .col-md-10
+              %h5.yellow Bonuses for ride
+              %p Phasellus l et porta tortor dignissim at. Pellentesque gravida tortor at euismod mollis.
+            .col-md-2.visible-md.visible-lg
+              %span.num 04.
+        .col-md-4.col-md-pull-4.col-sm-12
+          .mob
+            %a{:href => "#"}
+              %img{:src => "#{image_path '_app-google.png'}"}/
+            %a{:href => "#"}
+              %img{:src => "#{image_path '_app-apple.png'}"}/
+  %section#partners
+    .container
+      .row
+        .col-md-3.col-sm-12
+          %h4.black.margin-0 Our partners
+          %h2.white.margin-0 and clients
+        .col-md-9.col-sm-12
+          .row.items
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-1.png'}"}/
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-2.png'}"}/
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-3.png'}"}/
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-4.png'}"}/
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-5.png'}"}/

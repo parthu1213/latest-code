@@ -1,0 +1,137 @@
+%body
+  .page-top-info
+    .container
+      %h4 Your cart
+      .site-pagination
+        %a Home
+        \\/
+        %a Your cart
+  %section.cart-section.spad
+    .container
+      .row
+        .col-lg-8
+          .cart-table
+            %h3 Your Cart
+            .cart-table-warp
+              %table
+                %thead
+                  %tr
+                    %th.product-th Product
+                    %th.quy-th Quantity
+                    %th.size-th SizeSize
+                    %th.total-th Price
+                %tbody
+                  %tr
+                    %td.product-col
+                      = image_tag("cart/1.jpg")
+                      .pc-title
+                        %h4 Animal Print Dress
+                        %p $45.90
+                    %td.quy-col
+                      .quantity
+                        .pro-qty
+                          %input{:type => "text", :value => "1"}>/
+                          \/
+                    %td.size-col
+                      %h4 Size M
+                    %td.total-col
+                      %h4 $45.90
+                  %tr
+                    %td.product-col
+                      = image_tag("cart/2.jpg")
+                      .pc-title
+                        %h4 Ruffle Pink Top
+                        %p $45.90
+                    %td.quy-col
+                      .quantity
+                        .pro-qty
+                          %input{:type => "text", :value => "1"}>/
+                          \/
+                    %td.size-col
+                      %h4 Size M
+                    %td.total-col
+                      %h4 $45.90
+                  %tr
+                    %td.product-col
+                      = image_tag("cart/3.jpg")
+                      .pc-title
+                        %h4 Skinny Jeans
+                        %p $45.90
+                    %td.quy-col
+                      .quantity
+                        .pro-qty
+                          %input{:type => "text", :value => "1"}>/
+                          \/
+                    %td.size-col
+                      %h4 Size M
+                    %td.total-col
+                      %h4 $45.90
+            .total-cost
+              %h6
+                Total
+                %span $99.90
+        .col-lg-4.card-right
+          %form.promo-code-form
+            %input{:placeholder => "Enter promo code", :type => "text"}>/
+            \/
+            %button Submit
+          %a.site-btn{:href => "checkout.html"} Proceed to checkout
+          %a.site-btn.sb-dark Continue shopping
+  %section.related-product-section
+    .container
+      .section-title.text-uppercase
+        %h2 Continue Shopping
+      .row
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              .tag-new New
+              = image_tag("product/2.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Black and White Stripes Dress
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              = image_tag("product/5.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Flamboyant Pink Top
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              = image_tag("product/9.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Flamboyant Pink Top
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              = image_tag("product/1.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Flamboyant Pink Top

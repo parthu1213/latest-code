@@ -1,0 +1,31 @@
+%body
+  %header.header-area
+    .main-header-area
+      .classy-nav-container.breakpoint-off
+        .container
+          %nav#alimeNav.classy-navbar.justify-content-between
+            %a.nav-brand{:href => root_path}= image_tag("core-img/logo.png")
+            .classy-navbar-toggler
+              %span.navbarToggler
+                %span
+                %span
+                %span
+            .classy-menu
+              .classycloseIcon
+                .cross-wrap
+                  %span.top
+                  %span.bottom
+              .classynav
+                %ul#nav
+                  %li{:class => "#{active_class(root_path)}"}
+                    %a{:href => root_path} Home
+                  %li{:class => "#{active_class(about_path)}"}
+                    %a{:href => about_path} About
+                  %li{:class => "#{active_class(gallery_path)}"}
+                    %a{:href => gallery_path} Gallery
+                  %li{:class => "#{active_class(blog_path)}"}
+                    %a{:href => blog_path} Blog
+                  %li{:class => "#{active_class(contact_path)}"}
+                    %a{:href => contact_path} Contact
+                .search-icon{"data-target" => "#searchModal", "data-toggle" => "modal"}
+                  %i.ti-search

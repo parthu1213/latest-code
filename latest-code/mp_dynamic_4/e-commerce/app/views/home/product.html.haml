@@ -1,0 +1,207 @@
+%body
+  .page-top-info
+    .container
+      %h4 Category PAge
+      .site-pagination
+        %a{:href => ""} Home
+        \/
+        %a{:href => ""} Shop
+  %section.product-section
+    .container
+      .back-link
+        %a{:href => "./category.html"} &lt;&lt; Back to Category
+      .row
+        .col-lg-6
+          .product-pic-zoom
+            %img.product-big-img{:src => "#{image_path 'single-product/1.jpg'}"}/
+          .product-thumbs{:style => "overflow: hidden; outline: none;", :tabindex => "1"}
+            .product-thumbs-track
+              .pt.active{"data-imgbigurl" => "#{image_path 'single-product/1.jpg'}"}
+                %img{:src => "#{image_path 'single-product/thumb-1.jpg'}"}/
+              .pt{"data-imgbigurl" => "#{image_path 'single-product/2.jpg'}"}
+                %img{:src => "#{image_path 'single-product/thumb-2.jpg'}"}/
+              .pt{"data-imgbigurl" => "#{image_path 'single-product/3.jpg'}"}
+                %img{:src => "#{image_path 'single-product/thumb-3.jpg'}"}/
+              .pt{"data-imgbigurl" => "#{image_path 'single-product/4.jpg'}"}
+                %img{:src => "#{image_path 'single-product/thumb-4.jpg'}"}/
+        .col-lg-6.product-details
+          %h2.p-title Product Name Goes Here
+          %h3.p-price $39.90
+          %h4.p-stock
+            Available:
+            %span In Stock
+          .p-rating
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o.fa-fade
+          .p-review
+            %a{:href => ""}> 3 reviews
+            |
+            %a{:href => ""} Add your review
+          .fw-size-choose
+            %p Size
+            .sc-item
+              %input#xs-size{:name => "sc", :type => "radio"}/
+              %label{:for => "xs-size"} 32
+            .sc-item
+              %input#s-size{:name => "sc", :type => "radio"}/
+              %label{:for => "s-size"} 34
+            .sc-item
+              %input#m-size{:checked => "checked", :name => "sc", :type => "radio"}/
+              %label{:for => "m-size"} 36
+            .sc-item
+              %input#l-size{:name => "sc", :type => "radio"}/
+              %label{:for => "l-size"} 38
+            .sc-item.disable
+              %input#xl-size{:disabled => "disabled", :name => "sc", :type => "radio"}/
+              %label{:for => "xl-size"} 40
+            .sc-item
+              %input#xxl-size{:name => "sc", :type => "radio"}/
+              %label{:for => "xxl-size"} 42
+          .quantity
+            %p Quantity
+            .pro-qty
+              %input{:type => "text", :value => "1"}/
+          %a.site-btn{:href => "#"} SHOP NOW
+          #accordion.accordion-area
+            .panel
+              #headingOne.panel-header
+                %button.panel-link.active{"aria-controls" => "collapse1", "aria-expanded" => "true", "data-target" => "#collapse1", "data-toggle" => "collapse"} information
+              #collapse1.collapse.show{"aria-labelledby" => "headingOne", "data-parent" => "#accordion"}
+                .panel-body
+                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.
+                  %p Approx length 66cm/26" (Based on a UK size 8 sample)
+                  %p Mixed fibres
+                  %p The Model wears a UK size 8/ EU size 36/ US size 4 and her height is 5'8"
+            .panel
+              #headingTwo.panel-header
+                %button.panel-link{"aria-controls" => "collapse2", "aria-expanded" => "false", "data-target" => "#collapse2", "data-toggle" => "collapse"} care details
+              #collapse2.collapse{"aria-labelledby" => "headingTwo", "data-parent" => "#accordion"}
+                .panel-body
+                  = image_tag("cards.png")
+                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.
+            .panel
+              #headingThree.panel-header
+                %button.panel-link{"aria-controls" => "collapse3", "aria-expanded" => "false", "data-target" => "#collapse3", "data-toggle" => "collapse"} shipping &amp; Returns
+              #collapse3.collapse{"aria-labelledby" => "headingThree", "data-parent" => "#accordion"}
+                .panel-body
+                  %h4 7 Days Returns
+                  %p
+                    Cash on Delivery Available
+                    %br>/
+                    Home Delivery
+                    %span 3 - 4 days
+                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.
+          .social-sharing
+            %a{:href => ""}
+              %i.fa.fa-google-plus
+            %a{:href => ""}
+              %i.fa.fa-pinterest
+            %a{:href => ""}
+              %i.fa.fa-facebook
+            %a{:href => ""}
+              %i.fa.fa-twitter
+            %a{:href => ""}
+              %i.fa.fa-youtube
+  %section.related-product-section
+    .container
+      .section-title
+        %h2 RELATED PRODUCTS
+      .product-slider.owl-carousel
+        .product-item
+          .pi-pic
+            = image_tag("product/1.jpg")
+            .pi-links
+              %a.add-card{:href => "#"}
+                %i.flaticon-bag
+                %span ADD TO CART
+              %a.wishlist-btn{:href => "#"}
+                %i.flaticon-heart
+          .pi-text
+            %h6 $35,00
+            %p Flamboyant Pink Top
+        .product-item
+          .pi-pic
+            .tag-new New
+            = image_tag("product/2.jpg")
+            .pi-links
+              %a.add-card{:href => "#"}
+                %i.flaticon-bag
+                %span ADD TO CART
+              %a.wishlist-btn{:href => "#"}
+                %i.flaticon-heart
+          .pi-text
+            %h6 $35,00
+            %p Black and White Stripes Dress
+        .product-item
+          .pi-pic
+            = image_tag("product/3.jpg")
+            .pi-links
+              %a.add-card{:href => "#"}
+                %i.flaticon-bag
+                %span ADD TO CART
+              %a.wishlist-btn{:href => "#"}
+                %i.flaticon-heart
+          .pi-text
+            %h6 $35,00
+            %p Flamboyant Pink Top
+        .product-item
+          .pi-pic
+            = image_tag("product/4.jpg")
+            .pi-links
+              %a.add-card{:href => "#"}
+                %i.flaticon-bag
+                %span ADD TO CART
+              %a.wishlist-btn{:href => "#"}
+                %i.flaticon-heart
+          .pi-text
+            %h6 $35,00
+            %p Flamboyant Pink Top
+        .product-item
+          .pi-pic
+            = image_tag("product/6.jpg")
+            .pi-links
+              %a.add-card{:href => "#"}
+                %i.flaticon-bag
+                %span ADD TO CART
+              %a.wishlist-btn{:href => "#"}
+                %i.flaticon-heart
+          .pi-text
+            %h6 $35,00
+            %p Flamboyant Pink Top
+  :javascript
+    $('.product-thumbs-track > .pt').on('click', function(){
+    	$('.product-thumbs-track .pt').removeClass('active');
+    	$(this).addClass('active');
+    	var imgurl = $(this).data('imgbigurl');
+    	var bigImg = $('.product-big-img').attr('src');
+    	if(imgurl != bigImg) {
+    		$('.product-big-img').attr({src: imgurl});
+    		$('.zoomImg').attr({src: imgurl});
+    	}
+    });
+    $('.product-pic-zoom').zoom();
+    $('.product-slider').owlCarousel({
+    		loop: true,
+    		nav: true,
+    		dots: false,
+    		margin : 30,
+    		autoplay: true,
+    		navText: ['<i class="flaticon-left-arrow-1"></i>', '<i class="flaticon-right-arrow-1"></i>'],
+    		responsive : {
+    			0 : {
+    				items: 1,
+    			},
+    			480 : {
+    				items: 2,
+    			},
+    			768 : {
+    				items: 3,
+    			},
+    			1200 : {
+    				items: 4,
+    			}
+    		}
+    	});

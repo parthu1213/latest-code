@@ -1,0 +1,13 @@
+//= require jquery-3.2.1.min
+//= require animsition.min
+//= require popper
+//= require bootstrap.min
+//= require select2.min
+//= require moment.min
+//= require daterangepicker
+//= require slick.min
+//= require slick-custom
+//= require parallax100
+//= require countdowntime
+//= require lightbox.min
+//= require main

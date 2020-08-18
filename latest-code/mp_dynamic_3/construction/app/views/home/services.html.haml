@@ -1,0 +1,217 @@
+%body
+  #banner-area.banner-area{:style => "background-image: url('#{image_path 'banner/banner1.jpg'}')"}
+    .banner-text
+      .container
+        .row
+          .col-xs-12
+            .banner-heading
+              %h1.border-title.border-left Services
+              %ol.breadcrumb.mb-0
+                %li Home
+                %li Services
+                %li
+                  %a{:href => "#"} Services All
+  %section#main-container.main-container
+    .service-section
+      .container
+        .row
+          .col-lg-12
+            .service-item-wrapper
+              .row
+                .col-md-4.col-sm-12.col-xs-12
+                  .service-grid-item
+                    .service-grid-item__image
+                      .service-grid-item__image-wrapper
+                        %a{:href => "service-details.html"}
+                          = image_tag("services/service1.jpg", :class => "img-fluid")
+                      .icon
+                        %i.fa.fa-mars-double{"aria-hidden" => "true"}
+                    .service-grid-item__content
+                      %h3.title
+                        %a{:href => "service-details.html"} Land Minning
+                      %p.subtitle Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor
+                      %a.btn.btn-primary.solid.blank.mb-5{:href => "#"} SEE MORE
+                .col-md-4.col-sm-12.col-xs-12
+                  .service-grid-item
+                    .service-grid-item__image
+                      .service-grid-item__image-wrapper
+                        %a{:href => "service-details.html"}
+                          = image_tag("services/service2.jpg", :class => "img-fluid")
+                      .icon
+                        %i.fa.fa-binoculars{"aria-hidden" => "true"}
+                    .service-grid-item__content
+                      %h3.title
+                        %a{:href => "service-details.html"} Work Management
+                      %p.subtitle Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor
+                      %a.btn.btn-primary.solid.blank.mb-5{:href => "#"} SEE MORE
+                .col-md-4.col-sm-12.col-xs-12
+                  .service-grid-item
+                    .service-grid-item__image
+                      .service-grid-item__image-wrapper
+                        %a{:href => "service-details.html"}
+                          = image_tag("services/service1.jpg", :class => "img-fluid")
+                      .icon
+                        %i.fa.fa-plug{"aria-hidden" => "true"}
+                    .service-grid-item__content
+                      %h3.title
+                        %a{:href => "service-details.html"} Power and Energy
+                      %p.subtitle Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor
+                      %a.btn.btn-primary.solid.blank.mb-5{:href => "#"} SEE MORE
+              .col-md-4.col-sm-12.col-xs-12
+                .service-grid-item
+                  .service-grid-item__image
+                    .service-grid-item__image-wrapper
+                      %a{:href => "service-details.html"}
+                        = image_tag("services/service1.jpg", :class => "img-fluid")
+                    .icon
+                      %i.fa.fa-cogs{"aria-hidden" => "true"}
+                  .service-grid-item__content
+                    %h3.title
+                      %a{:href => "service-details.html"} Work Management
+                    %p.subtitle Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor
+                    %a.btn.btn-primary.solid.blank.mb-5{:href => "#"} SEE MORE
+              .col-md-4.col-sm-12.col-xs-12
+                .service-grid-item
+                  .service-grid-item__image
+                    .service-grid-item__image-wrapper
+                      %a{:href => "service-details.html"}
+                    .col-md-4.col-sm-12.col-xs-12
+                      .service-grid-item
+                        .service-grid-item__image
+                          .service-grid-item__image-wrapper
+                            %a{:href => "service-details.html"}
+                              = image_tag("services/service3.jpg", :class => "img-fluid")
+                          .icon
+                            %i.fa.fa-gavel{"aria-hidden" => "true"}
+                        .service-grid-item__content
+                          %h3.title
+                            %a{:href => "service-details.html"} Material Engineering
+                          %p.subtitle Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor
+                          %a.btn.btn-primary.solid.blank.mb-5{:href => "#"} SEE MORE
+                    .col-md-4.col-sm-12.col-xs-12
+                      .service-grid-item
+                        .service-grid-item__image
+                          .service-grid-item__image-wrapper
+                            %a{:href => "service-details.html"}
+                              = image_tag("services/service2.jpg", :class => "img-fluid")
+                          .icon
+                            %i.fa.fa-building{"aria-hidden" => "true"}
+                        .service-grid-item__content
+                          %h3.title
+                            %a{:href => "service-details.html"} Land Minning
+                          %p.subtitle Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor
+                          %a.btn.btn-primary.solid.blank.mb-5{:href => "#"} SEE MORE
+          %section#facts.facts-area.bg-overlay.no-padding{:style => "background-image: url('#{image_path 'parallax1.jpg'}')"}
+            .container
+              .row
+                .facts-wrapper
+                  .col-sm-3.ts-facts
+                    .ts-facts-img
+                      = image_tag("icon-image/fact1.png")
+                    .ts-facts-content
+                      %h2.ts-facts-num
+                        %span.counterUp 1789
+                      %h3.ts-facts-title Project Handover
+                  .col-sm-3.ts-facts
+                    .ts-facts-img
+                      = image_tag("icon-image/fact2.png")
+                    .ts-facts-content
+                      %h2.ts-facts-num
+                        %span.counterUp 1247
+                      %h3.ts-facts-title Full-time Salaried
+                  .col-sm-3.ts-facts
+                    .ts-facts-img
+                      = image_tag("icon-image/fact3.png")
+                    .ts-facts-content
+                      %h2.ts-facts-num
+                        %span.counterUp 5000
+                      %h3.ts-facts-title Million Revenue
+                  .col-sm-3.ts-facts
+                    .ts-facts-img
+                      = image_tag("icon-image/fact4.png")
+                    .ts-facts-content
+                      %h2.ts-facts-num
+                        %span.counterUp 44
+                      %h3.ts-facts-title Countries Experience
+          %section#testimonial-no-bg.testimonial-no-bg
+            .container
+              .row.text-center
+                %h2.border-title What People Said
+                %p.border-sub-title
+                  Collaboratively administrate empowered markets via plug-and-play networks.
+              .row
+                #testimonial-slide2.owl-carousel.owl-theme.testimonial-slide2
+                  .item
+                    .quote-item.text-center
+                      %span.quote-text
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion ullamco laboris nisi ut aliquip commodo.
+                      .quote-item-footer
+                        = image_tag("clients/testimonial1.png", :class => "testimonial-thumb")
+                        .quote-item-info
+                          %h3.quote-author Gabriel Denis
+                          %span.quote-subtext Chairman, OKT
+                  .item
+                    .quote-item
+                      %span.quote-text
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion ullamco laboris nisi aliquip consequat.
+                      .quote-item-footer
+                        = image_tag("clients/testimonial2.png", :class => "testimonial-thumb")
+                        .quote-item-info
+                          %h3.quote-author Weldon Cash
+                          %span.quote-subtext CFO, First Choice
+                  .item
+                    .quote-item
+                      %span.quote-text
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion ullamco laboris nisi ut commodo consequat.
+                      .quote-item-footer
+                        = image_tag("clients/testimonial3.png", :class => "testimonial-thumb")
+                        .quote-item-info
+                          %h3.quote-author Minter Puchan
+                          %span.quote-subtext Director, AKT
+                  .item
+                    .quote-item
+                      %span.quote-text
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      .quote-item-footer
+                        = image_tag("clients/testimonial4.png", :class => "testimonial-thumb")
+                        .quote-item-info
+                          %h3.quote-author Tian Gray
+                          %span.quote-subtext Accountant
+                  .item
+                    .quote-item
+                      %span.quote-text
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      .quote-item-footer
+                        = image_tag("clients/testimonial5.png", :class => "testimonial-thumb")
+                        .quote-item-info
+                          %h3.quote-author Jeroge Tinker
+                          %span.quote-subtext Official
+          .facts-wrapper
+            .col-sm-3.ts-facts
+              .ts-facts-img
+                = image_tag("icon-image/fact1.png")
+              .ts-facts-content
+                %h2.ts-facts-num
+                  %span.counterUp 1789
+                %h3.ts-facts-title Project Handover
+            .col-sm-3.ts-facts
+              .ts-facts-img
+                = image_tag("icon-image/fact2.png")
+              .ts-facts-content
+                %h2.ts-facts-num
+                  %span.counterUp 1247
+                %h3.ts-facts-title Full-time Salaried
+            .col-sm-3.ts-facts
+              .ts-facts-img
+                = image_tag("icon-image/fact3.png")
+              .ts-facts-content
+                %h2.ts-facts-num
+                  %span.counterUp 5000
+                %h3.ts-facts-title Million Revenue
+            .col-sm-3.ts-facts
+              .ts-facts-img
+                = image_tag("icon-image/fact4.png")
+              .ts-facts-content
+                %h2.ts-facts-num
+                  %span.counterUp 44
+                %h3.ts-facts-title Countries Experience

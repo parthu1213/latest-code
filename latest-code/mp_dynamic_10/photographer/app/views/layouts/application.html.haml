@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Photographer
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+  %body
+    .top-search-area
+      #searchModal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+        .modal-dialog.modal-dialog-centered{:role => "document"}
+          .modal-content
+            .modal-body
+              / Close
+              %button.btn.close-btn{"data-dismiss" => "modal", :type => "button"}
+                %i.ti-close
+              / Form
+              %form{:action => "index.html", :method => "post"}
+                %input.form-control{:name => "top-search-bar", :placeholder => "Search and hit enter...", :type => "search"}/
+                %button{:type => "submit"} Search
+    #preloader
+      .loader
+    = render "layouts/header"
+    = yield
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'

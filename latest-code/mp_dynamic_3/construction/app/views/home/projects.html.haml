@@ -1,0 +1,123 @@
+%body
+  #banner-area.banner-area
+    .banner-text
+      .container
+        .row
+          .col-xs-12
+            .banner-heading
+              %h1.border-title.border-left Projects All
+              %ol.breadcrumb.mb-0
+                %li Home
+                %li Projects
+                %li
+                  %a{:href => "#"} Projects All
+  %section#main-container.main-container
+    .container
+      .row.text-center
+        .col-md-12
+          .isotope-nav{"data-isotope-nav" => "isotope"}
+            %ul
+              %li
+                %a.active{"data-filter" => "*", :href => "#"} Show All
+              %li
+                %a{"data-filter" => ".commercial", :href => "#"} Commercial
+              %li
+                %a{"data-filter" => ".interiors", :href => "#"} Interiors
+              %li
+                %a{"data-filter" => ".education", :href => "#"} Education
+              %li
+                %a{"data-filter" => ".government", :href => "#"} Government
+              %li
+                %a{"data-filter" => ".infrastructure", :href => "#"} Infrastructure
+              %li
+                %a{"data-filter" => ".residential", :href => "#"} Residential
+              %li
+                %a{"data-filter" => ".healthcare", :href => "#"} Healthcare
+      #isotope.isotope
+        .col-md-3.col-sm-6.col-xs-12.commercial.isotope-item
+          .single-project-style-two
+            .img-box
+              = image_tag("projects/project1.jpg")
+              .overlay
+                .box
+                  .content
+                    %a.more-btn{:href => "projects.html"}
+                      %i.fa.fa-link{"aria-hidden" => "true"}
+                    %h3 Houston Plant
+        .col-md-3.col-sm-6.col-xs-12.healthcare.isotope-item
+          .isotope-img-container
+            .single-project-style-two
+              .img-box
+                = image_tag("projects/project8.jpg")
+                .overlay
+                  .box
+                    .content
+                      %a.more-btn{:href => "projects.html"}
+                        %i.fa.fa-link{"aria-hidden" => "true"}
+                      %h3 Houston Plant
+        .col-md-3.col-sm-6.col-xs-12.government.isotope-item
+          .isotope-img-container
+            .single-project-style-two
+              .img-box
+                = image_tag("projects/project7.jpg")
+                .overlay
+                  .box
+                    .content
+                      %a.more-btn{:href => "projects.html"}
+                        %i.fa.fa-link{"aria-hidden" => "true"}
+                      %h3 Houston Plant
+        .col-md-3.col-sm-6.col-xs-12.infrastructure.isotope-item
+          .isotope-img-container
+            .single-project-style-two
+              .img-box
+                = image_tag("projects/project6.jpg")
+                .overlay
+                  .box
+                    .content
+                      %a.more-btn{:href => "projects.html"}
+                        %i.fa.fa-link{"aria-hidden" => "true"}
+                      %h3 Houston Plant
+        .col-md-3.col-sm-6.col-xs-12.infrastructure.isotope-item
+          .isotope-img-container
+            .single-project-style-two
+              .img-box
+                = image_tag("projects/project2.jpg")
+                .overlay
+                  .box
+                    .content
+                      %a.more-btn{:href => "projects.html"}
+                        %i.fa.fa-link{"aria-hidden" => "true"}
+                      %h3 Houston Plant
+        .col-md-3.col-sm-6.col-xs-12.residential.isotope-item
+          .isotope-img-container
+            .single-project-style-two
+              .img-box
+                = image_tag("projects/project3.jpg")
+                .overlay
+                  .box
+                    .content
+                      %a.more-btn{:href => "projects.html"}
+                        %i.fa.fa-link{"aria-hidden" => "true"}
+                      %h3 Houston Plant
+        .col-md-3.col-sm-6.col-xs-12.commercial.isotope-item
+          .isotope-img-container
+            .single-project-style-two
+              .img-box
+                = image_tag("projects/project4.jpg")
+                .overlay
+                  .box
+                    .content
+                      %a.more-btn{:href => "projects.html"}
+                        %i.fa.fa-link{"aria-hidden" => "true"}
+                      %h3 Houston Plant
+        .col-md-3.col-sm-6.col-xs-12.education.isotope-item
+          .isotope-img-container
+            .single-project-style-two
+              .img-box
+                = image_tag("projects/project5.jpg")
+                .overlay
+                  .box
+                    .content
+                      %a.more-btn{:href => "projects.html"}
+                        %i.fa.fa-link{"aria-hidden" => "true"}
+                      %h3 Houston Plant

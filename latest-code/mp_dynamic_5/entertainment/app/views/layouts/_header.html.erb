@@ -1,0 +1,77 @@
+
+<!-- Page Wraper Here Start -->
+        <div class="page-wraper" id="main-home">
+      <!-- Header Area Start -->
+      <header>
+        <!-- Header Menu Area Start -->
+        <div class="header-menu" id="sticky-header">
+          <div class="container">
+            <div class="row">
+              <!-- Logo Area Start -->
+              <div class="col-lg-4 col-md-12 col-sm-12 align-self-center">
+                <div class="logo-img">
+                    <%= image_tag("home-one/icon/logo.png") %>
+                  </a>
+                </div>
+              </div>
+              <!-- Logo Area End -->
+              <!-- Menu Area Start -->
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="main-menu text-right">
+                  <nav>
+                    <ul>
+                      <li class="<%= active_class(root_path) %>"><a href="<%= root_path %>">Home</a></li>
+                      <li class="<%= active_class(aboutus_path) %>"><a href="<%= aboutus_path %>">About</a></li>
+                      <li class="<%= active_class(service_path) %>"><a href="<%= service_path %>">Services</a></li>
+                      <li class="<%= active_class(gallery_path) %>"><a href="<%= gallery_path %>">Gallery </a></li>
+                      <li class="<%= active_class(news_path) %>"><a href="<%= news_path %>"> News </a></li>
+                      <li class="<%= active_class(contact_path) %>"><a href="<%= contact_path %>">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- Header Menu Area Start -->
+            </div>
+          </div>
+          <!-- MOBILE-MENU-AREA START -->
+          <div class="mobile-menu-area">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <div class="mobile-area">
+                    <div class="mobile-menu">
+                      <nav id="mobile-nav">
+                        <ul>
+                          <li class="<%= active_class(root_path) %>"><a href="<%= root_path %>">Home</a>
+
+                          </li>
+                          <li><a href="<%= aboutus_path %>">About</a></li>
+                          <li><a href="<%= service_path %>">Services</a>
+
+                          </li>
+                          <li><a href="<%= gallery_path %>">Gallery </a>
+
+                          </li>
+
+
+
+                          <li><a href="<%= news_path %>"> News </a>
+
+                          </li>
+
+
+                          </li>
+                          <li><a href="<%= contact_path %>">Contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MOBILE-MENU-AREA END  -->
+        </div>
+        <!-- Header Menu Area Start -->
+      </header>
+      <!-- Header Area End -->

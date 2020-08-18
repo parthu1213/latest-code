@@ -1,0 +1,56 @@
+%body
+  %header.main_menu
+    .sub_menu
+      .container
+        .row
+          .col-lg-6.col-sm-12.col-md-6
+            .sub_menu_right_content
+              %span Top destinations
+              %a{:href => "#"} Asia
+              %a{:href => "#"} Europe
+              %a{:href => "#"} America
+          .col-lg-6.col-sm-12.col-md-6
+            .sub_menu_social_icon
+              %a{:href => "https://www.facebook.com/softices/?ref=aymt_homepage_panel&eid=ARAm18ULAHBNqv2_Az_4sos7SWP3mjVSiSx1_B0Wign4XH4MZ2g-GjOu2oJVWaqajG1kXXOJk0XG7OIa"}
+                %i.flaticon-facebook
+              %a{:href => "https://twitter.com/Softices"}
+                %i.flaticon-twitter
+              %a{:href => "#"}
+                %i.flaticon-skype
+              %a{:href => "https://www.instagram.com/softices_consultancy/"}
+                %i.flaticon-instagram
+              %a
+                %i.flaticon-phone-call>
+                +91 70166 76005
+    .main_menu_iner
+      .container
+        .row.align-items-center
+          .col-lg-12
+            %nav.navbar.navbar-expand-lg.navbar-light.justify-content-between
+              %a.navbar-brand{:href => root_path}
+                = image_tag("logo.png")
+              %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+                %span.navbar-toggler-icon
+              #navbarSupportedContent.collapse.navbar-collapse.main-menu-item.justify-content-center
+                %ul.navbar-nav
+                  %li.nav-item
+                    %a.nav-link{:href => root_path} Home
+                  %li.nav-item
+                    %a.nav-link{:href => about_path} About
+                  %li.nav-item
+                    %a.nav-link{:href => packages_path} packages
+                  %li.nav-item.dropdown
+                    %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => blog_path, :role => "button"}
+                      Blog
+                    .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+                      %a.dropdown-item{:href => blog_path} Blog
+                      %a.dropdown-item{:href => singleblog_path} Single blog
+                  %li.nav-item.dropdown
+                    %a#navbarDropdown_1.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => blog_path, :role => "button"}
+                      pages
+                    .dropdown-menu{"aria-labelledby" => "navbarDropdown_1"}
+                      %a.dropdown-item{:href => topplace_path} top place
+                      %a.dropdown-item{:href => tourdetails_path} tour details
+                  %li.nav-item
+                    %a.nav-link{:href => contact_path} Contact
+              %a.btn_1.d-none.d-lg-block{:href => "#"} book now

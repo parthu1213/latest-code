@@ -1,0 +1,301 @@
+%body
+  #homepage-block-1.bgMove{:style => "background-image: url('#{image_path '_homepage-1-bg.jpg'}');"}
+    #nav-wrapper.nav-wrapper
+      %nav.navbar.navbar-static
+        .container
+          %a.logo{:href => root_path}
+            %img{:src => "#{image_path 'logo.png'}"}/
+          .navbar-header
+            %button.navbar-toggle.collapsed{:type => "button"}
+              %span.sr-only Toggle navigation
+              %span.icon-bar.top-bar
+              %span.icon-bar.middle-bar
+              %span.icon-bar.bottom-bar
+          #navbar.navbar-collapse.collapse
+            %button.navbar-toggle.collapsed{:type => "button"}
+              %span.sr-only Toggle navigation
+              %span.icon-bar.top-bar
+              %span.icon-bar.middle-bar
+              %span.icon-bar.bottom-bar
+            %ul.nav.navbar-nav
+              %li.hasSub.current_page_item
+                %a{:href => "#"} Home
+              %li
+                %a{:href => gettaxi_path} Get Taxi
+              %li
+                %a{:href => services_path} Services
+              %li.hasSub
+                %a{:href => "#"} Our blog
+                %ul.sub-menu
+                  %li
+                    %a{:href => blog_path} Classic Blog
+              %li
+                %a{:href => contacts_path} Contacts
+      .container.content
+        .get-icon
+          %h4 Get Taxi Now
+          .phone 70166 76005
+          %span.fa.fa-phone-square
+  %section#services
+    .container
+      %h4.yellow Welcome
+      %h2.h1 Our Services
+      .outer-box
+        .row.clearfix
+          .service-block-four.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-layer{:style => "background-image:url('#{image_path 'featured-image-5.jpg'}');"}
+              .icon-box
+                %i.fa.fa-glass{"aria-hidden" => "true"}
+              %h3 Night Parties
+              .text The weather started getting rough the ship was tossed if courage.
+          .service-block-four.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-layer{:style => "background-image:url('#{image_path 'featured-image-5.jpg'}');"}
+              .icon-box
+                %i.fa.fa-shopping-cart{"aria-hidden" => "true"}
+              %h3 Shopping Malls
+              .text The weather started getting rough the ship was tossed if courage.
+          .service-block-four.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-layer{:style => "background-image:url('#{image_path 'featured-image-5.jpg'}');"}
+              .icon-box
+                %i.fa.fa-circle-o{"aria-hidden" => "true"}
+              %h3 Weddings
+              .text The weather started getting rough the ship was tossed if courage.r
+          .service-block-four.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-layer{:style => "background-image:url('#{image_path 'featured-image-5.jpg'}');"}
+              .icon-box
+                %i.fa.fa-plane{"aria-hidden" => "true"}
+              %h3 Airports
+              .text The weather started getting rough the ship was tossed if courage.
+          .service-block-four.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-layer{:style => "background-image:url('#{image_path 'featured-image-5.jpg'}');"}
+              .icon-box
+                %i.fa.fa-h-square{"aria-hidden" => "true"}
+              %h3 Hotels
+              .text The weather started getting rough the ship was tossed if courage.
+          .service-block-four.col-md-4.col-sm-6.col-xs-12
+            .inner-box
+              .image-layer{:style => "background-image:url('#{image_path 'featured-image-5.jpg'}');"}
+              .icon-box
+                %i.fa.fa-play-circle-o{"aria-hidden" => "true"}
+              %h3 Cinemas
+              .text The weather started getting rough the ship was tossed if courage.
+  .taxi-form-full
+    .container
+      %form.form-validate
+        .row.forms
+          %input.btn.btn-lg.btn-book.aligncenter{:value => "Book Now"}/
+          .col-md-6
+            .form-group
+              %label From Address...
+              %input#to.ajaxField{:name => "to", :placeholder => "Starting Place...", :type => "text", :value => ""}/
+          .col-md-6
+            .form-group
+              %label To
+              %input#to.ajaxField{:name => "to", :placeholder => "To...", :type => "text", :value => ""}/
+          .col-md-6
+            .form-group
+              %label Phone Number
+              %input#phone.ajaxField.required{:name => "phone", :placeholder => "Phone Number", :type => "text", :value => ""}/
+          .col-md-6
+            .form-group
+              %label Date&amp;Time
+              %input#text.ajaxField{:name => "text", :placeholder => "Date and Time", :type => "text", :value => ""}/
+        %input.btn.btn-lg.btn-red.aligncenter{:type => "submit", :value => "Get Taxi"}/
+        %input#type.ajaxField{:name => "type", :type => "hidden", :value => "2"}/
+  %section#ride
+    .container
+      .title
+        %h4.yellow See Our
+        %h2.h1 Select Vechicle to Ride
+      .row
+        .col-md-4.col-ms-6
+          .st-card
+            %img.img-responsive.st-card-img{:src => "#{image_path '_gallery-5.jpg'}"}/
+            .st-card-content
+              %h4.st-card-title
+                STANDART
+                %span.st-card-price
+                  %span.st-price-tag From
+                  $5.00/km
+              %ul.st-card-list
+                %li
+                  %i.fa.fa-user{"aria-hidden" => "true"}
+                  %span Max
+                  5
+                  %span
+                    people
+                    %br>/
+                    per vechicle
+                %li
+                  %i.fa.fa-briefcase{"aria-hidden" => "true"}
+                  = succeed "5" do
+                    %span Max
+                  %span.luggage_type Small
+                  %span
+                    luggage
+                    %br>/
+                    per vechicle
+                %li
+                  %a.st-card-btn{:href => "https://simontaxi.wptaxitheme.com/vehicle/bmw-m5-in-copiague/"} View more
+        .col-md-4.col-ms-6
+          .st-card
+            %img.img-responsive.st-card-img{:src => "#{image_path '_gallery-5.jpg'}"}/
+            .st-card-content
+              %h4.st-card-title
+                VIP
+                %span.st-card-price
+                  %span.st-price-tag From
+                  $5.00/km
+              %ul.st-card-list
+                %li
+                  %i.fa.fa-user{"aria-hidden" => "true"}
+                  %span Max
+                  5
+                  %span
+                    people
+                    %br>/
+                    per vechicle
+                %li
+                  %i.fa.fa-briefcase{"aria-hidden" => "true"}
+                  = succeed "5" do
+                    %span Max
+                  %span.luggage_type Small
+                  %span
+                    luggage
+                    %br>/
+                    per vechicle
+                %li
+                  %a.st-card-btn{:href => "https://simontaxi.wptaxitheme.com/vehicle/bmw-m5-in-copiague/"} View more
+        .col-md-4.col-ms-6
+          .st-card
+            %img.img-responsive.st-card-img{:src => "#{image_path '_gallery-5.jpg'}"}/
+            .st-card-content
+              %h4.st-card-title
+                BUSINESS
+                %span.st-card-price
+                  %span.st-price-tag From
+                  $2.70/km
+              %ul.st-card-list
+                %li
+                  %i.fa.fa-user{"aria-hidden" => "true"}
+                  %span Max
+                  5
+                  %span
+                    people
+                    %br>/
+                    per vechicle
+                %li
+                  %i.fa.fa-briefcase{"aria-hidden" => "true"}
+                  = succeed "5" do
+                    %span Max
+                  %span.luggage_type Small
+                  %span
+                    luggage
+                    %br>/
+                    per vechicle
+                %li
+                  %a.st-card-btn{:href => "https://simontaxi.wptaxitheme.com/vehicle/bmw-m5-in-copiague/"} View more
+  %section#car-block
+    .car-right.animation-block
+      %img{:src => "#{image_path '_car-big-side.png'}"}/
+    .container
+      .row
+        .col-md-7
+          %h4.yellow For Drivers
+          %h2.h1 Do You Want To Earn With Us?
+        .col-md-6
+          %p Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.
+          %ul.check.two-col.strong
+            %li Luxury cars
+            %li No fee
+            %li Weekly payment
+            %li Fixed price
+            %li Good application
+            %li Stable orders
+          %a.btn.btn-yellow.btn-lg.btn-white{:href => "#"} Become a Driver
+  %section#testimonials
+    %hr.lg/
+    .container
+      %h4.yellow Happy Client's
+      %h2.h1 Testimonials
+      #testimonials-slider.swiper-container.row
+        .swiper-wrapper
+          .col-md-4.col-sm-6.swiper-slide
+            .inner.matchHeight
+              .text
+                %p Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum.
+              .quote
+                %span.fa.fa-quote-left
+                .name Anastasia Stone
+                %img{:src => "#{image_path '_client-1.jpg'}"}/
+          .col-md-4.col-sm-6.swiper-slide
+            .inner.matchHeight
+              .text
+                %p Suspendisse nec arcu sed nibh lacinia pretium. Phasellus eros ligula, mattis id rutrum non, eleifend vitae lacus.
+              .quote
+                %span.fa.fa-quote-left
+                .name Steven Rashford
+                %img{:src => "#{image_path '_client-4.jpg'}"}/
+          .col-md-4.col-sm-6.swiper-slide
+            .inner.matchHeight
+              .text
+                %p Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.
+              .quote
+                %span.fa.fa-quote-left
+                .name Patrick James
+                %img{:src => "#{image_path '_client-5.jpg'}"}/
+          .col-md-4.col-sm-6.swiper-slide
+            .inner.matchHeight
+              .text
+                %p Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum.
+              .quote
+                %span.fa.fa-quote-left
+                .name Anastasia Stone
+                %img{:src => "#{image_path '_client-1.jpg'}"}/
+          .col-md-4.col-sm-6.swiper-slide
+            .inner.matchHeight
+              .text
+                %p Suspendisse nec arcu sed nibh lacinia pretium. Phasellus eros ligula, mattis id rutrum non, eleifend vitae lacus.
+              .quote
+                %span.fa.fa-quote-left
+                .name Steven Rashford
+                %img{:src => "#{image_path '_client-4.jpg'}"}/
+          .col-md-4.col-sm-6.swiper-slide
+            .inner.matchHeight
+              .text
+                %p Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.
+              .quote
+                %span.fa.fa-quote-left
+                .name Patrick James
+                %img{:src => "#{image_path '_client-5.jpg'}"}/
+        .arrows
+          %a.arrow-left.fa.fa-caret-left{:href => "#"}
+          %a.arrow-right.fa.fa-caret-right{:href => "#"}
+  %section#partners
+    .container
+      .row
+        .col-md-3.col-sm-12
+          %h4.black.margin-0 Our partners
+          %h2.white.margin-0 and clients
+        .col-md-9.col-sm-12
+          .row.items
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-1.png'}"}/
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-2.png'}"}/
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-3.png'}"}/
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-4.png'}"}/
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-5.png'}"}/

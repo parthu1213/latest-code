@@ -1,0 +1,49 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{content: "width=device-width, initial-scale=1, shrink-to-fit=no", name: "viewport"}
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %title
+      = @title
+    %meta{content: @description, name: "description"}
+    %meta{content: @keywords, name: "keyword"}
+    %meta{content: "en_US", property: "og:locale"}
+    %meta{content: "website", property: "og:type"}
+    %meta{content: @title, property: "og:title"}
+    %meta{content: @title, property: "og:site_name"}
+    %meta{content: @description, property: "og:description"}
+    %meta{content: "https://softices.com", property: "og:url"}
+    %meta{content: "summary", name: "twitter:card"}
+    %meta{content: @description, name: "twitter:description"}
+    %meta{content: @title, name: "twitter:title"}
+    %meta{content: "@softices", name: "twitter:site"}
+    %meta{content: "@softices", name: "twitter:creator"}
+    %meta{content: '', property: "og:image"}
+    %meta{content: '', name: "twitter:image"}
+    %link{href: '', rel: "shortcut icon", type: "image/png", sizes: "128x128"}
+    %link{href: '', rel: "apple-touch-icon", sizes: "64x64"}
+    %link{href: '', rel: "apple-touch-icon", sizes: "152x152"}
+    %link{href: '', rel: "apple-touch-icon", sizes: "167x167"}
+    %link{href: '', rel: "apple-touch-icon", sizes: "180x180"}
+
+    = csrf_meta_tags
+    = csp_meta_tag
+    %link{href: "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap", rel: "stylesheet"}/
+
+    = yield :top_css_code
+    = yield :top_css_file
+    = stylesheet_link_tag 'application', media: 'all'
+  %body
+    .page-wrapper
+      = render "layouts/header"
+
+      = yield
+      = render "layouts/footer"
+
+    = yield :css_code
+    = yield :css_file
+
+    = javascript_include_tag 'application'
+    = yield :js_code
+    = yield :js_file

@@ -1,0 +1,196 @@
+%body
+  \&gt;
+  %section.breadcrumb_area
+    .overlay.bg-parallax{"data-stellar-ratio" => "0.8", "data-stellar-vertical-offset" => "0", :style => "background-image: url('#{image_path 'about_banner.jpg'}')"}
+    .container
+      .page-cover.text-center
+        %h2.page-cover-tittle Accomodation
+        %ol.breadcrumb
+          %li
+            %a{:href => root_path} Home
+          %li.active Accomodation
+  %section.accomodation_area.section_gap
+    .container
+      .section_title.text-center
+        %h2.title_color Special Accomodation
+        %p We all live in an age that belongs to the young at heart. Life that is becoming extremely fast,
+      .row.mb_30
+        .col-lg-3.col-sm-6
+          .accomodation_item.text-center
+            .hotel_img
+              = image_tag("room1.jpg")
+            %a{:href => "#"}
+              %h4.sec_h4 Double Deluxe Room
+            %h5
+              $250
+              %small /night
+            %a.btn.theme_btn.button_hover{:href => "#"} Book Now
+        .col-lg-3.col-sm-6
+          .accomodation_item.text-center
+            .hotel_img
+              = image_tag("room2.jpg")
+            %a{:href => "#"}
+              %h4.sec_h4 Single Deluxe Room
+            %h5
+              $200
+              %small /night
+            %a.btn.theme_btn.button_hover{:href => "#"} Book Now
+        .col-lg-3.col-sm-6
+          .accomodation_item.text-center
+            .hotel_img
+              = image_tag("room3.jpg")
+            %a{:href => "#"}
+              %h4.sec_h4 Honeymoon Suit
+            %h5
+              $750
+              %small /night
+            %a.btn.theme_btn.button_hover{:href => "#"} Book Now
+        .col-lg-3.col-sm-6
+          .accomodation_item.text-center
+            .hotel_img
+              = image_tag("room4.jpg")
+            %a{:href => "#"}
+              %h4.sec_h4 Economy Double
+            %h5
+              $200
+              %small /night
+            %a.btn.theme_btn.button_hover{:href => "#"} Book Now
+  %section.hotel_booking_area
+    .container
+      .row.hotel_booking_table
+        .col-md-3
+          %h2
+            Book
+            %br/
+            Your Room
+        .col-md-9
+          .boking_table
+            .row
+              .col-md-4
+                .book_tabel_item
+                  .form-group
+                    #datetimepicker11.input-group.date
+                      %input.form-control{:placeholder => "Arrival Date", :type => "text"}/
+                      %span.input-group-addon
+                        %i.fa.fa-calendar{"aria-hidden" => "true"}
+                  .form-group
+                    #datetimepicker1.input-group.date
+                      %input.form-control{:placeholder => "Departure Date", :type => "text"}/
+                      %span.input-group-addon
+                        %i.fa.fa-calendar{"aria-hidden" => "true"}
+              .col-md-4
+                .book_tabel_item
+                  .input-group
+                    %select.wide{:style => "display: none;"}
+                      %option{"data-display" => "Adult"} Adult
+                      %option{:value => "1"} Old
+                      %option{:value => "2"} Younger
+                      %option{:value => "3"} Potato
+                    .nice-select.wide{:tabindex => "0"}
+                      %span.current Adult
+                      %ul.list
+                        %li.option.selected{"data-display" => "Adult", "data-value" => "Adult"} Adult
+                        %li.option{"data-value" => "1"} Old
+                        %li.option{"data-value" => "2"} Younger
+                        %li.option{"data-value" => "3"} Potato
+                  .input-group
+                    %select.wide{:style => "display: none;"}
+                      %option{"data-display" => "Child"} Child
+                      %option{:value => "1"} Child
+                      %option{:value => "2"} Baby
+                      %option{:value => "3"} Child
+                    .nice-select.wide{:tabindex => "0"}
+                      %span.current Child
+                      %ul.list
+                        %li.option.selected{"data-display" => "Child", "data-value" => "Child"} Child
+                        %li.option{"data-value" => "1"} Child
+                        %li.option{"data-value" => "2"} Baby
+                        %li.option{"data-value" => "3"} Child
+              .col-md-4.d-flex.align-items-center
+                %a.book_now_btn.button_hover{:href => "#"} Book Now
+  %section.accomodation_area.section_gap
+    .container
+      .section_title.text-center
+        %h2.title_color Normal Accomodation
+        %p We all live in an age that belongs to the young at heart. Life that is becoming extremely fast,
+      .row.accomodation_two
+        .col-lg-3.col-sm-6
+          .accomodation_item.text-center
+            .hotel_img
+              = image_tag("room1.jpg")
+            %a{:href => "#"}
+              %h4.sec_h4 Double Deluxe Room
+            %h5
+              $250
+              %small /night
+            %a.btn.theme_btn.button_hover{:href => "#"} Book Now
+        .col-lg-3.col-sm-6
+          .accomodation_item.text-center
+            .hotel_img
+              = image_tag("room2.jpg")
+            %a{:href => "#"}
+              %h4.sec_h4 Single Deluxe Room
+            %h5
+              $200
+              %small /night
+            %a.btn.theme_btn.button_hover{:href => "#"} Book Now
+        .col-lg-3.col-sm-6
+          .accomodation_item.text-center
+            .hotel_img
+              = image_tag("room3.jpg")
+            %a{:href => "#"}
+              %h4.sec_h4 Honeymoon Suit
+            %h5
+              $750
+              %small /night
+            %a.btn.theme_btn.button_hover{:href => "#"} Book Now
+        .col-lg-3.col-sm-6
+          .accomodation_item.text-center
+            .hotel_img
+              = image_tag("room4.jpg")
+            %a{:href => "#"}
+              %h4.sec_h4 Economy Double
+            %h5
+              $200
+              %small /night
+            %a.btn.theme_btn.button_hover{:href => "#"} Book Now
+        .col-lg-3.col-sm-6
+          .accomodation_item.text-center
+            .hotel_img
+              = image_tag("room1.jpg")
+            %a{:href => "#"}
+              %h4.sec_h4 Double Deluxe Room
+            %h5
+              $250
+              %small /night
+            %a.btn.theme_btn.button_hover{:href => "#"} Book Now
+        .col-lg-3.col-sm-6
+          .accomodation_item.text-center
+            .hotel_img
+              = image_tag("room2.jpg")
+            %a{:href => "#"}
+              %h4.sec_h4 Single Deluxe Room
+            %h5
+              $200
+              %small /night
+            %a.btn.theme_btn.button_hover{:href => "#"} Book Now
+        .col-lg-3.col-sm-6
+          .accomodation_item.text-center
+            .hotel_img
+              = image_tag("room3.jpg")
+            %a{:href => "#"}
+              %h4.sec_h4 Honeymoon Suit
+            %h5
+              $750
+              %small /night
+            %a.btn.theme_btn.button_hover{:href => "#"} Book Now
+        .col-lg-3.col-sm-6
+          .accomodation_item.text-center
+            .hotel_img
+              = image_tag("room4.jpg")
+            %a{:href => "#"}
+              %h4.sec_h4 Economy Double
+            %h5
+              $200
+              %small /night
+            %a.btn.theme_btn.button_hover{:href => "#"} Book Now

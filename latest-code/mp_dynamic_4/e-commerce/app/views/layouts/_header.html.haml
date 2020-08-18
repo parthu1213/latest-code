@@ -1,0 +1,45 @@
+%body
+  %header.header-section
+    .header-top
+      .container
+        .row
+          .col-lg-2.text-center.text-lg-left
+            %a.site-logo{:href => "./index.html"}
+              %h2 FASION
+          .col-xl-6.col-lg-5
+            %form.header-search-form
+              %input{:placeholder => "Search on....", :type => "text"}/
+              %button
+                %i.flaticon-search
+          .col-xl-4.col-lg-5
+            .user-panel
+              .up-item
+                %i.flaticon-profile
+                %a{:href => "#"} Sign
+                In or
+                %a{:href => "#"} Create Account
+              .up-item
+                .shopping-card
+                  %i.flaticon-bag
+                  %span 0
+                %a{:href => cart_path} Shopping Cart
+    %nav.main-navbar
+      .container
+        %ul.main-menu
+          %li
+            %a{:href => root_path} Women
+          %li
+            %a{:href => root_path} Men
+          %li
+            %a{:href => "#"} Pages
+            %ul.sub-menu
+              %li
+                %a{:href => product_path} Product Page
+              %li
+                %a{:href => category_path} Category Page
+              %li
+                %a{:href => cart_path} Cart Page
+              %li
+                %a{:href => checkout_path} Checkout Page
+              %li
+                %a{:href => contact_path} Contact Page

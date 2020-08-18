@@ -1,0 +1,172 @@
+%body
+  #top-bar
+    .container
+      .row
+        .col-lg-6.col-md-9
+          .contacts
+            %div
+              %span.fa.fa-phone
+              (+91) 70166 76005
+            .hidden-xs.hidden-ms
+              %span.fa.fa-skype
+              SOFTICES
+            .hidden-xs.hidden-ms
+              %span.fa.fa-phone>
+              202-204 Panvel Point
+        .col-lg-6.col-md-3
+          .social.social-small.visible-lg
+            %a.fa.fa-twitter{:href => "#"}
+            %a.fa.fa-facebook{:href => "#"}
+            %a.fa.fa-instagram{:href => "#"}
+            %a.fa.fa-google-plus{:href => "#"}
+            %a.fa.fa-pinterest{:href => "#"}
+          %a.btn.btn-xs.btn-black-bordered.pull-right{:href => gettaxi_path} Get taxi online
+  #nav-wrapper.nav-wrapper
+    %nav.navbar.navbar-static.navbar-affix{"data-spy" => "affix"}
+      .container
+        .navbar-header
+          %button.navbar-toggle.collapsed{:type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar.top-bar
+            %span.icon-bar.middle-bar
+            %span.icon-bar.bottom-bar
+          %a.logo{:href => root_path}
+            %img{:src => "#{image_path 'logo-inner.png'}"}/
+        #navbar.navbar-collapse.collapse
+          %button.navbar-toggle.collapsed{:type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar.top-bar
+            %span.icon-bar.middle-bar
+            %span.icon-bar.bottom-bar
+          %ul.nav.navbar-nav
+            %li
+              %a{:href => root_path} Home
+            %li
+              %a{:href => gettaxi_path} Get Taxi
+            %li.current_page_item
+              %a{:href => services_path} Services
+            %li.hasSub
+              %a{:href => "#"} Our blog
+              %ul.sub-menu
+                %li
+                  %a{:href => blog_path} Classic Blog
+            %li
+              %a{:href => contacts_path} Contacts
+  %header.page-header.margin-bottom-0{:style => "background-image: url('#{image_path '_inner-bg.jpg'}');"}
+    .container
+      %ol.bread
+        %li
+          %a{:href => root_path}
+            %span Home
+        %li.divider
+          %span //
+        %li
+          %span Services
+      %h1 Services
+  %section#services
+    .container
+      %h4.yellow Welcome
+      %h2.h1 Our Services
+      %p.aligncenter.short-width Nulla egestas ante sit amet tincidunt bibendum. Duis id aliquet tellus, ut iaculis orci. Suspendisse efficitur ornare neque, rhoncus viverra dui semper in. Ut nec gravida enim. Maecenas viverra elit id nulla euismod tempus. Proin hendrerit nibh mauris, eget mollis ex elementum vel. Sed facilisis scelerisque viverra.
+      .row
+        .col-md-3.col-sm-6.col-ms-6.matchHeight
+          .image
+            %img{:src => "#{image_path '_services-1.png'}"}/
+          %h5 Rapid city transfer
+          %p We will bring you quickly and comfortably to anywhere in your city
+        .col-md-3.col-sm-6.col-ms-6.matchHeight
+          .image
+            %img{:src => "#{image_path '_services-2.png'}"}/
+          %h5 Booking a hotel
+          %p If you need a comfortable hotel, our operators will book it for you, and take a taxi to the address
+        .col-md-3.col-sm-6.col-ms-6.matchHeight
+          .image
+            %img{:src => "#{image_path '_services-3.png'}"}/
+          %h5 Airport transfer
+          %p We will bring you quickly and comfortably to anywhere in your city
+        .col-md-3.col-sm-6.col-ms-6.matchHeight
+          .image
+            %img{:src => "#{image_path '_services-4.png'}"}/
+          %h5 Baggage transport
+          %p If you need a comfortable hotel, our operators will book it for you, and take a taxi to the address
+  %section#testimonials
+    %hr.lg/
+    .container
+      %h4.yellow Happy Client's
+      %h2.h1 Testimonials
+      #testimonials-slider.swiper-container.row
+        .swiper-wrapper
+          .col-md-4.col-sm-6.swiper-slide
+            .inner.matchHeight
+              %span.fa.fa-quote-left
+              .text
+                %p Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum.
+              .quote
+                .name Anastasia Stone
+                %img{:src => "#{image_path '_client-1.jpg'}"}/
+          .col-md-4.col-sm-6.swiper-slide
+            .inner.matchHeight
+              %span.fa.fa-quote-left
+              .text
+                %p Suspendisse nec arcu sed nibh lacinia pretium. Phasellus eros ligula, mattis id rutrum non, eleifend vitae lacus.
+              .quote
+                .name Steven Rashford
+                %img{:src => "#{image_path '_client-4.jpg'}"}/
+          .col-md-4.col-sm-6.swiper-slide
+            .inner.matchHeight
+              %span.fa.fa-quote-left
+              .text
+                %p Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.
+              .quote
+                .name Patrick James
+                %img{:src => "#{image_path '_client-5.jpg'}"}/
+          .col-md-4.col-sm-6.swiper-slide
+            .inner.matchHeight
+              %span.fa.fa-quote-left
+              .text
+                %p Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum.
+              .quote
+                .name Anastasia Stone
+                %img{:src => "#{image_path '_client-1.jpg'}"}/
+          .col-md-4.col-sm-6.swiper-slide
+            .inner.matchHeight
+              %span.fa.fa-quote-left
+              .text
+                %p Suspendisse nec arcu sed nibh lacinia pretium. Phasellus eros ligula, mattis id rutrum non, eleifend vitae lacus.
+              .quote
+                .name Steven Rashford
+                %img{:src => "#{image_path '_client-4.jpg'}"}/
+          .col-md-4.col-sm-6.swiper-slide
+            .inner.matchHeight
+              %span.fa.fa-quote-left
+              .text
+                %p Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.
+              .quote
+                .name Patrick James
+                %img{:src => "#{image_path '_client-5.jpg'}"}/
+        .arrows
+          %a.arrow-left.fa.fa-caret-left{:href => "#"}
+          %a.arrow-right.fa.fa-caret-right{:href => "#"}
+  %section#partners
+    .container
+      .row
+        .col-md-3.col-sm-12
+          %h4.black.margin-0 Our partners
+          %h2.white.margin-0 and clients
+        .col-md-9.col-sm-12
+          .row.items
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-1.png'}"}/
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-2.png'}"}/
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-3.png'}"}/
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-4.png'}"}/
+            .col-md-5ths.col-sm-3.col-ms-4.col-xs-6
+              %a{:href => "#"}
+                %img{:src => "#{image_path '_partner-5.png'}"}/

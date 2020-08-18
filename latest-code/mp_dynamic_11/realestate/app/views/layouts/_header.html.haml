@@ -1,0 +1,47 @@
+.top
+  .container
+    .row.d-flex.align-items-center
+      .col
+        %p.social.d-flex
+          %a.facebook{:href => "https://www.facebook.com/softices/?ref=aymt_homepage_panel&eid=ARAm18ULAHBNqv2_Az_4sos7SWP3mjVSiSx1_B0Wign4XH4MZ2g-GjOu2oJVWaqajG1kXXOJk0XG7OIa"}
+            %span.icon-facebook
+          %a.twitter{:href => "https://twitter.com/Softices"}
+            %span.icon-twitter
+          %a.google{:href => "#"}
+            %span.icon-google
+          %a.pinterest{:href => "https://in.pinterest.com/SofticesConsultancy/"}
+            %span.icon-pinterest
+      .col.d-flex.justify-content-end
+        %p.num
+          %span.icon-phone
+          +91 70166 76005
+%nav#ftco-navbar.navbar.navbar-expand-lg.navbar-dark.ftco_navbar.bg-dark.ftco-navbar-light
+  .container
+    %a.navbar-brand{:href => root_path}
+      Royal
+      %span estate
+    %button.navbar-toggler{"aria-controls" => "ftco-nav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#ftco-nav", "data-toggle" => "collapse", :type => "button"}
+      %span.oi.oi-menu
+      Menu
+    #ftco-nav.collapse.navbar-collapse
+      %ul.navbar-nav.ml-auto
+        %li{:class => "nav-item #{active_class(root_path)}"}
+          %a.nav-link{:href => root_path} Home
+        %li{:class => "nav-item #{active_class(property_path)}"}
+          %a.nav-link{:href => property_path} Property
+        %li{:class => "nav-item #{active_class(agents_path)}"}
+          %a.nav-link{:href => agents_path} Agents
+        %li{:class => "nav-item #{active_class(about_path)}"}
+          %a.nav-link{:href => about_path} About
+        %li{:class => "nav-item #{active_class(blog_path)}"}
+          %a.nav-link{:href => blog_path} Blog
+        %li{:class => "nav-item #{active_class(contact_path)}"}
+          %a.nav-link{:href => contact_path} Contact
+        %li.nav-item.cta
+          %a.nav-link.ml-lg-2{:href => "contact.html"}
+            %span.icon-user
+            Sign-In
+        %li.nav-item.cta.cta-colored
+          %a.nav-link{:href => "contact.html"}
+            %span.icon-pencil
+            Sign-Up

@@ -1,0 +1,295 @@
+%body
+  %aside.sidebar.trans-0-4
+    %button.btn-hide-sidebar.ti-close.color0-hov.trans-0-4
+    %ul.menu-sidebar.p-t-95.p-b-70
+      %li.t-center.m-b-13
+        %a.txt19{:href => root_path} Home
+      %li.t-center.m-b-13
+        %a.txt19{:href => menu_path} Menu
+      %li.t-center.m-b-13
+        %a.txt19{:href => gallery_path} Gallery
+      %li.t-center.m-b-13
+        %a.txt19{:href => about_path} About
+      %li.t-center.m-b-13
+        %a.txt19{:href => blog_path} Blog
+      %li.t-center.m-b-33
+        %a.txt19{:href => contact_path} Contact
+      %li.t-center
+        %a.btn3.flex-c-m.size13.txt11.trans-0-4.m-l-r-auto{:href => "reservation.html"}
+          Reservation
+    .gallery-sidebar.t-center.p-l-60.p-r-60.p-b-40
+      %h4.txt20.m-b-33
+        Gallery
+      .wrap-gallery-sidebar.flex-w
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-01.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-01.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-02.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-02.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-03.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-03.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-05.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-05.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-06.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-06.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-07.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-07.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-09.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-09.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-10.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-10.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-11.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-11.jpg'}"}/
+  %section.bg-title-page.flex-c-m.p-t-160.p-b-80.p-l-15.p-r-15{:style => "background-image: url('#{image_path 'bg-title-page-03.jpg'}');"}
+    %h2.tit6.t-center
+      Blog
+  %section
+    .bread-crumb.bo5-b.p-t-17.p-b-17
+      .container
+        %a.txt27{:href => "index.html"}
+          Home
+        %span.txt29.m-l-10.m-r-10 /
+        %span.txt29
+          Blog
+    .container
+      .row
+        .col-md-8.col-lg-9
+          .p-t-80.p-b-124.bo5-r.h-full.p-r-50.p-r-0-md.bo-none-md
+            .blo4.p-b-63
+              .pic-blo4.hov-img-zoom.bo-rad-10.pos-relative
+                %a{:href => "blog-detail.html"}
+                  %img{:src => "#{image_path 'blog-05.jpg'}"}/
+                .date-blo4.flex-col-c-m
+                  %span.txt30.m-b-4
+                    28
+                  %span.txt31
+                    Dec, 2018
+              .text-blo4.p-t-33
+                %h4.p-b-16
+                  %a.tit9{:href => "blog-detail.html"} Cooking recipe Delicious
+                .txt32.flex-w.p-b-24
+                  %span
+                    by Admin
+                    %span.m-r-6.m-l-4 |
+                  %span
+                    28 December, 2018
+                    %span.m-r-6.m-l-4 |
+                  %span
+                    Cooking, Food
+                    %span.m-r-6.m-l-4 |
+                  %span
+                    8 Comments
+                %p
+                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius
+                %a.dis-block.txt4.m-t-30{:href => "blog-detail.html"}
+                  Continue Reading
+                  %i.fa.fa-long-arrow-right.m-l-10{"aria-hidden" => "true"}
+            .blo4.p-b-63
+              .pic-blo4.hov-img-zoom.bo-rad-10.pos-relative
+                %a{:href => "blog-detail.html"}
+                  %img{:src => "#{image_path 'blog-06.jpg'}"}/
+                .date-blo4.flex-col-c-m
+                  %span.txt30.m-b-4
+                    20
+                  %span.txt31
+                    Dec, 2018
+              .text-blo4.p-t-33
+                %h4.p-b-16
+                  %a.tit9{:href => "blog-detail.html"} Pizza is prepared fresh
+                .txt32.flex-w.p-b-24
+                  %span
+                    by Admin
+                    %span.m-r-6.m-l-4 |
+                  %span
+                    20 December, 2018
+                    %span.m-r-6.m-l-4 |
+                  %span
+                    Cooking, Food
+                    %span.m-r-6.m-l-4 |
+                  %span
+                    8 Comments
+                %p
+                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius
+                %a.dis-block.txt4.m-t-30{:href => "blog-detail.html"}
+                  Continue Reading
+                  %i.fa.fa-long-arrow-right.m-l-10{"aria-hidden" => "true"}
+            .blo4.p-b-63
+              .pic-blo4.hov-img-zoom.bo-rad-10.pos-relative
+                %a{:href => "blog-detail.html"}
+                  %img{:src => "#{image_path 'blog-04.jpg'}"}/
+                .date-blo4.flex-col-c-m
+                  %span.txt30.m-b-4
+                    16
+                  %span.txt31
+                    Dec, 2018
+              .text-blo4.p-t-33
+                %h4.p-b-16
+                  %a.tit9{:href => "blog-detail.html"} Style the Wedding Party
+                .txt32.flex-w.p-b-24
+                  %span
+                    by Admin
+                    %span.m-r-6.m-l-4 |
+                  %span
+                    16 December, 2018
+                    %span.m-r-6.m-l-4 |
+                  %span
+                    Cooking, Food
+                    %span.m-r-6.m-l-4 |
+                  %span
+                    8 Comments
+                %p
+                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius
+                %a.dis-block.txt4.m-t-30{:href => "blog-detail.html"}
+                  Continue Reading
+                  %i.fa.fa-long-arrow-right.m-l-10{"aria-hidden" => "true"}
+            .blo4.p-b-63
+              .pic-blo4.hov-img-zoom.bo-rad-10.pos-relative
+                %a{:href => "blog-detail.html"}
+                  %img{:src => "#{image_path 'blog-07.jpg'}"}/
+                .date-blo4.flex-col-c-m
+                  %span.txt30.m-b-4
+                    15
+                  %span.txt31
+                    Dec, 2018
+              .text-blo4.p-t-33
+                %h4.p-b-16
+                  %a.tit9{:href => "blog-detail.html"} Best Places for Wine
+                .txt32.flex-w.p-b-24
+                  %span
+                    by Admin
+                    %span.m-r-6.m-l-4 |
+                  %span
+                    15 December, 2018
+                    %span.m-r-6.m-l-4 |
+                  %span
+                    Cooking, Food
+                    %span.m-r-6.m-l-4 |
+                  %span
+                    8 Comments
+                %p
+                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius
+                %a.dis-block.txt4.m-t-30{:href => "blog-detail.html"}
+                  Continue Reading
+                  %i.fa.fa-long-arrow-right.m-l-10{"aria-hidden" => "true"}
+            .pagination.flex-l-m.flex-w.m-l--6.p-t-25
+              %a.item-pagination.flex-c-m.trans-0-4.active-pagination{:href => "#"} 1
+              %a.item-pagination.flex-c-m.trans-0-4{:href => "#"} 2
+        .col-md-4.col-lg-3
+          .sidebar2.p-t-80.p-b-80.p-l-20.p-l-0-md.p-t-0-md
+            .search-sidebar2.size12.bo2.pos-relative
+              %input.input-search-sidebar2.txt10.p-l-20.p-r-55{:name => "search", :placeholder => "Search", :type => "text"}/
+              %button.btn-search-sidebar2.flex-c-m.ti-search.trans-0-4
+            .categories
+              %h4.txt33.bo5-b.p-b-35.p-t-58
+                Categories
+              %ul
+                %li.bo5-b.p-t-8.p-b-8
+                  %a.txt27{:href => "#"}
+                    Cooking recipe
+                %li.bo5-b.p-t-8.p-b-8
+                  %a.txt27{:href => "#"}
+                    Delicious foods
+                %li.bo5-b.p-t-8.p-b-8
+                  %a.txt27{:href => "#"}
+                    Events Design
+                %li.bo5-b.p-t-8.p-b-8
+                  %a.txt27{:href => "#"}
+                    Restaurant Place
+                %li.bo5-b.p-t-8.p-b-8
+                  %a.txt27{:href => "#"}
+                    WordPress
+            .popular
+              %h4.txt33.p-b-35.p-t-58
+                Most popular
+              %ul
+                %li.flex-w.m-b-25
+                  .size16.bo-rad-10.wrap-pic-w.of-hidden.m-r-18
+                    %a{:href => "#"}
+                      %img{:src => "#{image_path 'blog-11.jpg'}"}/
+                  .size28
+                    %a.dis-block.txt28.m-b-8{:href => "#"}
+                      Best Places for Wine
+                    %span.txt14
+                      3 days ago
+                %li.flex-w.m-b-25
+                  .size16.bo-rad-10.wrap-pic-w.of-hidden.m-r-18
+                    %a{:href => "#"}
+                      %img{:src => "#{image_path 'blog-12.jpg'}"}/
+                  .size28
+                    %a.dis-block.txt28.m-b-8{:href => "#"}
+                      Eggs and Cheese
+                    %span.txt14
+                      July 2, 2017
+                %li.flex-w.m-b-25
+                  .size16.bo-rad-10.wrap-pic-w.of-hidden.m-r-18
+                    %a{:href => "#"}
+                      %img{:src => "#{image_path 'blog-13.jpg'}"}/
+                  .size28
+                    %a.dis-block.txt28.m-b-8{:href => "#"}
+                      Style the Wedding Party
+                    %span.txt14
+                      May 28, 2017
+                %li.flex-w.m-b-25
+                  .size16.bo-rad-10.wrap-pic-w.of-hidden.m-r-18
+                    %a{:href => "#"}
+                      %img{:src => "#{image_path 'blog-14.jpg'}"}/
+                  .size28
+                    %a.dis-block.txt28.m-b-8{:href => "#"}
+                      Cooking recipe Delicious
+                    %span.txt14
+                      May 25, 2017
+                %li.flex-w.m-b-25
+                  .size16.bo-rad-10.wrap-pic-w.of-hidden.m-r-18
+                    %a{:href => "#"}
+                      %img{:src => "#{image_path 'blog-15.jpg'}"}/
+                  .size28
+                    %a.dis-block.txt28.m-b-8{:href => "#"}
+                      Pizza is prepared fresh
+                    %span.txt14
+                      May 2, 2017
+            .archive
+              %h4.txt33.p-b-20.p-t-43
+                Archive
+              %ul
+                %li.flex-sb-m.p-t-8.p-b-8
+                  %a.txt27{:href => "#"}
+                    uly 2018
+                  %span.txt29
+                    (9)
+                %li.flex-sb-m.p-t-8.p-b-8
+                  %a.txt27{:href => "#"}
+                    June 2018
+                  %span.txt29
+                    (39)
+                %li.flex-sb-m.p-t-8.p-b-8
+                  %a.txt27{:href => "#"}
+                    May 2018
+                  %span.txt29
+                    (29)
+                %li.flex-sb-m.p-t-8.p-b-8
+                  %a.txt27{:href => "#"}
+                    April  2018
+                  %span.txt29
+                    (35)
+                %li.flex-sb-m.p-t-8.p-b-8
+                  %a.txt27{:href => "#"}
+                    March 2018
+                  %span.txt29
+                    (22)
+                %li.flex-sb-m.p-t-8.p-b-8
+                  %a.txt27{:href => "#"}
+                    February 2018
+                  %span.txt29
+                    (32)
+                %li.flex-sb-m.p-t-8.p-b-8
+                  %a.txt27{:href => "#"}
+                    January 2018
+                  %span.txt29
+                    (21)
+                %li.flex-sb-m.p-t-8.p-b-8
+                  %a.txt27{:href => "#"}
+                    December 2017
+                  %span.txt29
+                    (26)
+  #myBtn.btn-back-to-top.bg0-hov
+    %span.symbol-btn-back-to-top
+      %i.fa.fa-angle-double-up{"aria-hidden" => "true"}

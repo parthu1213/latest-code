@@ -1,0 +1,68 @@
+
+      <!-- Page Content Start -->
+      <div class="page-content">
+        <section class="contact-us-area pt-90 pb-100">
+          <div class="container">
+            <div class="row">
+              <!-- Section Titel -->
+              <div class="col-lg-6 col-md-12">
+                <div class="section-titel-contact text-left">
+                  <h3>QUICK CONTACT</h3>
+                  <p>It is a long established fact that a reader will be distracted by the on readable content of a page when looking at its layout. The point of using Lorem Ipsum is that logic.</p>
+                </div>
+              </div>
+              <!-- Section Titel -->
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="contact-us-map">
+                  <!-- Google Map -->
+                  <div class="map-area">
+                    <div id="googleMap"></div>
+                  </div>
+                  <!-- Google Map -->
+                  <div class="contact-address">
+                    <div class="contact-adres-single">
+                      <h4>ADDRESS</h4>
+                      <p>202-204 Panvel Point, Nr. Sudama Chowk, Mota Varachha, Surat, Gujarat, India</p>
+                    </div>
+                    <div class="contact-adres-single">
+                      <h4>E-mail</h4>
+                      <p>contact@softices.com</p>
+                    </div>
+                    <div class="contact-adres-single">
+                      <h4>PHONE</h4>
+                      <p>+91 70166 76005</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Page Content End -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzcEM8z2_imGO8TMRmJEpDEahvZ7KYY_U"></script>
+      		<script>
+      			function initialize() {
+      			  var mapOptions = {
+      				zoom: 14,
+      				scrollwheel: false,
+      				center: new google.maps.LatLng(34.073781, -84.302295)
+      			  };
+
+      			  var map = new google.maps.Map(document.getElementById('googleMap'),
+      				  mapOptions);
+
+
+      			  var marker = new google.maps.Marker({
+      				position: map.getCenter(),
+      				animation:google.maps.Animation.BOUNCE,
+      				// icon: 'img/map-icon.png',
+      				map: map
+      			  });
+
+      			}
+
+      			google.maps.event.addDomListener(window, 'load', initialize);
+      		</script>

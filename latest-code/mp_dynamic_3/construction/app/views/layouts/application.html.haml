@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Construction
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'application','https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300',media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag 'application','https://fonts.googleapis.com/css?family=Hind:400,500,600,700',media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    = render "layouts/header"
+    = yield
+    = render "layouts/footer"

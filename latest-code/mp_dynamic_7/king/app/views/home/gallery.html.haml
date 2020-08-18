@@ -1,0 +1,70 @@
+%body
+  %section.breadcrumb_area
+    .overlay.bg-parallax{"data-stellar-ratio" => "0.8", "data-stellar-vertical-offset" => "0", :style => "background-image: url('#{image_path 'about_banner.jpg'}')"} &gt;
+    .container
+      .page-cover.text-center
+        %h2.page-cover-tittle Gallery
+        %ol.breadcrumb
+          %li
+            %a{:href => root_path} Home
+          %li.active Gallery
+  %section.gallery_area.section_gap
+    .container
+      .section_title.text-center
+        %h2.title_color King Hotel Gallery
+        %p Who are in extremely love with eco friendly system.
+      #gallery.row.imageGallery1
+        .col-md-4.gallery_item
+          .gallery_img
+            = image_tag("gallery/1.jpg")
+            .hover
+              %a.light{:href => "#{image_path("gallery/1.jpg")}"}
+                %i.fa.fa-expand
+        .col-md-4.gallery_item
+          .gallery_img
+            = image_tag("gallery/2.jpg")
+            .hover
+              %a.light{:href => "#{image_path("gallery/2.jpg")}"}
+                %i.fa.fa-expand
+        .col-md-4.gallery_item
+          .gallery_img
+            = image_tag("gallery/3.jpg")
+            .hover
+              %a.light{:href => "#{image_path("gallery/3.jpg")}"}
+                %i.fa.fa-expand
+        .col-md-4.gallery_item
+          .gallery_img
+            = image_tag("gallery/4.jpg")
+            .hover
+              %a.light{:href => "#{image_path("gallery/4.jpg")}"}
+                %i.fa.fa-expand
+        .col-md-4.gallery_item
+          .gallery_img
+            = image_tag("gallery/5.jpg")
+            .hover
+              %a.light{:href => "#{image_path("gallery/5.jpg")}"}
+                %i.fa.fa-expand
+        .col-md-4.gallery_item
+          .gallery_img
+            = image_tag("gallery/6.jpg")
+            .hover
+              %a.light{:href => "#{image_path("gallery/6.jpg")}"}
+                %i.fa.fa-expand
+        .col-md-4.gallery_item
+          .gallery_img
+            = image_tag("gallery/7.jpg")
+            .hover
+              %a.light{:href => "#{image_path("gallery/7.jpg")}"}
+                %i.fa.fa-expand
+        .col-md-4.gallery_item
+          .gallery_img
+            = image_tag("gallery/8.jpg")
+            .hover
+              %a.light{:href => "#{image_path("gallery/8.jpg")}"}
+                %i.fa.fa-expand
+        .col-md-4.gallery_item
+          .gallery_img
+            = image_tag("gallery/9.jpg")
+            .hover
+              %a.light{:href => "#{image_path("gallery/9.jpg")}"}
+                %i.fa.fa-expand

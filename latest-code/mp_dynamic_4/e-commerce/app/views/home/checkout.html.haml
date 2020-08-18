@@ -1,0 +1,86 @@
+%body
+  .page-top-info
+    .container
+      %h4 Your cart
+      .site-pagination
+        %a{:href => ""} Home
+        \/
+        %a{:href => ""} Your cart
+  %section.checkout-section.spad
+    .container
+      .row
+        .col-lg-8.order-2.order-lg-1
+          %form.checkout-form
+            .cf-title Billing Address
+            .row
+              .col-md-7
+                %p *Billing Information
+              .col-md-5
+                .cf-radio-btns.address-rb
+                  .cfr-item
+                    %input#one{:name => "pm", :type => "radio"}/
+                    %label{:for => "one"} Use my regular address
+                  .cfr-item
+                    %input#two{:name => "pm", :type => "radio"}/
+                    %label{:for => "two"} Use a different address
+            .row.address-inputs
+              .col-md-12
+                %input{:placeholder => "Address", :type => "text"}/
+                %input{:placeholder => "Address line 2", :type => "text"}/
+                %input{:placeholder => "Country", :type => "text"}/
+              .col-md-6
+                %input{:placeholder => "Zip code", :type => "text"}/
+              .col-md-6
+                %input{:placeholder => "Phone no.", :type => "text"}/
+            .cf-title Delievery Info
+            .row.shipping-btns
+              .col-6
+                %h4 Standard
+              .col-6
+                .cf-radio-btns
+                  .cfr-item
+                    %input#ship-1{:name => "shipping", :type => "radio"}/
+                    %label{:for => "ship-1"} Free
+              .col-6
+                %h4 Next day delievery
+              .col-6
+                .cf-radio-btns
+                  .cfr-item
+                    %input#ship-2{:name => "shipping", :type => "radio"}/
+                    %label{:for => "ship-2"} $3.45
+            .cf-title Payment
+            %ul.payment-list
+              %li
+                Paypal
+                %a{:href => "#"}
+                  = image_tag("paypal.png")
+              %li
+                Credit / Debit card
+                %a{:href => "#"}
+                  = image_tag("mastercart.png")
+              %li Pay when you get the package
+            %button.site-btn.submit-order-btn Place Order
+        .col-lg-4.order-1.order-lg-2
+          .checkout-cart
+            %h3 Your Cart
+            %ul.product-list
+              %li
+                .pl-thumb
+                  = image_tag("cart/1.jpg")
+                %h6 Animal Print Dress
+                %p $45.90
+              %li
+                .pl-thumb
+                  = image_tag("cart/2.jpg")
+                %h6 Animal Print Dress
+                %p $45.90
+            %ul.price-list
+              %li
+                Total
+                %span $99.90
+              %li
+                Shipping
+                %span free
+              %li.total
+                Total
+                %span $99.90

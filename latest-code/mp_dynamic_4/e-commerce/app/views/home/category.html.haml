@@ -1,0 +1,321 @@
+%body
+  .page-top-info
+    .container
+      %h4 CAtegory PAge
+      .site-pagination
+        %a Home
+        \\/
+        %a Shop
+        \\/
+  %section.category-section.spad
+    .container
+      .row
+        .col-lg-3.order-2.order-lg-1
+          .filter-widget
+            %h2.fw-title Categories
+            %ul.category-menu
+              %li
+                %a{:href => "#"} Woman wear
+                %ul.sub-menu
+                  %li
+                    %a{:href => "#"}
+                      Midi Dresses
+                      %span (2)
+                  %li
+                    %a{:href => "#"}
+                      Maxi Dresses
+                      %span (56)
+                  %li
+                    %a{:href => "#"}
+                      Prom Dresses
+                      %span (36)
+                  %li
+                    %a{:href => "#"}
+                      Little Black Dresses
+                      %span (27)
+                  %li
+                    %a{:href => "#"}
+                      Mini Dresses
+                      %span (19)
+              %li
+                %a{:href => "#"} Man Wear
+                %ul.sub-menu
+                  %li
+                    %a{:href => "#"}
+                      Midi Dresses
+                      %span (2)
+                  %li
+                    %a{:href => "#"}
+                      Maxi Dresses
+                      %span (56)
+                  %li
+                    %a{:href => "#"}
+                      Prom Dresses
+                      %span (36)
+              %li
+                %a{:href => "#"} Children
+              %li
+                %a{:href => "#"} Bags &amp; Purses
+              %li
+                %a{:href => "#"} Eyewear
+              %li
+                %a{:href => "#"} Footwear
+          .filter-widget.mb-0
+            %h2.fw-title refine by
+            .price-range-wrap
+              %h4 Price
+              .price-range.ui-slider.ui-corner-all.ui-slider-horizontal.ui-widget.ui-widget-content{"data-max" => "270", "data-min" => "10"}
+                .ui-slider-range.ui-corner-all.ui-widget-header{:style => "left: 0%; width: 100%;"}
+                %span.ui-slider-handle.ui-corner-all.ui-state-default{:style => "left: 0%;", :tabindex => "0"}
+                %span.ui-slider-handle.ui-corner-all.ui-state-default{:style => "left: 100%;", :tabindex => "0"}
+              .range-slider
+                .price-input
+                  %input#minamount{:type => "text"}>/
+                  \/
+                  = succeed "/" do
+                    %input#maxamount{:type => "text"}/
+          .filter-widget.mb-0
+            %h2.fw-title color by
+            .fw-color-choose
+              .cs-item
+                %input#gray-color{:name => "cs", :type => "radio"}>/
+                \/
+                %label.cs-gray{:for => "gray-color"}
+                  %span (3)
+              .cs-item
+                %input#orange-color{:name => "cs", :type => "radio"}>/
+                \/
+                %label.cs-orange{:for => "orange-color"}
+                  %span (25)
+              .cs-item
+                %input#yollow-color{:name => "cs", :type => "radio"}>/
+                \/
+                %label.cs-yollow{:for => "yollow-color"}
+                  %span (112)
+              .cs-item
+                %input#green-color{:name => "cs", :type => "radio"}>/
+                \/
+                %label.cs-green{:for => "green-color"}
+                  %span (75)
+              .cs-item
+                %input#purple-color{:name => "cs", :type => "radio"}>/
+                \/
+                %label.cs-purple{:for => "purple-color"}
+                  %span (9)
+              .cs-item
+                %input#blue-color{:checked => "checked", :name => "cs", :type => "radio"}>/
+                \/
+                %label.cs-blue{:for => "blue-color"}
+                  %span (29)
+          .filter-widget.mb-0
+            %h2.fw-title Size
+            .fw-size-choose
+              .sc-item
+                %input#xs-size{:name => "sc", :type => "radio"}>/
+                \/
+                %label{:for => "xs-size"} XS
+              .sc-item
+                %input#s-size{:name => "sc", :type => "radio"}>/
+                \/
+                %label{:for => "s-size"} S
+              .sc-item
+                %input#m-size{:checked => "checked", :name => "sc", :type => "radio"}>/
+                \/
+                %label{:for => "m-size"} M
+              .sc-item
+                %input#l-size{:name => "sc", :type => "radio"}>/
+                \/
+                %label{:for => "l-size"} L
+              .sc-item
+                %input#xl-size{:name => "sc", :type => "radio"}>/
+                \/
+                %label{:for => "xl-size"} XL
+              .sc-item
+                %input#xxl-size{:name => "sc", :type => "radio"}>/
+                \/
+                %label{:for => "xxl-size"} XXL
+          .filter-widget
+            %h2.fw-title Brand
+            %ul.category-menu
+              %li
+                %a{:href => "#"}
+                  Abercrombie &amp; Fitch
+                  %span (2)
+              %li
+                %a{:href => "#"}
+                  Asos
+                  %span (56)
+              %li
+                %a{:href => "#"}
+                  Bershka
+                  %span (36)
+              %li
+                %a{:href => "#"}
+                  Missguided
+                  %span (27)
+              %li
+                %a{:href => "#"}
+                  Zara
+                  %span (19)
+        .col-lg-9.order-1.order-lg-2.mb-5.mb-lg-0
+          .row
+            .col-lg-4.col-sm-6
+              .product-item
+                .pi-pic
+                  .tag-sale ON SALE
+                  = image_tag("product/6.jpg")
+                  .pi-links
+                    %a.add-card{:href => "#"}
+                      %i.flaticon-bag
+                      %span ADD TO CART
+                    %a.wishlist-btn{:href => "#"}
+                      %i.flaticon-heart
+                .pi-text
+                  %h6 $35,00
+                  %p Black and White Stripes Dress
+            .col-lg-4.col-sm-6
+              .product-item
+                .pi-pic
+                  = image_tag("product/7.jpg")
+                  .pi-links
+                    %a.add-card{:href => "#"}
+                      %i.flaticon-bag
+                      %span ADD TO CART
+                    %a.wishlist-btn{:href => "#"}
+                      %i.flaticon-heart
+                .pi-text
+                  %h6 $35,00
+                  %p Flamboyant Pink Top
+            .col-lg-4.col-sm-6
+              .product-item
+                .pi-pic
+                  = image_tag("product/8.jpg")
+                  .pi-links
+                    %a.add-card{:href => "#"}
+                      %i.flaticon-bag
+                      %span ADD TO CART
+                    %a.wishlist-btn{:href => "#"}
+                      %i.flaticon-heart
+                .pi-text
+                  %h6 $35,00
+                  %p Flamboyant Pink Top
+            .col-lg-4.col-sm-6
+              .product-item
+                .pi-pic
+                  = image_tag("product/10.jpg")
+                  .pi-links
+                    %a.add-card{:href => "#"}
+                      %i.flaticon-bag
+                      %span ADD TO CART
+                    %a.wishlist-btn{:href => "#"}
+                      %i.flaticon-heart
+                .pi-text
+                  %h6 $35,00
+                  %p Black and White Stripes Dress
+            .col-lg-4.col-sm-6
+              .product-item
+                .pi-pic
+                  = image_tag("product/11.jpg")
+                  .pi-links
+                    %a.add-card{:href => "#"}
+                      %i.flaticon-bag
+                      %span ADD TO CART
+                    %a.wishlist-btn{:href => "#"}
+                      %i.flaticon-heart
+                .pi-text
+                  %h6 $35,00
+                  %p Flamboyant Pink Top
+            .col-lg-4.col-sm-6
+              .product-item
+                .pi-pic
+                  = image_tag("product/12.jpg")
+                  .pi-links
+                    %a.add-card{:href => "#"}
+                      %i.flaticon-bag
+                      %span ADD TO CART
+                    %a.wishlist-btn{:href => "#"}
+                      %i.flaticon-heart
+                .pi-text
+                  %h6 $35,00
+                  %p Flamboyant Pink Top
+            .col-lg-4.col-sm-6
+              .product-item
+                .pi-pic
+                  = image_tag("product/5.jpg")
+                  .pi-links
+                    %a.add-card{:href => "#"}
+                      %i.flaticon-bag
+                      %span ADD TO CART
+                    %a.wishlist-btn{:href => "#"}
+                      %i.flaticon-heart
+                .pi-text
+                  %h6 $35,00
+                  %p Flamboyant Pink Top
+            .col-lg-4.col-sm-6
+              .product-item
+                .pi-pic
+                  = image_tag("product/9.jpg")
+                  .pi-links
+                    %a.add-card{:href => "#"}
+                      %i.flaticon-bag
+                      %span ADD TO CART
+                    %a.wishlist-btn{:href => "#"}
+                      %i.flaticon-heart
+                .pi-text
+                  %h6 $35,00
+                  %p Flamboyant Pink Top
+            .col-lg-4.col-sm-6
+              .product-item
+                .pi-pic
+                  = image_tag("product/1.jpg")
+                  .pi-links
+                    %a.add-card{:href => "#"}
+                      %i.flaticon-bag
+                      %span ADD TO CART
+                    %a.wishlist-btn{:href => "#"}
+                      %i.flaticon-heart
+                .pi-text
+                  %h6 $35,00
+                  %p Flamboyant Pink Top
+            .col-lg-4.col-sm-6
+              .product-item
+                .pi-pic
+                  .tag-new new
+                  = image_tag("product/2.jpg")
+                  .pi-links
+                    %a.add-card{:href => "#"}
+                      %i.flaticon-bag
+                      %span ADD TO CART
+                    %a.wishlist-btn{:href => "#"}
+                      %i.flaticon-heart
+                .pi-text
+                  %h6 $35,00
+                  %p Black and White Stripes Dress
+            .col-lg-4.col-sm-6
+              .product-item
+                .pi-pic
+                  = image_tag("product/3.jpg")
+                  .pi-links
+                    %a.add-card{:href => "#"}
+                      %i.flaticon-bag
+                      %span ADD TO CART
+                    %a.wishlist-btn{:href => "#"}
+                      %i.flaticon-heart
+                .pi-text
+                  %h6 $35,00
+                  %p Flamboyant Pink Top
+            .col-lg-4.col-sm-6
+              .product-item
+                .pi-pic
+                  = image_tag("product/4.jpg")
+                  .pi-links
+                    %a.add-card{:href => "#"}
+                      %i.flaticon-bag
+                      %span ADD TO CART
+                    %a.wishlist-btn{:href => "#"}
+                      %i.flaticon-heart
+                .pi-text
+                  %h6 $35,00
+                  %p Flamboyant Pink Top
+            .text-center.w-100.pt-3
+              %button.site-btn.sb-line.sb-dark LOAD MORE

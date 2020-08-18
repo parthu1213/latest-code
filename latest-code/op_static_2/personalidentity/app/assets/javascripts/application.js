@@ -1,0 +1,12 @@
+//= require jquery-3.3.1.min
+//= require jquery-migrate-3.0.1.min
+//= require jquery-ui
+//= require popper.min
+//= require bootstrap.min
+//= require owl.carousel.min
+//= require jquery.stellar.min
+//= require jquery.countdown.min
+//= require jquery.easing.1.3
+//= require aos
+//= require jquery.sticky
+//= require main

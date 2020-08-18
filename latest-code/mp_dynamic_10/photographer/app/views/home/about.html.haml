@@ -1,0 +1,166 @@
+%body
+  %section.breadcrumb-area.bg-img.bg-overlay.jarallax{:style => "background-image: url('#{image_path 'bg-img/38.jpg'}');"}
+    .container.h-100
+      .row.h-100.align-items-center
+        .col-12
+          .breadcrumb-content.text-center
+            %h2.page-title About Us
+            %nav{"aria-label" => "breadcrumb"}
+              %ol.breadcrumb.justify-content-center
+                %li.breadcrumb-item
+                  %a{:href => root_path}
+                    %i.icon_house_alt
+                    Home
+                %li.breadcrumb-item.active{"aria-current" => "page"} About
+  .about-us-area.section-padding-80-0.clearfix
+    .container
+      .row.align-items-center
+        .col-12.col-lg-6
+          .about-us-content.mb-80
+            %h3.wow.fadeInUp{"data-wow-delay" => "100ms"} We Live For Passion
+            .line.wow.fadeInUp{"data-wow-delay" => "200ms"}
+            %p.wow.fadeInUp{"data-wow-delay" => "300ms"} Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do sunt explicabo. Nemo enim ipsam et dolore magnam aliquam quaerat voluptatem.
+            %p.wow.fadeInUp{"data-wow-delay" => "400ms"} Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do sunt explicabo. Nemo enim ipsam et dolore magnam aliquam quaerat voluptatem.
+            %a.btn.alime-btn.btn-2.mt-30.wow.fadeInUp{"data-wow-delay" => "500ms", :href => "#"} Contact Us
+        .col-12.col-lg-6
+          .about-video-area.mb-80.wow.fadeInUp{"data-wow-delay" => "100ms"}
+            = image_tag("bg-img/17.jpg")
+            .video-icon
+              %a.video-play-btn
+                %i.fa.fa-play
+  %section.why-choose-us-area.section-padding-80-0.clearfix
+    .container
+      .row
+        .col-12
+          .section-heading.text-center.wow.fadeInUp{"data-wow-delay" => "100ms", :style => "visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;"}
+            %h2 Why Choose Us
+      .row
+        .col-md-6.col-lg-4
+          .why-choose-us-content.text-center.mb-80.wow.fadeInUp{"data-wow-delay" => "100ms", :style => "visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;"}
+            .chosse-us-icon
+              %i.fa.fa-film{"aria-hidden" => "true"}
+            %h4 High Quality Images
+            %p Lorem ipsum dolor sit amet, consectetur isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut elit, sed do eiusmod te
+        .col-md-6.col-lg-4
+          .why-choose-us-content.text-center.mb-80.wow.fadeInUp{"data-wow-delay" => "300ms", :style => "visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;"}
+            .chosse-us-icon
+              %i.fa.fa-pencil{"aria-hidden" => "true"}
+            %h4 Abundant Experience
+            %p Lorem ipsum dolor sit amet, consectetur isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut elit, sed do eiusmod te
+        .col-md-6.col-lg-4
+          .why-choose-us-content.text-center.mb-80.wow.fadeInUp{"data-wow-delay" => "500ms", :style => "visibility: visible; animation-delay: 500ms; animation-name: fadeInUp;"}
+            .chosse-us-icon
+              %i.fa.fa-camera{"aria-hidden" => "true"}
+            %h4 Modern Equipments
+            %p Lorem ipsum dolor sit amet, consectetur isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut elit, sed do eiusmod te
+  %section.our-team-area.section-padding-80-50
+    .container
+      .row
+        .col-12
+          .section-heading.text-center.wow.fadeInUp{"data-wow-delay" => "100ms"}
+            %h2 Our Team
+      .row
+        .col-md-6.col-xl-3
+          .team-content-area.text-center.mb-30.wow.fadeInUp{"data-wow-delay" => "100ms"}
+            .member-thumb
+              = image_tag("bg-img/19.jpg")
+            %h5 Andrew Dean
+            %span Photographer
+            .member-social-info
+              %a{:href => "#"}
+                %i.ti-facebook
+              %a{:href => "#"}
+                %i.ti-twitter-alt
+              %a{:href => "#"}
+                %i.ti-linkedin
+              %a{:href => "#"}
+                %i.ti-pinterest
+        .col-md-6.col-xl-3
+          .team-content-area.text-center.mb-30.wow.fadeInUp{"data-wow-delay" => "300ms"}
+            .member-thumb
+              = image_tag("bg-img/20.jpg")
+            %h5 Tommy Kim
+            %span Photographer
+            .member-social-info
+              %a{:href => "#"}
+                %i.ti-facebook
+              %a{:href => "#"}
+                %i.ti-twitter-alt
+              %a{:href => "#"}
+                %i.ti-linkedin
+              %a{:href => "#"}
+                %i.ti-pinterest
+        .col-md-6.col-xl-3
+          .team-content-area.text-center.mb-30.wow.fadeInUp{"data-wow-delay" => "500ms"}
+            .member-thumb
+              = image_tag("bg-img/21.jpg")
+            %h5 Max McCormick
+            %span Photographer
+            .member-social-info
+              %a{:href => "#"}
+                %i.ti-facebook
+              %a{:href => "#"}
+                %i.ti-twitter-alt
+              %a{:href => "#"}
+                %i.ti-linkedin
+              %a{:href => "#"}
+                %i.ti-pinterest
+        .col-md-6.col-xl-3
+          .team-content-area.text-center.mb-30.wow.fadeInUp{"data-wow-delay" => "700ms"}
+            .member-thumb
+              = image_tag("bg-img/22.jpg")
+            %h5 Robert Ward
+            %span Photographer
+            .member-social-info
+              %a{:href => "#"}
+                %i.ti-facebook
+              %a{:href => "#"}
+                %i.ti-twitter-alt
+              %a{:href => "#"}
+                %i.ti-linkedin
+              %a{:href => "#"}
+                %i.ti-pinterest
+  .follow-area.clearfix
+    .container
+      .row
+        .col-12
+          .section-heading.text-center
+            %h2 Follow Instagram
+            %p @Alime_photographer
+    .instragram-feed-area.owl-carousel
+      .single-instagram-item
+        = image_tag("bg-img/11.jpg")
+        .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+          %a{:href => "#"}
+            %i.ti-instagram{"aria-hidden" => "true"}
+            %span Alime_photographer
+      .single-instagram-item
+        = image_tag("bg-img/12.jpg")
+        .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+          %a{:href => "#"}
+            %i.ti-instagram{"aria-hidden" => "true"}
+            %span Alime_photographer
+      .single-instagram-item
+        = image_tag("bg-img/13.jpg")
+        .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+          %a{:href => "#"}
+            %i.ti-instagram{"aria-hidden" => "true"}
+            %span Alime_photographer
+      .single-instagram-item
+        = image_tag("bg-img/14.jpg")
+        .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+          %a{:href => "#"}
+            %i.ti-instagram{"aria-hidden" => "true"}
+            %span Alime_photographer
+      .single-instagram-item
+        = image_tag("bg-img/15.jpg")
+        .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+          %a{:href => "#"}
+            %i.ti-instagram{"aria-hidden" => "true"}
+            %span Alime_photographer
+      .single-instagram-item
+        = image_tag("bg-img/16.jpg")
+        .instagram-hover-content.text-center.d-flex.align-items-center.justify-content-center
+          %a{:href => "#"}
+            %i.ti-instagram{"aria-hidden" => "true"}
+            %span Alime_photographer

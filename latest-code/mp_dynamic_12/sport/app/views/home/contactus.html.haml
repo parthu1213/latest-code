@@ -1,0 +1,84 @@
+.ritekhed-subheader{:style => "background-image: url('#{image_path 'parallax-bg.jpg'}')"}
+  %span.ritekhed-banner-transparent
+  .container
+    .row
+      .col-md-12
+        %h1 Contact Us
+        %ul.ritekhed-breadcrumb
+          %li
+            %a{:href => "#"} Home
+          %li
+            %a{:href => "#"} Player
+          %li Contact Us
+.ritekhed-main-content
+  .ritekhed-main-section.ritekhed-map-full
+    .container
+      .row
+        .col-md-12
+          .ritekhed-fancy-title
+            %h2 Location Map
+          .ritekhed-map
+            %iframe{:height => "410", :src => "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13607.77012816369!2d74.3086574!3d31.4982634!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1540882875572"}
+  .ritekhed-main-section.ritekhed-contact-form-full
+    .container
+      .row
+        .col-md-12
+          .ritekhed-fancy-title
+            %h2 Contact Form
+        .col-md-9
+          .ritekhed-contact-form
+            %form
+              %ul
+                %li
+                  %label Name:
+                  %p
+                    %input{:onblur => "if(this.value == '') { this.value ='Type here'; }", :onfocus => "if(this.value =='Type here') { this.value = ''; }", :type => "text", :value => "Type here"}/
+                    %span
+                      %i.fa.fa-user
+                %li
+                  %label Email:
+                  %p
+                    %input{:onblur => "if(this.value == '') { this.value ='Type here'; }", :onfocus => "if(this.value =='Type here') { this.value = ''; }", :type => "text", :value => "Type here"}/
+                    %span
+                      %i.fa.fa-envelope
+                %li.full-input
+                  %label Message:
+                  %p
+                    %textarea{:name => "u_msg", :placeholder => "Type here"}
+                    %span
+                      %i.fa.fa-comment
+                %li
+                  %p
+                    %label
+                      %input{:type => "submit", :value => "Submit"}/
+        .col-md-3
+          %ul.ritekhed-contact-us-text
+            %li
+              %h4 Send Us Message !!!
+              %p Lorem ipsum dolor sit amet, consectet adipiscing elit. Ut ac malesuada antes urabitur lacinia
+            %li
+              %h4 Open Practices
+              %p Lorem ipsum dolor sit amet, consectet adipiscing elit. Ut ac malesuada antes urabitur lacinia
+              %time{:datetime => "2008-02-14 20:00"}
+                Timings:
+                %span 9:00am to 12:00pm
+  .ritekhed-main-section.ritekhed-partner-slider-full
+    .container
+      .row
+        .col-md-12
+          .ritekhed-partner-slider
+            .ritekhed-partner-slider-layer
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'partner-logo-1.jpg'}"}/
+            .ritekhed-partner-slider-layer
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'partner-logo-2.jpg'}"}/
+            .ritekhed-partner-slider-layer
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'partner-logo-3.jpg'}"}/
+            .ritekhed-partner-slider-layer
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'partner-logo-1.jpg'}"}/
+            .ritekhed-partner-slider-layer
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'partner-logo-2.jpg'}"}/

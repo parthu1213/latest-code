@@ -1,0 +1,50 @@
+%section.home-slider.js-fullheight.owl-carousel
+  .slider-item.js-fullheight{:style => "background-image:url('#{image_path 'bg_1.jpg'}')"}
+    .overlay
+    .container
+      .row.slider-text.justify-content-center.align-items-center
+        .col-md-7.col-sm-12.text-center.ftco-animate
+          %h1.mb-3.mt-5.bread About
+          %p.breadcrumbs
+            %span.mr-2
+              %a{:href => root_path} Home
+            %span contact
+%section.ftco-section.contact-section
+  .container
+    .row.d-flex.mb-5.contact-info
+      .col-md-12.mb-4
+        %h2.h4 Contact Information
+      .w-100
+      .col-md-3
+        %p
+          %span Address:
+          202-204 Panvel Point, Nr. Sudama Chowk, Mota Varachha, Surat, Gujarat, India
+      .col-md-3
+        %p
+          %span Phone:
+          %a{:href => "tel://1234567920"} (+91) 70166 76005
+      .col-md-3
+        %p
+          %span Email:
+          %a{:href => "mailto:info@yoursite.com"} info@yoursite.com
+      .col-md-3
+        %p
+          %span Website
+          %a{:href => "#"}
+            contact@softices.com
+      %a{:href => "#"}
+    %a{:href => "#"}
+      .row.block-9
+        .col-md-6.order-md-last.pr-md-5
+          %form{:action => "#"}
+            .form-group
+              %input.form-control{:placeholder => "Your Name", :type => "text"}/
+            .form-group
+              %input.form-control{:placeholder => "Your Email", :type => "text"}/
+            .form-group
+              %input.form-control{:placeholder => "Subject", :type => "text"}/
+            .form-group
+              %textarea.form-control{:cols => "30", :id => "", :name => "", :placeholder => "Message", :rows => "7"}
+            .form-group
+              %input.btn.btn-primary.py-3.px-5{:type => "submit", :value => "Send Message"}/
+  %a{:href => "#"}

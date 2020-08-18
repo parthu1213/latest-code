@@ -1,0 +1,9 @@
+//= require jquery.min
+//= require bootstrap.bundle.min
+//= require owl.carousel.min
+//= require waypoints.min
+//= require jquery.counterup.min
+//= require wow
+//= require jquery.ajaxchimp.min
+//= require jquery.easing.min
+//= require theme

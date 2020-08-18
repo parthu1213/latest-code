@@ -1,0 +1,28 @@
+%body
+  %header.header_area.navbar_fixed
+    .container
+      %nav.navbar.navbar-expand-lg.navbar-light
+        %a.navbar-brand.logo_h{:href => root_path}= image_tag("Logo.png")
+        %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        #navbarSupportedContent.collapse.navbar-collapse.offset
+          %ul.nav.navbar-nav.menu_nav.ml-auto
+            %li{:class => "nav-item #{active_class(root_path)}"}
+              %a.nav-link{:href => root_path} Home
+            %li{:class => "nav-item #{active_class(about_path)}"}
+              %a.nav-link{:href => about_path} About us
+            %li{:class => "nav-item #{active_class(accomodation_path)}"}
+              %a.nav-link{:href => accomodation_path} Reservation
+            %li{:class => "nav-item #{active_class(gallery_path)}"}
+              %a.nav-link{:href => gallery_path} Gallery
+            %li.nav-item.submenu.dropdown
+              %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"} Blog
+              %ul.dropdown-menu
+                %li{:class => "nav-item #{active_class(blog_path)}"}
+                  %a.nav-link{:href => blog_path} Blog
+                %li{:class => "nav-item #{active_class(blogsingle_path)}"}
+                  %a.nav-link{:href => blogsingle_path} Blog Details
+            %li.nav-item
+              %a.nav-link{:href => contact_path} Contact

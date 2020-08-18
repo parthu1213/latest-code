@@ -1,0 +1,83 @@
+%body
+  %section.breadcrumb.breadcrumb_bg{:style => "background-image: url('#{image_path 'breadcrumb.png'}')"}
+    .container
+      .row
+        .col-lg-12
+          .breadcrumb_iner
+            .breadcrumb_iner_item.text-center
+              %h2 contact
+              %p home . contact
+  %section.contact-section
+    .container
+      .d-none.d-sm-block.mb-5.pb-4
+        #map{:style => "height: 480px;"}
+        :javascript
+          function initMap() {
+              var uluru = {
+                  lat: -25.363,
+                  lng: 131.044
+              };
+              var grayStyles = [{
+                  featureType: "all",
+                  stylers: [{
+                      saturation: -90
+                  }, {
+                      lightness: 50
+                  }]
+              }, {
+                  elementType: 'labels.text.fill',
+                  stylers: [{
+                      color: '#ccdee9'
+                  }]
+              }];
+              var map = new google.maps.Map(document.getElementById('map'), {
+                  center: {
+                      lat: -31.197,
+                      lng: 150.744
+                  },
+                  zoom: 9,
+                  styles: grayStyles,
+                  scrollwheel: false
+              });
+          }
+        %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"}
+          :cdata
+      .row
+        .col-12
+          %h2.contact-title Get in Touch
+        .col-lg-8
+          %form#contactForm.form-contact.contact_form{:action => "contact_process.php", :method => "post", :novalidate => "novalidate"}
+            .row
+              .col-12
+                .form-group
+                  %textarea#message.form-control.w-100{:cols => "30", :name => "message", :onblur => "this.placeholder = 'Enter Message'", :onfocus => "this.placeholder = ''", :placeholder => "Enter Message", :rows => "9"}
+              .col-sm-6
+                .form-group
+                  %input#name.form-control{:name => "name", :onblur => "this.placeholder = 'Enter your name'", :onfocus => "this.placeholder = ''", :placeholder => "Enter your name", :type => "text"}/
+              .col-sm-6
+                .form-group
+                  %input#email.form-control{:name => "email", :onblur => "this.placeholder = 'Enter email address'", :onfocus => "this.placeholder = ''", :placeholder => "Enter email address", :type => "email"}/
+              .col-12
+                .form-group
+                  %input#subject.form-control{:name => "subject", :onblur => "this.placeholder = 'Enter Subject'", :onfocus => "this.placeholder = ''", :placeholder => "Enter Subject", :type => "text"}/
+            .form-group.mt-3
+              %button.button.button-contactForm.btn_1{:type => "submit"} Send Message
+        .col-lg-4
+          .media.contact-info
+            %span.contact-info__icon
+              %i.ti-home
+            .media-body
+              %h3 202-204 Panvel Point, Nr. Sudama Chowk,
+              %p Mota Varachha, Surat, Gujarat, India
+          .media.contact-info
+            %span.contact-info__icon
+              %i.ti-tablet
+            .media-body
+              %h3 +91 70166 76005
+              %p Mon to Fri 9am to 6pm
+          .media.contact-info
+            %span.contact-info__icon
+              %i.ti-email
+            .media-body
+              %h3 contact@softices.com
+              %p Send us your query anytime!

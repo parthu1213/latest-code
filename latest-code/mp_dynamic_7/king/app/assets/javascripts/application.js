@@ -1,0 +1,12 @@
+//= require jquery-3.2.1.min
+//= require popper
+//= require bootstrap.min
+//= require owl.carousel.min
+//= require jquery.ajaxchimp.min
+//= require mail-script
+//= require bootstrap-datetimepicker.min
+//= require jquery.nice-select
+//= require mail-script
+//= require stellar
+//= require simpleLightbox.min
+//= require custom

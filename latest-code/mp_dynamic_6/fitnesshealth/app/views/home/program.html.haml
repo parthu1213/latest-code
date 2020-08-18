@@ -1,0 +1,127 @@
+%body
+  %section.hero-wrap.js-fullheight{:style => "background-image: url('#{image_path 'bg_2.jpg'}'); height: 435px;"}
+    .overlay
+    .container
+      .row.no-gutters.slider-text.js-fullheight.align-items-center.justify-content-center{:style => "height: 435px;"}
+        .col-md-9.ftco-animate.text-center.fadeInUp.ftco-animated
+          %h1.mb-3.bread Workout Classes
+          %p.breadcrumbs
+            %span.mr-2
+              %a{:href => root_path} Home
+            %span Program
+  %section.ftco-section
+    .container-fluid
+      .row
+        .col-md-6.col-lg-3
+          .class-item.box-hover-effect.effect1.mb-md-30.bg-lighter
+            .thumb.mb-2
+              = image_tag("popular-class/5.jpg", :class => "w-100 img-responsive img-fullwidth")
+            .content.text-left.flip.p-3.pt-0
+              %h4.text-uppercase.font-weight-800.line-bottom Yoga Program
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.
+              %a.read-more.btn-sm{:href => "#"} Read More
+        .col-md-6.col-lg-3
+          .class-item.box-hover-effect.effect1.mb-md-30.bg-lighter
+            .thumb.mb-2
+              = image_tag("popular-class/6.jpg", :class => "w-100 img-responsive img-fullwidth")
+            .content.text-left.flip.p-3.pt-0
+              %h4.text-uppercase.font-weight-800.line-bottom Yoga Program
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.
+              %a.read-more.btn-sm{:href => "#"} Read More
+        .col-md-6.col-lg-3
+          .class-item.box-hover-effect.effect1.mb-md-30.bg-lighter
+            .thumb.mb-2
+              = image_tag("popular-class/7.jpg", :class => "w-100 img-responsive img-fullwidth")
+            .content.text-left.flip.p-3.pt-0
+              %h4.text-uppercase.font-weight-800.line-bottom Yoga Program
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.
+              %a.read-more.btn-sm{:href => "#"} Read More
+        .col-md-6.col-lg-3
+          .class-item.box-hover-effect.effect1.mb-md-30.bg-lighter
+            .thumb.mb-2
+              = image_tag("popular-class/5.jpg", :class => "w-100 img-responsive img-fullwidth")
+            .content.text-left.flip.p-3.pt-0
+              %h4.text-uppercase.font-weight-800.line-bottom Yoga Program
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.
+              %a.read-more.btn-sm{:href => "#"} Read More
+        .col-md-6.col-lg-3
+          .class-item.box-hover-effect.effect1.mb-md-30.bg-lighter
+            .thumb.mb-2
+              = image_tag("popular-class/6.jpg", :class => "w-100 img-responsive img-fullwidth")
+            .content.text-left.flip.p-3.pt-0
+              %h4.text-uppercase.font-weight-800.line-bottom Yoga Program
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.
+              %a.read-more.btn-sm{:href => "#"} Read More
+        .col-md-6.col-lg-3
+          .class-item.box-hover-effect.effect1.mb-md-30.bg-lighter
+            .thumb.mb-2
+              = image_tag("popular-class/7.jpg", :class => "w-100 img-responsive img-fullwidth")
+            .content.text-left.flip.p-3.pt-0
+              %h4.text-uppercase.font-weight-800.line-bottom Yoga Program
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.
+              %a.read-more.btn-sm{:href => "#"} Read More
+        .col-md-6.col-lg-3
+          .class-item.box-hover-effect.effect1.mb-md-30.bg-lighter
+            .thumb.mb-2
+              = image_tag("popular-class/5.jpg", :class => "w-100 img-responsive img-fullwidth")
+            .content.text-left.flip.p-3.pt-0
+              %h4.text-uppercase.font-weight-800.line-bottom Yoga Program
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.
+              %a.read-more.btn-sm{:href => "#"} Read More
+        .col-md-6.col-lg-3
+          .class-item.box-hover-effect.effect1.mb-md-30.bg-lighter
+            .thumb.mb-2
+              = image_tag("popular-class/6.jpg", :class => "w-100 img-responsive img-fullwidth")
+            .content.text-left.flip.p-3.pt-0
+              %h4.text-uppercase.font-weight-800.line-bottom Yoga Program
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.
+              %a.read-more.btn-sm{:href => "#"} Read More
+      .row.mt-5
+        .col.text-center
+          .block-27
+            %ul
+              %li
+                %a{:href => "#"} &lt;
+              %li.active
+                %span 1
+              %li
+                %a{:href => "#"} 2
+              %li
+                %a{:href => "#"} 3
+              %li
+                %a{:href => "#"} 4
+              %li
+                %a{:href => "#"} 5
+              %li
+                %a{:href => "#"} &gt;
+  %section.ftco-appointment
+    .overlay
+    .container-wrap
+      .row.no-gutters.d-md-flex.align-items-center
+        .col-md-6.d-flex.align-self-stretch.img{:style => "background-image: url('#{image_path 'about-3.jpg'}')"}
+        .col-md-6.appointment.ftco-animate.fadeInUp.ftco-animated
+          %h3.mb-3 Book a Appointment
+          %form.appointment-form{:action => "#"}
+            .d-md-flex
+              .form-group
+                %input.form-control{:placeholder => "First Name", :type => "text"}/
+              .form-group.ml-md-4
+                %input.form-control{:placeholder => "Last Name", :type => "text"}/
+            .d-md-flex
+              .form-group
+                .input-wrap
+                  .icon
+                    %span.ion-md-calendar
+                  %input.form-control.appointment_date{:placeholder => "Date", :type => "text"}/
+              .form-group.ml-md-4
+                .input-wrap
+                  .icon
+                    %span.ion-ios-clock
+                  %input.form-control.appointment_time.ui-timepicker-input{:autocomplete => "off", :placeholder => "Time", :type => "text"}/
+              .form-group.ml-md-4
+                %input.form-control{:placeholder => "Phone", :type => "text"}/
+            .d-md-flex
+              .form-group
+                %textarea.form-control{:cols => "30", :id => "", :name => "", :placeholder => "Message", :rows => "2"}
+              .form-group.ml-md-4
+                %input.btn.btn-primary.py-3.px-4{:type => "submit", :value => "Appointment"}/

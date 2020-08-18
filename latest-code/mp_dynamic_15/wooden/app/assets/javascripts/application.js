@@ -1,0 +1,15 @@
+//= require_tree .
+//= require_self
+//= require jquery.min
+//= require jquery-migrate-3.0.1.min
+//= require popper.min
+//= require bootstrap.min
+//= require jquery.easing.1.3
+//= require jquery.waypoints.min
+//= require jquery.stellar.min
+//= require owl.carousel.min
+//= require aos
+//= require jquery.animateNumber.min
+//= require bootstrap-datepicker
+//= require scrollax.min
+//= require main

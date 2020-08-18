@@ -1,0 +1,92 @@
+.container
+  .content
+    .row
+      .col-sm-12.col-md-6
+        .row
+          .col-sm-6
+            .c-box
+              %h2.mb30.mt16 Address
+              %p
+                202-204 Panvel Point,
+                %br/
+                Mota Varachha,
+                %br/
+                Surat, Gujarat, India
+          .col-sm-6
+            .c-box
+              %h2.mb30.mt16 Contact Person
+              %p
+                John Doe
+                %br/
+                Phone: +91 70166 76005
+                %br/
+                E-mail:
+                %a{:href => "mailto:#"} contact@softices.com
+        .row
+          .col-sm-6
+            .c-box
+              %h2 E-mail
+              %p
+                Information:
+                %a{:href => "mailto:#"} contact@softices.com
+                %br/
+                Support:
+                %a{:href => "mailto:#"} contact@softices.com
+                %br/
+                Development:
+                %a{:href => "mailto:#"} hr@softices.com
+          .col-sm-6
+            .c-box
+              %h2 Phone &amp; Fax
+              %p
+                Information: +91 70166 76005
+                %br/
+                Support: +91 70166 76005
+                %br/
+                Development: +91 70166 76005
+        .row.mb30
+          .col-sm-12
+            %h2.mb30 Social Profiles
+            %ul.clearfix.sharing-buttons.pl-0
+              %li
+                %a.facebook{:href => "https://www.facebook.com/softices/?ref=aymt_homepage_panel&eid=ARAm18ULAHBNqv2_Az_4sos7SWP3mjVSiSx1_B0Wign4XH4MZ2g-GjOu2oJVWaqajG1kXXOJk0XG7OIa", :onclick => "javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"}
+                  %i.fa.fa-facebook.fa-left
+                  %span.social-name Facebook
+              %li
+                %a.google-plus{:href => "https://www.google.com/search?q=softices&rlz=1C1CHBF_enIN847IN847&oq=softices&aqs=chrome..69i57j69i60l5j69i65l2.2095j0j4&sourceid=chrome&ie=UTF-8", :onclick => "javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"}
+                  %i.fa.fa-google-plus.fa-left
+                  %span.social-name Google+
+              %li
+                %a.twitter{:href => "https://twitter.com/Softices", :onclick => "javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"}
+                  %i.fa.fa-twitter.fa-left
+                  %span.social-name Twitter
+      .col-sm-12.col-md-6
+        .box
+          %h2.mt-0 Contact Form
+          %form{:action => "?", :method => "post"}
+            .form-group
+              %input.form-control{:placeholder => "Your Name", :type => "text"}/
+            .form-group
+              %input.form-control{:placeholder => "Subject", :type => "text"}/
+            .form-group
+              %input.form-control{:placeholder => "E-mail", :type => "text"}/
+            .form-group
+              %textarea.form-control{:placeholder => "Message", :style => "overflow: hidden; overflow-wrap: break-word; height: 68px;"}
+            %button.btn{:type => "submit"} Post Message
+.container
+  .row
+    .col-md-12
+      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29751.823045597186!2d72.869271!3d21.2327257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1553746896224", :style => "border:0", :width => "100%"}
+%section.ftco-section-parallax
+  .parallax-img.d-flex.align-items-center
+    .container
+      .row.d-flex.justify-content-center
+        .col-md-7.text-center.heading-section.heading-section-white.ftco-animate
+          %h2 Subcribe to our Newsletter
+          %p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in
+          .row.d-flex.justify-content-center.mt-5
+            .col-md-8
+              %form.subscribe-form{:action => "#"}
+                .form-group.d-flex
+                  %input.form-control{:placeholder => "Enter email address", :type => "text"}/
+                  %input.submit.px-3{:type => "submit", :value => "Subscribe"}/

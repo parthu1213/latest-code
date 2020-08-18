@@ -1,0 +1,91 @@
+%body
+  .page-top-info
+    .container
+      %h4 Contact
+      .site-pagination
+        %a{:href => ""} Home
+        \/
+        %a{:href => ""} Contact
+  %section.contact-section
+    .container
+      .row
+        .col-lg-6.contact-info
+          %h3 Get in touch
+          %p 202-204 Panvel Point, Nr. Sudama Chowk, Mota Varachha
+          %p +91 70166 76005
+          %p contact@softices.com
+          .contact-social
+            %a{:href => "https://in.pinterest.com/SofticesConsultancy/"}
+              %i.fa.fa-pinterest
+            %a{:href => "https://www.facebook.com/softices/?ref=aymt_homepage_panel&eid=ARAm18ULAHBNqv2_Az_4sos7SWP3mjVSiSx1_B0Wign4XH4MZ2g-GjOu2oJVWaqajG1kXXOJk0XG7OIa"}
+              %i.fa.fa-facebook
+            %a{:href => "https://twitter.com/Softices"}
+              %i.fa.fa-twitter
+            %a{:href => "https://www.behance.net/softicesconsultancy?tracking_source=search%7Csoftices%20consultancy"}
+              %i.fa.fa-behance
+          %form.contact-form
+            %input{:placeholder => "Your name", :type => "text"}/
+            %input{:placeholder => "Your e-mail", :type => "text"}/
+            %input{:placeholder => "Subject", :type => "text"}/
+            %textarea{:placeholder => "Message"}
+            %button.site-btn SEND NOW
+    .map
+      %iframe{:allowfullscreen => "", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14376.077865872314!2d-73.879277264103!3d40.757667781624285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1546528920522", :style => "border:0"}
+  %section.related-product-section.spad
+    .container
+      .section-title
+        %h2 Your Favorites
+      .row
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              .tag-new New
+              = image_tag("product/2.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Black and White Stripes Dress
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              = image_tag("product/5.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Flamboyant Pink Top
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              = image_tag("product/9.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Flamboyant Pink Top
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              = image_tag("product/1.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Flamboyant Pink Top

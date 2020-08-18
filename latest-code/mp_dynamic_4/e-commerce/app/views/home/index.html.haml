@@ -1,0 +1,373 @@
+%body
+  %section.hero-section
+    .hero-slider.owl-carousel
+      .hs-item.set-bg{:style => "background-image: url('#{image_path 'bg-3.jpg'}')"}
+        .container
+          .row
+            .col-xl-6.col-lg-7.text-white
+              %span New Arrivals
+              %h2 New Product Collection
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+              %a.site-btn.sb-white{:href => "#"} ADD TO CART
+          .offer-card.text-white
+            %span from
+            %h2 $29
+            %p SHOP NOW
+      .hs-item.set-bg{:style => "background-image: url('#{image_path 'bg-4.jpg'}')"}
+        .container
+          .row
+            .col-xl-6.col-lg-7.text-white
+              %span New Arrivals
+              %h2 HOT DEAL Up to 50% OFF
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+              %a.site-btn.sb-white{:href => "#"} ADD TO CART
+          .offer-card.text-white
+            %span from
+            %h2 $29
+            %p SHOP NOW
+    .container
+      #snh-1.slide-num-holder
+  %section.features-section
+    .container-fluid
+      .row
+        .col-md-4.p-0.feature
+          .feature-inner
+            .feature-icon
+              = image_tag("icons/1.png", :width => "30")
+            %h2 Fast Secure Payments
+        .col-md-4.p-0.feature
+          .feature-inner
+            .feature-icon
+              = image_tag("icons/2.png", :width => "30")
+            %h2 Premium Products
+        .col-md-4.p-0.feature
+          .feature-inner
+            .feature-icon
+              = image_tag("icons/3.png", :width => "30")
+            %h2 Free &amp; fast Delivery
+  .banner-padding-bg
+    .container
+      .row{"data-gutter" => "15"}
+        .col-md-4
+          .banner-2{:style => "background-color:#83599A;"}
+            %a.banner-link{:href => "#"}
+            .banner-caption-top-left
+              %h5.banner-title Backpack Collection
+              %p.banner-desc Don't Be Vague. Ask for Backpack .
+              %p.banner-shop-now
+                Shop Now
+                %i.fa.fa-caret-right
+            %img.banner-img{:alt => "Image Alternative text", :src => "#{image_path 'bag.png'}", :style => "bottom: -8px; right: -32px;", :title => "Image Title"}/
+        .col-md-4
+          .banner-2{:style => "background-color:#EF4D9C;"}
+            %a.banner-link{:href => "#"}
+            .banner-caption-top-right
+              %h5.banner-title Best 2015 Tablets
+              %p.banner-desc Double the Pleasure, Double the Tablets.
+              %p.banner-shop-now
+                Shop Now
+                %i.fa.fa-caret-right
+            %img.banner-img{:alt => "Image Alternative text", :src => "#{image_path 'tablets.png'}", :style => "bottom: -22px; left: 0; width: 235px;", :title => "Image Title"}/
+        .col-md-4
+          .banner-2{:style => "background-color:#FEA92E;"}
+            %a.banner-link{:href => "#"}
+            .banner-caption-bottom-left
+              %h5.banner-title Top Glasses
+              %p.banner-desc My Goodness, My Glasses!
+              %p.banner-shop-now
+                Shop Now
+                %i.fa.fa-caret-right
+            %img.banner-img{:alt => "Image Alternative text", :src => "#{image_path 'glasses.png'}", :style => " top: -4px; right: -15px; width: 220px;", :title => "Image Title"}/
+  %section{:style => "background-color: #f8f8f8;"}
+    .block-main.container
+      .row
+        .col-md-4.col-sm-4
+          .block-content
+            = image_tag("1.jpg", :class => "img-responsive")
+            .bs-text-down.text-center.hvr-outline-out
+              Menswear
+              %span Intimates Fall/Winter 2015
+        .col-md-4.col-sm-4
+          .block-content
+            = image_tag("5.jpg", :class => "img-responsive")
+            .bs-text-center.text-center
+              Accesories
+              %span Get a new look with Smile Collection
+        .col-md-4.col-sm-4
+          .block-content
+            = image_tag("3.jpg", :class => "img-responsive")
+            .bs-text-down.text-center
+              Womenswear
+              %span Smile Collection new arrivals
+    .clearfix
+  %section.top-letest-product-section
+    .container
+      .section-title
+        %h2 LATEST PRODUCTS
+      %section.related-product-section
+        .container
+          .product-slider.owl-carousel
+            .product-item
+              .pi-pic
+                = image_tag("product/1.jpg")
+                .pi-links
+                  %a.add-card{:href => "#"}
+                    %i.flaticon-bag
+                    %span ADD TO CART
+                  %a.wishlist-btn{:href => "#"}
+                    %i.flaticon-heart
+              .pi-text
+                %h6 $35,00
+                %p Flamboyant Pink Top
+            .product-item
+              .pi-pic
+                .tag-new New
+                = image_tag("product/2.jpg")
+                .pi-links
+                  %a.add-card{:href => "#"}
+                    %i.flaticon-bag
+                    %span ADD TO CART
+                  %a.wishlist-btn{:href => "#"}
+                    %i.flaticon-heart
+              .pi-text
+                %h6 $35,00
+                %p Black and White Stripes Dress
+            .product-item
+              .pi-pic
+                = image_tag("product/3.jpg")
+                .pi-links
+                  %a.add-card{:href => "#"}
+                    %i.flaticon-bag
+                    %span ADD TO CART
+                  %a.wishlist-btn{:href => "#"}
+                    %i.flaticon-heart
+              .pi-text
+                %h6 $35,00
+                %p Flamboyant Pink Top
+            .product-item
+              .pi-pic
+                = image_tag("product/4.jpg")
+                .pi-links
+                  %a.add-card{:href => "#"}
+                    %i.flaticon-bag
+                    %span ADD TO CART
+                  %a.wishlist-btn{:href => "#"}
+                    %i.flaticon-heart
+              .pi-text
+                %h6 $35,00
+                %p Flamboyant Pink Top
+            .product-item
+              .pi-pic
+                = image_tag("product/6.jpg")
+                .pi-links
+                  %a.add-card{:href => "#"}
+                    %i.flaticon-bag
+                    %span ADD TO CART
+                  %a.wishlist-btn{:href => "#"}
+                    %i.flaticon-heart
+              .pi-text
+                %h6 $35,00
+                %p Flamboyant Pink Top
+  %section.product-filter-section
+    .container
+      .section-title
+        %h2 BROWSE TOP SELLING PRODUCTS
+      %ul.product-filter-menu
+        %li
+          %a{:href => "#"} TOPS
+        %li
+          %a{:href => "#"} JUMPSUITS
+        %li
+          %a{:href => "#"} LINGERIE
+        %li
+          %a{:href => "#"} JEANS
+        %li
+          %a{:href => "#"} DRESSES
+        %li
+          %a{:href => "#"} COATS
+        %li
+          %a{:href => "#"} JUMPERS
+        %li
+          %a{:href => "#"} LEGGINGS
+      .row
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              = image_tag("product/5.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Product Fashion
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              .tag-sale ON SALE
+              = image_tag("product/6.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Product Fashion
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              = image_tag("product/7.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Product Fashion
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              = image_tag("product/8.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Product Fashion
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              = image_tag("product/9.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Product Fashion
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              = image_tag("product/10.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Product Fashion
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              = image_tag("product/11.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Product Fashion
+        .col-lg-3.col-sm-6
+          .product-item
+            .pi-pic
+              = image_tag("product/12.jpg")
+              .pi-links
+                %a.add-card{:href => "#"}
+                  %i.flaticon-bag
+                  %span ADD TO CART
+                %a.wishlist-btn{:href => "#"}
+                  %i.flaticon-heart
+            .pi-text
+              %h6 $35,00
+              %p Product Fashion
+      .text-center.pt-5
+        %a{:href => "category.html"}
+          %button.site-btn.sb-line.sb-dark LOAD MORE
+  %section.banner-section
+    .container
+      .banner.set-bg{:style => "background-image: url('#{image_path 'banner-bg.jpg'}')"}
+        .tag-new NEW
+        %span New Arrivals
+        %h2 STRIPED SHIRTS
+        %a.site-btn{:href => "#"} SHOP NOW
+  .section
+    .container
+      .row
+        .col-md-4.col-sm-6
+          %a.banner.banner-1{:href => "#"}
+            = image_tag("banner10.jpg")
+            .banner-caption.text-center
+              %h4.white-color.text-white NEW COLLECTION
+        .col-md-4.col-sm-6
+          %a.banner.banner-1{:href => "#"}
+            = image_tag("banner11.jpg")
+            .banner-caption.text-center
+              %h4.white-color.text-white NEW COLLECTION
+        .col-md-4.col-md-offset-0.col-sm-6.col-sm-offset-3
+          %a.banner.banner-1{:href => "#"}
+            = image_tag("banner12.jpg")
+            .banner-caption.text-center
+              %h4.white-color.text-white NEW COLLECTION
+  :javascript
+    var hero_s = $(".hero-slider");
+        hero_s.owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            items: 1,
+            dots: true,
+            animateOut: 'fadeOut',
+        	animateIn: 'fadeIn',
+            navText: ['<i class="flaticon-left-arrow-1"></i>', '<i class="flaticon-right-arrow-1"></i>'],
+            smartSpeed: 1200,
+            autoHeight: false,
+            autoplay: true,
+            onInitialized: function() {
+            	var a = this.items().length;
+                $("#snh-1").html("<span>1</span><span>" + a + "</span>");
+            }
+        }).on("changed.owl.carousel", function(a) {
+            var b = --a.item.index, a = a.item.count;
+        	$("#snh-1").html("<span> "+ (1 > b ? b + a : b > a ? b - a : b) + "</span><span>" + a + "</span>");
+
+        });
+
+    	hero_s.append('<div class="slider-nav-warp"><div class="slider-nav"></div></div>');
+    	$(".hero-slider .owl-nav, .hero-slider .owl-dots").appendTo('.slider-nav');
+      $('.product-slider').owlCarousel({
+      		loop: true,
+      		nav: true,
+      		dots: false,
+      		margin : 30,
+      		autoplay: true,
+      		navText: ['<i class="flaticon-left-arrow-1"></i>', '<i class="flaticon-right-arrow-1"></i>'],
+      		responsive : {
+      			0 : {
+      				items: 1,
+      			},
+      			480 : {
+      				items: 2,
+      			},
+      			768 : {
+      				items: 3,
+      			},
+      			1200 : {
+      				items: 4,
+      			}
+      		}
+      	});

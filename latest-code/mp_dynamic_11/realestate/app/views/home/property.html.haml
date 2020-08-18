@@ -1,0 +1,348 @@
+%body
+  %section.ftco-search
+    .container
+      .row
+        .col-md-12.search-wrap
+          %h2.heading.h5.d-flex.align-items-center.pr-4
+            %span.ion-ios-search.mr-3
+            Search Property
+          %form.search-property{:action => "#"}
+            .row
+              .col-md.align-items-end
+                .form-group
+                  %label{:for => "#"} Keyword
+                  .form-field
+                    .icon
+                      %span.icon-my_location
+                    %input.form-control{:placeholder => "Keyword", :type => "text"}/
+              .col-md.align-items-end
+                .form-group
+                  %label{:for => "#"} Location
+                  .form-field
+                    .icon
+                      %span.icon-my_location
+                    %input.form-control{:placeholder => "City/Locality Name", :type => "text"}/
+              .col-md.align-items-end
+                .form-group
+                  %label{:for => "#"} Property Type
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} Type
+                        %option{:value => ""} Commercial
+                        %option{:value => ""} - Office
+                        %option{:value => ""} Residential
+                        %option{:value => ""} Villa
+                        %option{:value => ""} Condominium
+                        %option{:value => ""} Apartment
+              .col-md.align-items-end
+                .form-group
+                  %label{:for => "#"} Property Status
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} Type
+                        %option{:value => ""} Rent
+                        %option{:value => ""} Sale
+              .col-md.align-items-end
+                .form-group
+                  %label{:for => "#"} Agents
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} Any
+                        %option{:value => ""} Jonh Doe
+                        %option{:value => ""} Doe Mags
+                        %option{:value => ""} Kenny Scott
+                        %option{:value => ""} Emily Storm
+            .row
+              .col-md.align-items-end
+                .form-group
+                  %label{:for => "#"} Min Beds
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} 1
+                        %option{:value => ""} 2
+                        %option{:value => ""} 3
+                        %option{:value => ""} 4
+                        %option{:value => ""} 5
+              .col-md.align-items-end
+                .form-group
+                  %label{:for => "#"} Min Bathroom
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} 1
+                        %option{:value => ""} 2
+                        %option{:value => ""} 3
+                        %option{:value => ""} 4
+                        %option{:value => ""} 5
+              .col-md.align-items-end
+                .form-group
+                  %label{:for => "#"} Min Price
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} Min Price
+                        %option{:value => ""} $1,000
+                        %option{:value => ""} $5,000
+                        %option{:value => ""} $10,000
+                        %option{:value => ""} $50,000
+                        %option{:value => ""} $100,000
+                        %option{:value => ""} $200,000
+                        %option{:value => ""} $300,000
+                        %option{:value => ""} $400,000
+                        %option{:value => ""} $500,000
+                        %option{:value => ""} $600,000
+                        %option{:value => ""} $700,000
+                        %option{:value => ""} $800,000
+                        %option{:value => ""} $900,000
+                        %option{:value => ""} $1,000,000
+              .col-md.align-items-end
+                .form-group
+                  %label{:for => "#"} Min Price
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} Min Price
+                        %option{:value => ""} $5,000
+                        %option{:value => ""} $10,000
+                        %option{:value => ""} $50,000
+                        %option{:value => ""} $100,000
+                        %option{:value => ""} $200,000
+                        %option{:value => ""} $300,000
+                        %option{:value => ""} $400,000
+                        %option{:value => ""} $500,000
+                        %option{:value => ""} $600,000
+                        %option{:value => ""} $700,000
+                        %option{:value => ""} $800,000
+                        %option{:value => ""} $900,000
+                        %option{:value => ""} $1,000,000
+                        %option{:value => ""} $2,000,000
+              .col-md.align-items-end
+                .form-group
+                  %label{:for => "#"}
+                    Min Area
+                    %span (sq ft)
+                  .form-field
+                    .icon
+                      %span.icon-my_location
+                    %input.form-control{:placeholder => "Min Area", :type => "text"}/
+              .col-md.align-items-end
+                .form-group
+                  %label{:for => "#"}
+                    Max Area
+                    %span (sq ft)
+                  .form-field
+                    .icon
+                      %span.icon-my_location
+                    %input.form-control{:placeholder => "Max Area", :type => "text"}/
+              .col-md.align-self-end
+                .form-group
+                  .form-field
+                    %input.form-control.btn.btn-primary{:type => "submit", :value => "Search"}/
+  %section.ftco-section.bg-light
+    .container
+      .row
+        .col-sm.col-md-6.col-lg-4.ftco-animate
+          .property
+            %figure.tag.status For Sale
+            %a{:href => "property.html"}
+              .property-image
+                = image_tag("fp-1.jpg")
+              .overlay
+                .info
+                  .tag.price $ 11,000
+                  %h3 3398 Lodgeville Road
+                  %figure.mb-0 Golden Valley, MN 55427
+                %ul.additional-info
+                  %li
+                    %header Area:
+                    %figure.mb-0
+                      240m
+                      %sup 2
+                  %li
+                    %header Beds:
+                    %figure.mb-0 2
+                  %li
+                    %header Baths:
+                    %figure.mb-0 2
+                  %li
+                    %header Garages:
+                    %figure.mb-0 0
+        .col-sm.col-md-6.col-lg-4.ftco-animate
+          .property
+            %figure.tag.status For Sale
+            %a{:href => "property.html"}
+              .property-image
+                = image_tag("fp-1.jpg")
+              .overlay
+                .info
+                  .tag.price $ 11,000
+                  %h3 3398 Lodgeville Road
+                  %figure.mb-0 Golden Valley, MN 55427
+                %ul.additional-info
+                  %li
+                    %header Area:
+                    %figure.mb-0
+                      240m
+                      %sup 2
+                  %li
+                    %header Beds:
+                    %figure.mb-0 2
+                  %li
+                    %header Baths:
+                    %figure.mb-0 2
+                  %li
+                    %header Garages:
+                    %figure.mb-0 0
+        .col-sm.col-md-6.col-lg-4.ftco-animate
+          .property
+            %figure.tag.status For Sale
+            %a{:href => "property.html"}
+              .property-image
+                = image_tag("fp-1.jpg")
+              .overlay
+                .info
+                  .tag.price $ 11,000
+                  %h3 3398 Lodgeville Road
+                  %figure.mb-0 Golden Valley, MN 55427
+                %ul.additional-info
+                  %li
+                    %header Area:
+                    %figure.mb-0
+                      240m
+                      %sup 2
+                  %li
+                    %header Beds:
+                    %figure.mb-0 2
+                  %li
+                    %header Baths:
+                    %figure.mb-0 2
+                  %li
+                    %header Garages:
+                    %figure.mb-0 0
+        .col-sm.col-md-6.col-lg-4.ftco-animate
+          .property
+            %figure.tag.status For Sale
+            %a{:href => "property.html"}
+              .property-image
+                = image_tag("fp-1.jpg")
+              .overlay
+                .info
+                  .tag.price $ 11,000
+                  %h3 3398 Lodgeville Road
+                  %figure.mb-0 Golden Valley, MN 55427
+                %ul.additional-info
+                  %li
+                    %header Area:
+                    %figure.mb-0
+                      240m
+                      %sup 2
+                  %li
+                    %header Beds:
+                    %figure.mb-0 2
+                  %li
+                    %header Baths:
+                    %figure.mb-0 2
+                  %li
+                    %header Garages:
+                    %figure.mb-0 0
+        .col-sm.col-md-6.col-lg-4.ftco-animate
+          .property
+            %figure.tag.status For Sale
+            %a{:href => "property.html"}
+              .property-image
+                = image_tag("fp-1.jpg")
+              .overlay
+                .info
+                  .tag.price $ 11,000
+                  %h3 3398 Lodgeville Road
+                  %figure.mb-0 Golden Valley, MN 55427
+                %ul.additional-info
+                  %li
+                    %header Area:
+                    %figure.mb-0
+                      240m
+                      %sup 2
+                  %li
+                    %header Beds:
+                    %figure.mb-0 2
+                  %li
+                    %header Baths:
+                    %figure.mb-0 2
+                  %li
+                    %header Garages:
+                    %figure.mb-0 0
+        .col-sm.col-md-6.col-lg-4.ftco-animate
+          .property
+            %figure.tag.status For Sale
+            %a{:href => "property.html"}
+              .property-image
+                = image_tag("fp-1.jpg")
+              .overlay
+                .info
+                  .tag.price $ 11,000
+                  %h3 3398 Lodgeville Road
+                  %figure.mb-0 Golden Valley, MN 55427
+                %ul.additional-info
+                  %li
+                    %header Area:
+                    %figure.mb-0
+                      240m
+                      %sup 2
+                  %li
+                    %header Beds:
+                    %figure.mb-0 2
+                  %li
+                    %header Baths:
+                    %figure.mb-0 2
+                  %li
+                    %header Garages:
+                    %figure.mb-0 0
+      .row.mt-5
+        .col.text-center
+          .block-27
+            %ul
+              %li
+                %a{:href => "#"} &lt;
+              %li.active
+                %span 1
+              %li
+                %a{:href => "#"} 2
+              %li
+                %a{:href => "#"} 3
+              %li
+                %a{:href => "#"} 4
+              %li
+                %a{:href => "#"} 5
+              %li
+                %a{:href => "#"} &gt;
+  %section.ftco-section-parallax
+    .parallax-img.d-flex.align-items-center
+      .container
+        .row.d-flex.justify-content-center
+          .col-md-7.text-center.heading-section.heading-section-white.ftco-animate
+            %h2 Subcribe to our Newsletter
+            %p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in
+            .row.d-flex.justify-content-center.mt-5
+              .col-md-8
+                %form.subscribe-form{:action => "#"}
+                  .form-group.d-flex
+                    %input.form-control{:placeholder => "Enter email address", :type => "text"}/
+                    %input.submit.px-3{:type => "submit", :value => "Subscribe"}/

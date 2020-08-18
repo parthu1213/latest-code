@@ -1,0 +1,385 @@
+%body
+  %aside.sidebar.trans-0-4
+    %button.btn-hide-sidebar.ti-close.color0-hov.trans-0-4
+    %ul.menu-sidebar.p-t-95.p-b-70
+      %li.t-center.m-b-13
+        %a.txt19{:href => root_path} Home
+      %li.t-center.m-b-13
+        %a.txt19{:href => menu_path} Menu
+      %li.t-center.m-b-13
+        %a.txt19{:href => gallery_path} Gallery
+      %li.t-center.m-b-13
+        %a.txt19{:href => about_path} About
+      %li.t-center.m-b-13
+        %a.txt19{:href => blog_path} Blog
+      %li.t-center.m-b-33
+        %a.txt19{:href => contact_path} Contact
+      %li.t-center
+        %a.btn3.flex-c-m.size13.txt11.trans-0-4.m-l-r-auto{:href => "reservation.html"}
+          Reservation
+    .gallery-sidebar.t-center.p-l-60.p-r-60.p-b-40
+      %h4.txt20.m-b-33
+        Gallery
+      .wrap-gallery-sidebar.flex-w
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-01.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-01.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-02.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-02.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-03.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-03.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-05.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-05.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-06.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-06.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-07.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-07.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-09.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-09.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-10.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-10.jpg'}"}/
+        %a.item-gallery-sidebar.wrap-pic-w{"data-lightbox" => "gallery-footer", :href => "images/photo-gallery-11.jpg"}
+          %img{:src => "#{image_path 'photo-gallery-thumb-11.jpg'}"}/
+  %section.bg-title-page.flex-c-m.p-t-160.p-b-80.p-l-15.p-r-15{:style => "background-image: url('#{image_path 'bg-title-page-01.jpg'}');"}
+    %h2.tit6.t-center
+      Star Menu
+  %section.section-mainmenu.p-t-110.p-b-70.bg1-pattern
+    .container
+      .row
+        .col-md-10.col-lg-6.p-r-35.p-r-15-lg.m-l-r-auto
+          .wrap-item-mainmenu.p-b-22
+            %h3.tit-mainmenu.tit10.p-b-25
+              STARTERS
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Cheese Bread Roll
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $29.79
+              %span.info-item-mainmenu.txt23
+                Sed fermentum eros vitae eros
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Cheese Maggi Bread Roll
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $19.35
+              %span.info-item-mainmenu.txt23
+                Feugiat maximus neque pharetra
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Katori Chaat
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $12.19
+              %span.info-item-mainmenu.txt23
+                Proin lacinia nisl ut ultricies posuere nulla
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Maggi Noodle Cutlet
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $21.89
+              %span.info-item-mainmenu.txt23
+                Etiam cursus facilisis tortor
+          .wrap-item-mainmenu.p-b-22
+            %h3.tit-mainmenu.tit10.p-b-25
+              Drinks
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Beer
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $29.79
+              %span.info-item-mainmenu.txt23
+                Sed fermentum eros vitae eros
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Cider
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $19.35
+              %span.info-item-mainmenu.txt23
+                Feugiat maximus neque pharetra
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Hard soda
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $53.34
+              %span.info-item-mainmenu.txt23
+                Proin lacinia nisl ut ultricies posuere nulla
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Mixed drinks
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $62.45
+              %span.info-item-mainmenu.txt23
+                Sed fermentum eros vitae eros
+        .col-md-10.col-lg-6.p-l-35.p-l-15-lg.m-l-r-auto
+          .wrap-item-mainmenu.p-b-22
+            %h3.tit-mainmenu.tit10.p-b-25
+              Main
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Methi Paratha
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $31.18
+              %span.info-item-mainmenu.txt23
+                Proin lacinia nisl ut ultricies posuere nulla
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Gajar ki Sabji
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $70.25
+              %span.info-item-mainmenu.txt23
+                Feugiat maximus neque pharetra
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Palak Kadhi
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $36.19
+              %span.info-item-mainmenu.txt23
+                Etiam cursus facilisis tortor
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Annakoot Ki Sabzi
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $19.50
+              %span.info-item-mainmenu.txt23
+                Proin lacinia nisl ut ultricies posuere nulla
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Veg Kerala Biryani
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $29.15
+              %span.info-item-mainmenu.txt23
+                Sed fermentum eros vitae eros
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Paneer Makhani
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $29.79
+              %span.info-item-mainmenu.txt23
+                Feugiat maximus neque pharetra
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Tamarind Rice
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $19.35
+              %span.info-item-mainmenu.txt23
+                Proin lacinia nisl ut ultricies posuere nulla
+          .wrap-item-mainmenu.p-b-22
+            %h3.tit-mainmenu.tit10.p-b-25
+              Dessert
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Gulab Jamun
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $9.79
+              %span.info-item-mainmenu.txt23
+                Proin lacinia nisl ut ultricies posuere nulla
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Gajar Ka Halwa
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $19.35
+              %span.info-item-mainmenu.txt23
+                Sed fermentum eros vitae eros
+            .item-mainmenu.m-b-36
+              .flex-w.flex-b.m-b-3
+                %a.name-item-mainmenu.txt21{:href => "#"}
+                  Aam Shrikhand
+                .line-item-mainmenu.bg3-pattern
+                .price-item-mainmenu.txt22
+                  $5.79
+              %span.info-item-mainmenu.txt23
+                Duis pharetra ligula at urna dignissim
+  %section.section-lunch.bgwhite
+    .header-lunch.parallax0.parallax100{:style => "background-image: url('#{image_path 'header-menu-01.jpg'}');"}
+      .bg1-overlay.t-center.p-t-170.p-b-165
+        %h2.tit4.t-center
+          Lunch
+    .container
+      .row.p-t-108.p-b-70
+        .col-md-8.col-lg-6.m-l-r-auto
+          .blo3.flex-w.flex-col-l-sm.m-b-30
+            .pic-blo3.size20.bo-rad-10.hov-img-zoom.m-r-28
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'lunch-01.jpg'}"}/
+            .text-blo3.size21.flex-col-l-m
+              %a.txt21.m-b-3{:href => "#"}
+                Masala Bhindi
+              %span.txt23
+                Aenean pharetra tortor dui in pellentesque
+              %span.txt22.m-t-20
+                $29.79
+          .blo3.flex-w.flex-col-l-sm.m-b-30
+            .pic-blo3.size20.bo-rad-10.hov-img-zoom.m-r-28
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'lunch-03.jpg'}"}/
+            .text-blo3.size21.flex-col-l-m
+              %a.txt21.m-b-3{:href => "#"}
+                Chana Kulcha
+              %span.txt23
+                Aenean condimentum ante erat
+              %span.txt22.m-t-20
+                $45.09
+          .blo3.flex-w.flex-col-l-sm.m-b-30
+            .pic-blo3.size20.bo-rad-10.hov-img-zoom.m-r-28
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'lunch-05.jpg'}"}/
+            .text-blo3.size21.flex-col-l-m
+              %a.txt21.m-b-3{:href => "#"}
+                Gujarati Kadhi
+              %span.txt23
+                Proin lacinia nisl ut ultricies posuere nulla
+              %span.txt22.m-t-20
+                $12.75
+        .col-md-8.col-lg-6.m-l-r-auto
+          .blo3.flex-w.flex-col-l-sm.m-b-30
+            .pic-blo3.size20.bo-rad-10.hov-img-zoom.m-r-28
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'lunch-02.jpg'}"}/
+            .text-blo3.size21.flex-col-l-m
+              %a.txt21.m-b-3{:href => "#"}
+                Allahabad Ki Tehri
+              %span.txt23
+                Proin lacinia nisl ut ultricies posuere nulla
+              %span.txt22.m-t-20
+                $29.79
+          .blo3.flex-w.flex-col-l-sm.m-b-30
+            .pic-blo3.size20.bo-rad-10.hov-img-zoom.m-r-28
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'lunch-04.jpg'}"}/
+            .text-blo3.size21.flex-col-l-m
+              %a.txt21.m-b-3{:href => "#"}
+                Kolhapuri Vegetables
+              %span.txt23
+                Sed fermentum eros vitae eros
+              %span.txt22.m-t-20
+                $45.09
+          .blo3.flex-w.flex-col-l-sm.m-b-30
+            .pic-blo3.size20.bo-rad-10.hov-img-zoom.m-r-28
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'lunch-06.jpg'}"}/
+            .text-blo3.size21.flex-col-l-m
+              %a.txt21.m-b-3{:href => "#"}
+                Black Channa and Coconut Stew
+              %span.txt23
+                Duis massa nibh porttitor nec imperdiet eget
+              %span.txt22.m-t-20
+                $12.75
+  %section.section-dinner.bgwhite
+    .header-dinner.parallax0.parallax100{:style => "background-image: url('#{image_path 'header-menu-02.jpg'}');"}
+      .bg1-overlay.t-center.p-t-170.p-b-165
+        %h2.tit4.t-center
+          Dinner
+    .container
+      .row.p-t-108.p-b-70
+        .col-md-8.col-lg-6.m-l-r-auto
+          .blo3.flex-w.flex-col-l-sm.m-b-30
+            .pic-blo3.size20.bo-rad-10.hov-img-zoom.m-r-28
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'dinner-01.jpg'}"}/
+            .text-blo3.size21.flex-col-l-m
+              %a.txt21.m-b-3{:href => "#"}
+                Dal Methi
+              %span.txt23
+                Aenean pharetra tortor dui in pellentesque
+              %span.txt22.m-t-20
+                $29.79
+          .blo3.flex-w.flex-col-l-sm.m-b-30
+            .pic-blo3.size20.bo-rad-10.hov-img-zoom.m-r-28
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'dinner-03.jpg'}"}/
+            .text-blo3.size21.flex-col-l-m
+              %a.txt21.m-b-3{:href => "#"}
+                Palak Chana Dal
+              %span.txt23
+                Aenean condimentum ante erat
+              %span.txt22.m-t-20
+                $45.09
+          .blo3.flex-w.flex-col-l-sm.m-b-30
+            .pic-blo3.size20.bo-rad-10.hov-img-zoom.m-r-28
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'dinner-05.jpg'}"}/
+            .text-blo3.size21.flex-col-l-m
+              %a.txt21.m-b-3{:href => "#"}
+                Aloo Gobhi
+              %span.txt23
+                Proin lacinia nisl ut ultricies posuere nulla
+              %span.txt22.m-t-20
+                $12.75
+        .col-md-8.col-lg-6.m-l-r-auto
+          .blo3.flex-w.flex-col-l-sm.m-b-30
+            .pic-blo3.size20.bo-rad-10.hov-img-zoom.m-r-28
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'dinner-02.jpg'}"}/
+            .text-blo3.size21.flex-col-l-m
+              %a.txt21.m-b-3{:href => "#"}
+                Jeera Rice
+              %span.txt23
+                Proin lacinia nisl ut ultricies posuere nulla
+              %span.txt22.m-t-20
+                $29.79
+          .blo3.flex-w.flex-col-l-sm.m-b-30
+            .pic-blo3.size20.bo-rad-10.hov-img-zoom.m-r-28
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'dinner-04.jpg'}"}/
+            .text-blo3.size21.flex-col-l-m
+              %a.txt21.m-b-3{:href => "#"}
+                Matar Paneer
+              %span.txt23
+                Sed fermentum eros vitae eros
+              %span.txt22.m-t-20
+                $45.09
+          .blo3.flex-w.flex-col-l-sm.m-b-30
+            .pic-blo3.size20.bo-rad-10.hov-img-zoom.m-r-28
+              %a{:href => "#"}
+                %img{:src => "#{image_path 'dinner-06.jpg'}"}/
+            .text-blo3.size21.flex-col-l-m
+              %a.txt21.m-b-3{:href => "#"}
+                Tomato Rice
+              %span.txt23
+                Duis massa nibh porttitor nec imperdiet eget
+              %span.txt22.m-t-20
+                $12.75
+  .section-signup.bg1-pattern.p-t-85.p-b-85
+    %form.flex-c-m.flex-w.flex-col-c-m-lg.p-l-5.p-r-5
+      %span.txt5.m-10
+        Specials Sign up
+      .wrap-input-signup.size17.bo2.bgwhite.pos-relative.txt10.m-10
+        %input.sizefull.txt10.p-l-20{:name => "email-address", :placeholder => "Email Adrress", :type => "text"}/
+        %i.fa.fa-envelope.ab-r-m.m-r-18{"aria-hidden" => "true"}
+      %button.btn3.flex-c-m.size18.txt11.trans-0-4.m-10{:type => "submit"}
+        Sign-up
+  #myBtn.btn-back-to-top.bg0-hov
+    %span.symbol-btn-back-to-top
+      %i.fa.fa-angle-double-up{"aria-hidden" => "true"}

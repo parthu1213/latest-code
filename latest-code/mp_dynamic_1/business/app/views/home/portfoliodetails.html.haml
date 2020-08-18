@@ -1,0 +1,221 @@
+.sub-banner.overview-bgi{:style => "background-image: url('#{image_path 'banner-1.jpg'}')"}
+  \&gt;
+  .container
+    .breadcrumb-area
+      %h1 Portfolio Details
+      %ul.breadcrumbs
+        %li
+          %a{:href => "index.html"} Home
+        %li.active Portfolio Details
+.project-details-page.content-area-16
+  .container
+    .row
+      .col-lg-8.col-md-12
+        #ProjectDetailsSlider.carousel.Project-details-sliders.slide.mb-60
+          .carousel-inner
+            .active.item.carousel-item{"data-slide-number" => "0"}
+              = image_tag("portfolio/img-1.jpg", :class => "img-fluid")
+            .item.carousel-item{"data-slide-number" => "1"}
+              = image_tag("portfolio/img-2.jpg", :class => "img-fluid")
+            .item.carousel-item{"data-slide-number" => "2"}
+              = image_tag("portfolio/img-3.jpg", :class => "img-fluid")
+            .item.carousel-item{"data-slide-number" => "4"}
+              = image_tag("portfolio/img-4.jpg", :class => "img-fluid")
+            .item.carousel-item{"data-slide-number" => "5"}
+              = image_tag("portfolio/img-5.jpg", :class => "img-fluid")
+            %a.carousel-control.left{"data-slide" => "prev", :href => "#ProjectDetailsSlider"}
+              %i.fa.fa-angle-left
+            %a.carousel-control.right{"data-slide" => "next", :href => "#ProjectDetailsSlider"}
+              %i.fa.fa-angle-right
+          %ul.carousel-indicators.smail-properties.list-inline.nav.nav-justified
+            %li.list-inline-item.active
+              %a#carousel-selector-0.selected{"data-slide-to" => "0", "data-target" => "#ProjectDetailsSlider"}
+                = image_tag("portfolio/img-1.jpg", :class => "img-fluid")
+            %li.list-inline-item
+              %a#carousel-selector-1{"data-slide-to" => "1", "data-target" => "#ProjectDetailsSlider"}
+                = image_tag("portfolio/img-2.jpg", :class => "img-fluid")
+            %li.list-inline-item
+              %a#carousel-selector-2{"data-slide-to" => "2", "data-target" => "#ProjectDetailsSlider"}
+                = image_tag("portfolio/img-3.jpg", :class => "img-fluid")
+            %li.list-inline-item
+              %a#carousel-selector-3{"data-slide-to" => "3", "data-target" => "#ProjectDetailsSlider"}
+                = image_tag("portfolio/img-4.jpg", :class => "img-fluid")
+            %li.list-inline-item
+              %a#carousel-selector-4{"data-slide-to" => "4", "data-target" => "#ProjectDetailsSlider"}
+                = image_tag("portfolio/img-5.jpg", :class => "img-fluid")
+        .project-specification-2.widget.d-lg-none.d-xl-none
+          %h5.sidebar-title Project Info
+          %ul
+            %li
+              %i.flaticon-arrow
+              %strong Category :
+              Investment
+            %li
+              %i.flaticon-arrow
+              %strong Date :
+              14 February , 2018
+            %li
+              %i.flaticon-arrow
+              %strong Status :
+              In Progress
+            %li
+              %i.flaticon-arrow
+              %strong Ranking :
+              5
+            %li
+              %i.flaticon-arrow
+              %strong Location:
+              Mota varachha, Surat
+            %li
+              %i.flaticon-arrow
+              %strong Website:
+              %a{:href => "mailto:www.info@themevessel.com"} www.info@theme.com
+          %p
+            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+            as their default model text, and a search for 'lorem ipsum' will uncover many web sites.
+        .product-description.mb-60
+          .heading-3 Product Description
+          %p
+            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+            as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+          %p
+            the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+            Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, quis varius est elementum a. Aenean congue rhoncus mi, ut bibendum risus suscipit eu. Curabitur non interdum ligula. Nulla facilisi.
+          %p
+            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+            as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident
+        .comments-section.mb-60
+          %h2.comments-title Comments Section
+          %ul.comments
+            %li
+              .comment
+                .comment-author
+                  %a{:href => "#"}
+                    = image_tag("avatar/avatar-13.jpg", :class => "rounded-circle")
+                .comment-content
+                  .comment-meta
+                    .comment-meta-author
+                      Jane Doe
+                    .comment-meta-reply
+                      %a{:href => "#"} Reply
+                    .comment-meta-date
+                      %span 8:42 PM 10/3/2018
+                  .clearfix
+                  .comment-body
+                    .comment-rating
+                      %i.fa.fa-star
+                      %i.fa.fa-star
+                      %i.fa.fa-star
+                      %i.fa.fa-star
+                      %i.fa.fa-star-o
+                    %p
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec
+                      vel nulla dui. Pellentesque.
+              %ul
+                %li
+                  .comment
+                    .comment-author
+                      %a{:href => "#"}
+                        = image_tag("avatar/avatar-13.jpg", :class => "rounded-circle")
+                    .comment-content
+                      .comment-meta
+                        .comment-meta-author
+                          Jane Doe
+                        .comment-meta-reply
+                          %a{:href => "#"} Reply
+                        .comment-meta-date
+                          %span 8:42 PM 10/3/2018
+                      .clearfix
+                      .comment-body
+                        .comment-rating
+                          %i.fa.fa-star
+                          %i.fa.fa-star
+                          %i.fa.fa-star
+                          %i.fa.fa-star-half-o
+                          %i.fa.fa-star-o
+                        %p
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla.
+                          Donec vel nulla dui.
+            %li
+              .comment
+                .comment-author
+                  %a{:href => "#"}
+                    = image_tag("avatar/avatar-13.jpg", :class => "rounded-circle")
+                .comment-content
+                  .comment-meta
+                    .comment-meta-author
+                      Jane Doe
+                    .comment-meta-reply
+                      %a{:href => "#"} Reply
+                    .comment-meta-date
+                      %span 8:42 PM 10/3/2018
+                  .clearfix
+                  .comment-body
+                    .comment-rating
+                      %i.fa.fa-star
+                      %i.fa.fa-star
+                      %i.fa.fa-star
+                      %i.fa.fa-star
+                      %i.fa.fa-star-o
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros. Maecenas eros enim, tincidunt vel turpis vel, dapibus tempus nulla.
+        .contact-1.mb-30
+          %h2 Leave a Comment
+          .container
+            .row
+              %form{:action => "#", :enctype => "multipart/form-data", :method => "GET"}
+                .row
+                  .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                    .form-group.name
+                      %input.form-control{:name => "name", :placeholder => "Name", :type => "text"}/
+                  .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                    .form-group.email
+                      %input.form-control{:name => "email", :placeholder => "Email", :type => "email"}/
+                  .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                    .form-group.subject
+                      %input.form-control{:name => "subject", :placeholder => "Subject", :type => "text"}/
+                  .col-lg-6.col-md-6.col-sm-12.col-xs-12
+                    .form-group.number
+                      %input.form-control{:name => "phone", :placeholder => "Number", :type => "text"}/
+                  .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .form-group.message
+                      %textarea.form-control{:name => "message", :placeholder => "Write message"}
+                  .col-lg-6.col-md-12.col-sm-12.col-xs-12
+                    .send-btn
+                      %button.btn.btn-color.btn-md.btn-message{:type => "submit"} Send Message
+      .col-lg-4.col-md-12.d-none.d-xl-block.d-lg-block
+        .sidebar
+          .project-specification-2.widget
+            %h5.sidebar-title Project Info
+            %ul
+              %li
+                %i.flaticon-arrow
+                %strong Category :
+                Investment
+              %li
+                %i.flaticon-arrow
+                %strong Date :
+                14 February , 2018
+              %li
+                %i.flaticon-arrow
+                %strong Status :
+                In Progress
+              %li
+                %i.flaticon-arrow
+                %strong Ranking :
+                5
+              %li
+                %i.flaticon-arrow
+                %strong Location:
+                Mota Varachha, Surat
+              %li
+                %i.flaticon-arrow
+                %strong Website:
+                %a{:href => "mailto:contact@softices.com"} contact@softices.com
+            %p
+              Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem
+              Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites.
+#full-page-search
+  %button.close{:type => "button"} ×
+  %form{:action => "#"}
+    %input{:placeholder => "type keyword(s) here", :type => "search", :value => ""}/
+    %button.btn.btn-sm.btn-color{:type => "button"} Search

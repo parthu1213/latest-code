@@ -1,0 +1,590 @@
+%body
+  %section.home-slider.owl-carousel
+    .slider-item{:style => "background-image:url('#{image_path 'bg_2.jpg'}');"}
+      .overlay
+      .container
+        .row.no-gutters.slider-text.align-items-md-end.align-items-center.justify-content-end
+          .col-md-6.text.p-4.ftco-animate
+            %h1.mb-3 Florida 5, Pinecrest, FL
+            %span.location.d-block.mb-3
+              %i.icon-my_location
+              Melbourne, Vic 3004
+            %p A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            %span.price $28,000
+            %a.btn-custom.p-3.px-4.bg-primary{:href => "#"}
+              View Details
+              %span.icon-plus.ml-1
+    .slider-item{:style => "background-image:url('#{image_path 'bg_2.jpg'}');"}
+      .overlay
+      .container
+        .row.no-gutters.slider-text.align-items-md-end.align-items-center.justify-content-end
+          .col-md-6.text.p-4.ftco-animate
+            %h1.mb-3 3015 Grand Avenue, CocoWalk
+            %span.location.d-block.mb-3
+              %i.icon-my_location
+              Melbourne, Vic 3004
+            %p A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            %span.price $28,000
+            %a.btn-custom.p-3.px-4.bg-primary{:href => "#"}
+              View Details
+              %span.icon-plus.ml-1
+  %section.ftco-search
+    .container
+      .row
+        .col-md-12.search-wrap
+          %h2.heading.h5.d-flex.align-items-center.pr-4
+            %span.ion-ios-search.mr-3
+            Search Property
+          %form.search-property{:action => "#"}
+            .row
+              .col-md.col-sm-12.align-items-end
+                .form-group
+                  %label{:for => "#"} Keyword
+                  .form-field
+                    .icon
+                      %span.icon-pencil
+                    %input.form-control{:placeholder => "Keyword", :type => "text"}/
+              .col-md.col-sm-12.align-items-end
+                .form-group
+                  %label{:for => "#"} Location
+                  .form-field
+                    .icon
+                      %span.icon-pencil
+                    %input.form-control{:placeholder => "City/Locality Name", :type => "text"}/
+              .col-md.col-sm-12.align-items-end
+                .form-group
+                  %label{:for => "#"} Property Type
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} Type
+                        %option{:value => ""} Commercial
+                        %option{:value => ""} - Office
+                        %option{:value => ""} Residential
+                        %option{:value => ""} Villa
+                        %option{:value => ""} Condominium
+                        %option{:value => ""} Apartment
+              .col-md.col-sm-12.align-items-end
+                .form-group
+                  %label{:for => "#"} Property Status
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} Type
+                        %option{:value => ""} Rent
+                        %option{:value => ""} Sale
+              .col-md.col-sm-12.align-items-end
+                .form-group
+                  %label{:for => "#"} Agents
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} Any
+                        %option{:value => ""} Jonh Doe
+                        %option{:value => ""} Doe Mags
+                        %option{:value => ""} Kenny Scott
+                        %option{:value => ""} Emily Storm
+            .row
+              .col-md.col-sm-12.align-items-end
+                .form-group
+                  %label{:for => "#"} Min Beds
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} 1
+                        %option{:value => ""} 2
+                        %option{:value => ""} 3
+                        %option{:value => ""} 4
+                        %option{:value => ""} 5
+              .col-md.col-sm-12.align-items-end
+                .form-group
+                  %label{:for => "#"} Min Bathroom
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} 1
+                        %option{:value => ""} 2
+                        %option{:value => ""} 3
+                        %option{:value => ""} 4
+                        %option{:value => ""} 5
+              .col-md.col-sm-12.align-items-end
+                .form-group
+                  %label{:for => "#"} Min Price
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} Min Price
+                        %option{:value => ""} $1,000
+                        %option{:value => ""} $5,000
+                        %option{:value => ""} $10,000
+                        %option{:value => ""} $50,000
+                        %option{:value => ""} $100,000
+                        %option{:value => ""} $200,000
+                        %option{:value => ""} $300,000
+                        %option{:value => ""} $400,000
+                        %option{:value => ""} $500,000
+                        %option{:value => ""} $600,000
+                        %option{:value => ""} $700,000
+                        %option{:value => ""} $800,000
+                        %option{:value => ""} $900,000
+                        %option{:value => ""} $1,000,000
+              .col-md.col-sm-12.align-items-end
+                .form-group
+                  %label{:for => "#"} Min Price
+                  .form-field
+                    .select-wrap
+                      .icon
+                        %span.ion-ios-arrow-down
+                      %select.form-control{:id => "", :name => ""}
+                        %option{:value => ""} Min Price
+                        %option{:value => ""} $5,000
+                        %option{:value => ""} $10,000
+                        %option{:value => ""} $50,000
+                        %option{:value => ""} $100,000
+                        %option{:value => ""} $200,000
+                        %option{:value => ""} $300,000
+                        %option{:value => ""} $400,000
+                        %option{:value => ""} $500,000
+                        %option{:value => ""} $600,000
+                        %option{:value => ""} $700,000
+                        %option{:value => ""} $800,000
+                        %option{:value => ""} $900,000
+                        %option{:value => ""} $1,000,000
+                        %option{:value => ""} $2,000,000
+              .col-md.col-sm-12.align-items-end
+                .form-group
+                  %label{:for => "#"}
+                    Min Area
+                    %span (sq ft)
+                  .form-field
+                    .icon
+                      %span.icon-pencil
+                    %input.form-control{:placeholder => "Min Area", :type => "text"}/
+              .col-md.col-sm-12.align-items-end
+                .form-group
+                  %label{:for => "#"}
+                    Max Area
+                    %span (sq ft)
+                  .form-field
+                    .icon
+                      %span.icon-pencil
+                    %input.form-control{:placeholder => "Max Area", :type => "text"}/
+              .col-md.col-sm-12.align-self-end
+                .form-group
+                  .form-field
+                    %input.form-control.btn.btn-primary{:type => "submit", :value => "Search"}/
+  %section.ftco-section.bg-light
+    .container
+      .row.justify-content-center.mb-5.pb-3
+        .col-md-7.heading-section.text-center.ftco-animate
+          %span.subheading Special Offers
+          %h2.mb-4 Most Recommended Properties
+    .container
+      .row
+        .col-sm.col-md-6.col-lg-4.ftco-animate
+          .property
+            %figure.tag.status For Sale
+            %a{:href => "property.html"}
+              .property-image
+                = image_tag("fp-1.jpg")
+              .overlay
+                .info
+                  .tag.price $ 11,000
+                  %h3 3398 Lodgeville Road
+                  %figure.mb-0 Golden Valley, MN 55427
+                %ul.additional-info
+                  %li
+                    %header Area:
+                    %figure.mb-0
+                      240m
+                      %sup 2
+                  %li
+                    %header Beds:
+                    %figure.mb-0 2
+                  %li
+                    %header Baths:
+                    %figure.mb-0 2
+                  %li
+                    %header Garages:
+                    %figure.mb-0 0
+        .col-sm.col-md-6.col-lg-4.ftco-animate
+          .property
+            %figure.tag.status For Sale
+            %a{:href => "property.html"}
+              .property-image
+                = image_tag("fp-1.jpg")
+              .overlay
+                .info
+                  .tag.price $ 11,000
+                  %h3 3398 Lodgeville Road
+                  %figure.mb-0 Golden Valley, MN 55427
+                %ul.additional-info
+                  %li
+                    %header Area:
+                    %figure.mb-0
+                      240m
+                      %sup 2
+                  %li
+                    %header Beds:
+                    %figure.mb-0 2
+                  %li
+                    %header Baths:
+                    %figure.mb-0 2
+                  %li
+                    %header Garages:
+                    %figure.mb-0 0
+        .col-sm.col-md-6.col-lg-4.ftco-animate
+          .property
+            %figure.tag.status For Sale
+            %a{:href => "property.html"}
+              .property-image
+                = image_tag("fp-1.jpg")
+              .overlay
+                .info
+                  .tag.price $ 11,000
+                  %h3 3398 Lodgeville Road
+                  %figure.mb-0 Golden Valley, MN 55427
+                %ul.additional-info
+                  %li
+                    %header Area:
+                    %figure.mb-0
+                      240m
+                      %sup 2
+                  %li
+                    %header Beds:
+                    %figure.mb-0 2
+                  %li
+                    %header Baths:
+                    %figure.mb-0 2
+                  %li
+                    %header Garages:
+                    %figure.mb-0 0
+        .col-sm.col-md-6.col-lg-4.ftco-animate
+          .property
+            %figure.tag.status For Sale
+            %a{:href => "property.html"}
+              .property-image
+                = image_tag("fp-1.jpg")
+              .overlay
+                .info
+                  .tag.price $ 11,000
+                  %h3 3398 Lodgeville Road
+                  %figure.mb-0 Golden Valley, MN 55427
+                %ul.additional-info
+                  %li
+                    %header Area:
+                    %figure.mb-0
+                      240m
+                      %sup 2
+                  %li
+                    %header Beds:
+                    %figure.mb-0 2
+                  %li
+                    %header Baths:
+                    %figure.mb-0 2
+                  %li
+                    %header Garages:
+                    %figure.mb-0 0
+        .col-sm.col-md-6.col-lg-4.ftco-animate
+          .property
+            %figure.tag.status For Sale
+            %a{:href => "property.html"}
+              .property-image
+                = image_tag("fp-1.jpg")
+              .overlay
+                .info
+                  .tag.price $ 11,000
+                  %h3 3398 Lodgeville Road
+                  %figure.mb-0 Golden Valley, MN 55427
+                %ul.additional-info
+                  %li
+                    %header Area:
+                    %figure.mb-0
+                      240m
+                      %sup 2
+                  %li
+                    %header Beds:
+                    %figure.mb-0 2
+                  %li
+                    %header Baths:
+                    %figure.mb-0 2
+                  %li
+                    %header Garages:
+                    %figure.mb-0 0
+        .col-sm.col-md-6.col-lg-4.ftco-animate
+          .property
+            %figure.tag.status For Sale
+            %a{:href => "property.html"}
+              .property-image
+                = image_tag("fp-1.jpg")
+              .overlay
+                .info
+                  .tag.price $ 11,000
+                  %h3 3398 Lodgeville Road
+                  %figure.mb-0 Golden Valley, MN 55427
+                %ul.additional-info
+                  %li
+                    %header Area:
+                    %figure.mb-0
+                      240m
+                      %sup 2
+                  %li
+                    %header Beds:
+                    %figure.mb-0 2
+                  %li
+                    %header Baths:
+                    %figure.mb-0 2
+                  %li
+                    %header Garages:
+                    %figure.mb-0 0
+  %section#section-counter.ftco-section.ftco-counter.img{:style => "background-image: url('#{image_path 'bg_1.jpg'}');"}
+    .container
+      .row.justify-content-center
+        .col-md-10
+          .row
+            .col-md-3.d-flex.justify-content-center.counter-wrap.ftco-animate
+              .block-18.text-center
+                .text
+                  %strong.number{"data-number" => "9000"} 0
+                  %span Happy Customers
+            .col-md-3.d-flex.justify-content-center.counter-wrap.ftco-animate
+              .block-18.text-center
+                .text
+                  %strong.number{"data-number" => "10000"} 0
+                  %span Properties
+            .col-md-3.d-flex.justify-content-center.counter-wrap.ftco-animate
+              .block-18.text-center
+                .text
+                  %strong.number{"data-number" => "1000"} 0
+                  %span Agents
+            .col-md-3.d-flex.justify-content-center.counter-wrap.ftco-animate
+              .block-18.text-center
+                .text
+                  %strong.number{"data-number" => "100"} 0
+                  %span Awards
+  %section.ftco-section.testimony-section.bg-light
+    .container
+      .row.justify-content-center
+        .col-md-8.ftco-animate
+          .row.ftco-animate
+            .col-md-12
+              .carousel-testimony.owl-carousel.ftco-owl
+                .item
+                  .testimony-wrap.py-4
+                    .user-img.mb-4{:style => "background-image: url('#{image_path 'person_1.jpg'}')"}
+                      %span.quote.d-flex.align-items-center.justify-content-center
+                        %i.icon-quote-left
+                    .text.text-center
+                      %p.mb-4 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                      %p.name Roger Scott
+                      %span.position Clients
+                .item
+                  .testimony-wrap.py-4
+                    .user-img.mb-4{:style => "background-image: url('#{image_path 'person_2.jpg'}')"}
+                      %span.quote.d-flex.align-items-center.justify-content-center
+                        %i.icon-quote-left
+                    .text.text-center
+                      %p.mb-4 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                      %p.name Roger Scott
+                      %span.position Agent
+                .item
+                  .testimony-wrap.py-4
+                    .user-img.mb-4{:style => "background-image: url('#{image_path 'person_3.jpg'}')"}
+                      %span.quote.d-flex.align-items-center.justify-content-center
+                        %i.icon-quote-left
+                    .text.text-center
+                      %p.mb-4 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                      %p.name Roger Scott
+                      %span.position Client
+                .item
+                  .testimony-wrap.py-4
+                    .user-img.mb-4{:style => "background-image: url('#{image_path 'person_1.jpg'}'"}
+                      %span.quote.d-flex.align-items-center.justify-content-center
+                        %i.icon-quote-left
+                    .text.text-center
+                      %p.mb-4 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                      %p.name Roger Scott
+                      %span.position Client
+                .item
+                  .testimony-wrap.py-4
+                    .user-img.mb-4{:style => "background-image: url('#{image_path 'person_1.jpg'}')"}
+                      %span.quote.d-flex.align-items-center.justify-content-center
+                        %i.icon-quote-left
+                    .text.text-center
+                      %p.mb-4 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                      %p.name Roger Scott
+                      %span.position Client
+  %section.ftco-section.ftco-agent
+    .container
+      .row.justify-content-center.mb-5.pb-3
+        .col-md-7.heading-section.text-center.ftco-animate
+          %span.subheading Meet the Team
+          %h2 Dedicated Agent
+      .row
+        .col-md-4.listing_wrapper.d-flex.ftco-animate.fadeInUp.ftco-animated
+          .agent_unit
+            .agent-unit-img-wrapper
+              .prop_new_details_back
+              = image_tag("agent1.jpg")
+            %div
+              %h4
+                %a{:href => "#"} John Silver
+              .agent_position real estate broker
+              .agent_detail
+                %i.fa.fa-phone
+                %a{:href => "tel:(305) 555-4555"} (305) 555-4555
+              .agent_detail
+                %i.fa.fa-envelope-o
+                %a{:href => "#"} michael@wpresidence.net
+              .agent_detail
+                %i.fa.fa-skype>
+                michael.suttherland
+            %a.float-right.agent_unit_button.agent_unit_contact_me{:href => "#"} Contact me
+            .agent_unit_social.agent_list
+              .social-wrapper
+                %a{:href => "#"}
+                  %i.fa.fa-facebook
+                %a{:href => "#"}
+                  %i.fa.fa-twitter
+                %a{:href => "#"}
+                  %i.fa.fa-linkedin
+                %a{:href => "#"}
+                  %i.fa.fa-pinterest
+        .col-md-4.listing_wrapper.d-flex.ftco-animate.fadeInUp.ftco-animated
+          .agent_unit
+            .agent-unit-img-wrapper
+              .prop_new_details_back
+              = image_tag("agent2.jpg")
+            %div
+              %h4
+                %a{:href => "#"} John Silver
+              .agent_position real estate broker
+              .agent_detail
+                %i.fa.fa-phone
+                %a{:href => "tel:(305) 555-4555"} (305) 555-4555
+              .agent_detail
+                %i.fa.fa-mobile
+                %a{:href => "tel:(305) 555-4555"} (305) 555-4555
+              .agent_detail
+                %i.fa.fa-envelope-o
+                %a{:href => "#"} michael@wpresidence.net
+              .agent_detail
+                %i.fa.fa-skype>
+                michael.suttherland
+            %a.float-right.agent_unit_button.agent_unit_contact_me{:href => "#"} Contact me
+            .agent_unit_social.agent_list
+              .social-wrapper
+                %a{:href => "#"}
+                  %i.fa.fa-facebook
+                %a{:href => "#"}
+                  %i.fa.fa-twitter
+                %a{:href => "#"}
+                  %i.fa.fa-linkedin
+                %a{:href => "#"}
+                  %i.fa.fa-pinterest
+        .col-md-4.listing_wrapper.d-flex.ftco-animate.fadeInUp.ftco-animated
+          .agent_unit
+            .agent-unit-img-wrapper
+              .prop_new_details_back
+              = image_tag("agent3.jpg")
+            %div
+              %h4
+                %a{:href => "#"} John Silver
+              .agent_position real estate broker
+              .agent_detail
+                %i.fa.fa-phone
+                %a{:href => "tel:(305) 555-4555"} (305) 555-4555
+              .agent_detail
+                %i.fa.fa-mobile
+                %a{:href => "tel:(305) 555-4555"} (305) 555-4555
+              .agent_detail
+                %i.fa.fa-envelope-o
+                %a{:href => "#"} michael@wpresidence.net
+              .agent_detail
+                %i.fa.fa-skype>
+                michael.suttherland
+            %a.float-right.agent_unit_button.agent_unit_contact_me{:href => "#"} Contact me
+            .agent_unit_social.agent_list
+              .social-wrapper
+                %a{:href => "#"}
+                  %i.fa.fa-facebook
+                %a{:href => "#"}
+                  %i.fa.fa-twitter
+                %a{:href => "#"}
+                  %i.fa.fa-linkedin
+                %a{:href => "#"}
+                  %i.fa.fa-pinterest
+  %section.ftco-section
+    .container
+      .row.justify-content-center.mb-5.pb-3
+        .col-md-7.heading-section.text-center.ftco-animate
+          %span.subheading Read Articles
+          %h2 Recent Blog
+      .row.d-flex
+        .col-md-4.listing_wrapper.blog2v.ftco-animate.fadeInUp.ftco-animated
+          .property_listing
+            .blog_unit_image
+              %img.lazyload.img-responsive.wp-post-image{:alt => "", :height => "350", :src => "#{image_path 'blog.jpg'}", :width => "525"}/
+            .blog2v_content
+              %h4
+                %a{:href => "#"}
+                  Why Live in San Francisco
+              .listing_details.the_grid_view
+                A popular tourist destination,  San Francisco is known for its cool summers, fog, steep rolling
+                %a.unit_more_x{:href => "#"} [more]
+              .blog_unit_meta
+                .blog_unit2_author by remus
+                .blog_unit2_date Mar 04, 2016
+        .col-md-4.listing_wrapper.blog2v.ftco-animate.fadeInUp.ftco-animated
+          .property_listing
+            .blog_unit_image
+              %img.lazyload.img-responsive.wp-post-image{:alt => "", :height => "350", :src => "https://main.wpestatetheme.org/wp-content/uploads/2014/05/amazing-living-room-inspiration-2015-modern-design-white-fur-rug-green-sofa-round-glass-coffee-table-unique-black-floor-lamp-modern-living-room-design-2015-525x350.jpg", :width => "525"}/
+            .blog2v_content
+              %h4
+                %a{:href => "#"}
+                  Why Live in San Francisco
+              .listing_details.the_grid_view
+                A popular tourist destination,  San Francisco is known for its cool summers, fog, steep rolling
+                %a.unit_more_x{:href => "#"} [more]
+              .blog_unit_meta
+                .blog_unit2_author by remus
+                .blog_unit2_date Mar 04, 2016
+        .col-md-4.listing_wrapper.blog2v.ftco-animate.fadeInUp.ftco-animated
+          .property_listing
+            .blog_unit_image
+              %img.lazyload.img-responsive.wp-post-image{:alt => "", :height => "350", :src => "https://main.wpestatetheme.org/wp-content/uploads/2014/05/amazing-living-room-inspiration-2015-modern-design-white-fur-rug-green-sofa-round-glass-coffee-table-unique-black-floor-lamp-modern-living-room-design-2015-525x350.jpg", :width => "525"}/
+            .blog2v_content
+              %h4
+                %a{:href => "#"}
+                  Why Live in San Francisco
+              .listing_details.the_grid_view
+                A popular tourist destination,  San Francisco is known for its cool summers, fog, steep rolling
+                %a.unit_more_x{:href => "#"} [more]
+              .blog_unit_meta
+                .blog_unit2_author by remus
+                .blog_unit2_date Mar 04, 2016
+  %section.ftco-section-parallax
+    .parallax-img.d-flex.align-items-center
+      .container
+        .row.d-flex.justify-content-center
+          .col-md-7.text-center.heading-section.heading-section-white.ftco-animate
+            %h2 Subcribe to our Newsletter
+            %p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in
+            .row.d-flex.justify-content-center.mt-5
+              .col-md-8
+                %form.subscribe-form{:action => "#"}
+                  .form-group.d-flex
+                    %input.form-control{:placeholder => "Enter email address", :type => "text"}/
+                    %input.submit.px-3{:type => "submit", :value => "Subscribe"}/

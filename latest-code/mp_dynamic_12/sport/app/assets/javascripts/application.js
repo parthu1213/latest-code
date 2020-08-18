@@ -1,0 +1,11 @@
+//= require jquery
+//= require popper.min
+//= require bootstrap.min
+//= require slick.slider.min
+//= require fancybox.min
+//= require isotope.min
+//= require smartmenus.min
+//= require progressbar
+//= require counter
+//= require jquery.countdown.min
+//= require functions

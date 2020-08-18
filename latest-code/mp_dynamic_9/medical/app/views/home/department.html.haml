@@ -1,0 +1,213 @@
+%body
+  %section.hero-wrap.hero-wrap-2{"data-stellar-background-ratio" => "0.5", :style => "background-image: url('#{image_path 'bg_1.jpg'}');"}
+    .overlay
+    .container
+      .row.no-gutters.slider-text.align-items-center.justify-content-center
+        .col-md-9.ftco-animate.text-center
+          %h1.mb-2.bread Clinical Department
+          %p.breadcrumbs
+            %span.mr-2
+              %a{:href => root_path}
+                Home
+                %i.ion-ios-arrow-forward
+            %span
+              Department
+              %i.ion-ios-arrow-forward
+  %section.ftco-section
+    .container
+      .row.justify-content-center.mb-5.pb-2
+        .col-md-8.text-center.heading-section.ftco-animate
+          %span.subheading Departments
+          %h2.mb-4 Clinic Departments
+          %p Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country
+      .ftco-departments
+        .row
+          .col-md-12.nav-link-wrap
+            #v-pills-tab.nav.nav-pills.d-flex.text-center{"aria-orientation" => "vertical", :role => "tablist"}
+              %a#v-pills-1-tab.nav-link.ftco-animate.active{"aria-controls" => "v-pills-1", "aria-selected" => "true", "data-toggle" => "pill", :href => "#v-pills-1", :role => "tab"} Neurology
+              %a#v-pills-2-tab.nav-link.ftco-animate{"aria-controls" => "v-pills-2", "aria-selected" => "false", "data-toggle" => "pill", :href => "#v-pills-2", :role => "tab"} Surgical
+              %a#v-pills-3-tab.nav-link.ftco-animate{"aria-controls" => "v-pills-3", "aria-selected" => "false", "data-toggle" => "pill", :href => "#v-pills-3", :role => "tab"} Dental
+              %a#v-pills-4-tab.nav-link.ftco-animate{"aria-controls" => "v-pills-4", "aria-selected" => "false", "data-toggle" => "pill", :href => "#v-pills-4", :role => "tab"} Ophthalmology
+              %a#v-pills-5-tab.nav-link.ftco-animate{"aria-controls" => "v-pills-5", "aria-selected" => "false", "data-toggle" => "pill", :href => "#v-pills-5", :role => "tab"} Cardiology
+          .col-md-12.tab-wrap
+            #v-pills-tabContent.tab-content.bg-light.p-4.p-md-5.ftco-animate
+              #v-pills-1.tab-pane.py-2.fade.show.active{"aria-labelledby" => "day-1-tab", :role => "tabpanel"}
+                .row.departments
+                  .col-lg-4.order-lg-last.d-flex.align-items-stretch
+                    .img.d-flex.align-self-stretch{:style => "background-image: url('#{image_path 'dept-1.jpg'}');"}
+                  .col-lg-8
+                    %h2 Neurological Deparments
+                    %p On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.
+                    .row.mt-5.pt-2
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-first-aid-kit
+                          .text
+                            %h3 Primary Care
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-dropper
+                          .text
+                            %h3 Lab Test
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-experiment-results
+                          .text
+                            %h3 Symptom Check
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-heart-rate
+                          .text
+                            %h3 Heart Rate
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+              #v-pills-2.tab-pane.fade{"aria-labelledby" => "v-pills-day-2-tab", :role => "tabpanel"}
+                .row.departments
+                  .col-lg-4.order-lg-last.d-flex.align-items-stretch
+                    .img.d-flex.align-self-stretch{:style => "background-image: url('#{image_path 'dept-2.jpg'}');"}
+                  .col-md-8
+                    %h2 Surgical Deparments
+                    %p On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.
+                    .row.mt-5.pt-2
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-first-aid-kit
+                          .text
+                            %h3 Primary Care
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-dropper
+                          .text
+                            %h3 Lab Test
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-experiment-results
+                          .text
+                            %h3 Symptom Check
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-heart-rate
+                          .text
+                            %h3 Heart Rate
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+              #v-pills-3.tab-pane.fade{"aria-labelledby" => "v-pills-day-3-tab", :role => "tabpanel"}
+                .row.departments
+                  .col-lg-4.order-lg-last.d-flex.align-items-stretch
+                    .img.d-flex.align-self-stretch{:style => "background-image: url('#{image_path 'dept-3.jpg'}');"}
+                  .col-md-8
+                    %h2 Dental Deparments
+                    %p On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.
+                    .row.mt-5.pt-2
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-first-aid-kit
+                          .text
+                            %h3 Primary Care
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-dropper
+                          .text
+                            %h3 Lab Test
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-experiment-results
+                          .text
+                            %h3 Symptom Check
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-heart-rate
+                          .text
+                            %h3 Heart Rate
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+              #v-pills-4.tab-pane.fade{"aria-labelledby" => "v-pills-day-4-tab", :role => "tabpanel"}
+                .row.departments
+                  .col-lg-4.order-lg-last.d-flex.align-items-stretch
+                    .img.d-flex.align-self-stretch{:style => "background-image: url('#{image_path 'dept-4.jpg'}');"}
+                  .col-md-8
+                    %h2 Ophthalmology Deparments
+                    %p On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.
+                    .row.mt-5.pt-2
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-first-aid-kit
+                          .text
+                            %h3 Primary Care
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-dropper
+                          .text
+                            %h3 Lab Test
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-experiment-results
+                          .text
+                            %h3 Symptom Check
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-lg-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-heart-rate
+                          .text
+                            %h3 Heart Rate
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+              #v-pills-5.tab-pane.fade{"aria-labelledby" => "v-pills-day-5-tab", :role => "tabpanel"}
+                .row.departments
+                  .col-lg-4.order-lg-last.d-flex.align-items-stretch
+                    .img.d-flex.align-self-stretch{:style => "background-image: url('#{image_path 'dept-5.jpg'}');"}
+                  .col-md-8
+                    %h2 Cardiology Deparments
+                    %p On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.
+                    .row.mt-5.pt-2
+                      .col-md-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-idea
+                          .text
+                            %h3 Primary Care
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-md-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-idea
+                          .text
+                            %h3 Lab Test
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-md-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-idea
+                          .text
+                            %h3 Symptom Check
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.
+                      .col-md-6
+                        .services-2.d-flex
+                          .icon.mt-2.mr-3.d-flex.justify-content-center.align-items-center
+                            %span.flaticon-idea
+                          .text
+                            %h3 Heart Rate
+                            %p Far far away, behind the word mountains, far from the countries Vokalia.

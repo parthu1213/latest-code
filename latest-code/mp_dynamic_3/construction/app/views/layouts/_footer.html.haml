@@ -1,0 +1,66 @@
+%body
+  .footer-wrap{:style => "background-image: url('#{image_path 'footer-bg.jpg'}')"}
+    .container
+      .row
+        .col-md-4.col-sm-6.col-xs-12
+          .footer-logo
+            %a{:href => "index.html"}= image_tag("footer-logo.png")
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam neque eget ipsum porta, sed convallis odio convallis...
+            %a{:href => "#"} Read More
+          .social
+            %a{:href => "https://www.facebook.com/softices/?ref=aymt_homepage_panel&eid=ARAm18ULAHBNqv2_Az_4sos7SWP3mjVSiSx1_B0Wign4XH4MZ2g-GjOu2oJVWaqajG1kXXOJk0XG7OIa", :target => "_blank"}
+              %i.fa.fa-facebook-square{"aria-hidden" => "true"}
+            %a{:href => "https://twitter.com/Softices", :target => "_blank"}
+              %i.fa.fa-twitter-square{"aria-hidden" => "true"}
+            %a{:href => "#.", :target => "_blank"}
+              %i.fa.fa-google-plus-square{"aria-hidden" => "true"}
+            %a{:href => "https://www.linkedin.com/company/softices/?viewAsMember=tru", :target => "_blank"}
+              %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
+            %a{:href => "https://www.youtube.com/channel/UCfqO6OVTF-TRuUSgFJ7iUnw", :target => "_blank"}
+              %i.fa.fa-youtube-square{"aria-hidden" => "true"}
+        .col-md-2.col-sm-6.col-xs-12
+          %h3 Quick Links
+          %ul.footer-links
+            %li
+              %a{:href => "#"} Home
+            %li
+              %a{:href => "#"} About us
+            %li
+              %a{:href => "#"} Service
+            %li
+              %a{:href => "#"} Projects
+            %li
+              %a{:href => "#"} Blog
+            %li
+              %a{:href => "#"} Contact us
+        .col-md-3.col-sm-6.col-xs-12
+          %h3 Services
+          %ul.footer-links
+            %li
+              %a{:href => "#"} Project Management
+            %li
+              %a{:href => "#"} Material Sourcing
+            %li
+              %a{:href => "#"} Space Optimization
+            %li
+              %a{:href => "#"} Construction &amp; installation
+        .col-md-3.col-sm-6.col-xs-12
+          %h3 Contact Info
+          .footer-address 202-204 Panvel Point, Nr. Sudama Chowk, Mota Varachha
+          .call-us
+            %a{:href => "#"} (+91) 70166 76005
+          .fax
+            %a{:href => "#"} (+91) 70166 76005
+      .footerWrp
+        .row
+          .col-md-6.col-sm-6
+            .copyright © 2020 Softices Consultancy Pvt. Ltd. | All Rights Reserved
+          .col-md-6.col-sm-6
+            %ul.foot.footer-links
+              %li
+                %a{:href => "#"} Sitemap
+              %li
+                %a{:href => "#"} Privacy Policy
+              %li
+                %a{:href => "#"} Support
